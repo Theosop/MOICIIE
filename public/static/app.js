@@ -188,9 +188,11 @@
       <nav id="navbar" class="fixed w-full top-0 z-50 bg-white shadow-md transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex justify-between items-center h-20">
-            <div class="flex items-center">
-              <div class="text-3xl font-bold text-blue-900">
-                MOI<span class="text-cyan-500">ALU</span>
+            <div class="flex items-center gap-3">
+              <img src="/static/logo.png" alt="MOI Logo" class="h-14 w-14 object-contain">
+              <div class="text-xl md:text-2xl font-bold text-blue-900">
+                <div class="leading-tight">MENUISERIE</div>
+                <div class="text-sm md:text-base font-normal text-gray-600">DE L'OCEAN INDIEN</div>
               </div>
             </div>
             
@@ -245,6 +247,9 @@
       <section id="home" class="pt-20 gradient-bg hero-pattern">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
           <div class="text-center text-white">
+            <div class="flex justify-center mb-8 section-fade">
+              <img src="/static/logo.png" alt="MOI Logo" class="h-32 w-32 object-contain bg-white/10 rounded-2xl p-4 shadow-2xl">
+            </div>
             <h1 class="text-5xl md:text-7xl font-bold mb-6 section-fade">
               ${t.hero.title}
             </h1>
@@ -501,7 +506,13 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <div class="text-3xl font-bold mb-4">MOI<span class="text-cyan-400">ALU</span></div>
+              <div class="flex items-center gap-3 mb-4">
+                <img src="/static/logo.png" alt="MOI Logo" class="h-16 w-16 object-contain bg-white/10 rounded-lg p-2">
+                <div class="text-lg font-bold">
+                  <div class="leading-tight">MENUISERIE</div>
+                  <div class="text-sm font-normal text-blue-200">DE L'OCEAN INDIEN</div>
+                </div>
+              </div>
               <p class="text-blue-200 mb-4">${t.footer.tagline}</p>
               <div class="flex gap-4">
                 <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition">
