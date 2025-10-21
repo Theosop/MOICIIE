@@ -34,19 +34,58 @@ app.post('/api/contact', async (c) => {
 app.get('/', (c) => {
   return c.html(`
     <!DOCTYPE html>
-    <html lang="en">
+    <html lang="en" class="scroll-smooth">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MOI Aluminium - Expert in Aluminum Joinery | Mauritius</title>
-        <meta name="description" content="Menuiserie de l'Océan Indien - Manufacturing and installation of quality aluminum windows, doors and shutters in Mauritius since 2005">
-        <meta name="keywords" content="aluminum windows, aluminum doors, Mauritius, MOI, carpentry, shutters, glass facades">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <!-- SEO Meta Tags -->
+        <title>MOI Aluminium - Premium Aluminum Windows & Doors in Mauritius</title>
+        <meta name="description" content="Leading manufacturer of premium aluminum windows, doors, and shutters in Mauritius since 2005. Expert craftsmanship, 20+ years experience, Made in Moris certified.">
+        <meta name="keywords" content="aluminum windows Mauritius, aluminum doors Mauritius, shutters, MOI, menuiserie, luxury windows, premium doors, Made in Moris">
+        
+        <!-- Open Graph / Social Media -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="MOI Aluminium - Premium Aluminum Solutions">
+        <meta property="og:description" content="Quality aluminum windows, doors & shutters in Mauritius since 2005">
+        <meta property="og:image" content="/static/logo.png">
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="/static/logo.png">
+        
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        
+        <!-- Tailwind CSS -->
         <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                fontFamily: {
+                  'display': ['"Playfair Display"', 'serif'],
+                  'sans': ['Inter', 'system-ui', 'sans-serif']
+                }
+              }
+            }
+          }
+        </script>
+        
+        <!-- Font Awesome -->
         <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        
+        <!-- Custom Styles -->
         <link href="/static/style.css" rel="stylesheet">
+        
         <style>
-          @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-          body { font-family: 'Inter', sans-serif; }
+          body { 
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+          }
           
           .gradient-bg {
             background: linear-gradient(135deg, #1e3a8a 0%, #0ea5e9 100%);
