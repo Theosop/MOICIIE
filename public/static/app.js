@@ -2,85 +2,88 @@
 (function() {
   'use strict';
 
-  // Language translations
+  // Language translations with natural, professional language
   const translations = {
     en: {
       nav: {
         home: 'Home',
-        about: 'About',
+        about: 'About Us',
         products: 'Products',
         gallery: 'Gallery',
         contact: 'Contact'
       },
       hero: {
-        title: 'Expert in Aluminum Joinery',
-        subtitle: 'Manufacturing & Installation',
-        description: 'Quality aluminum windows, doors and shutters in Mauritius since 2005',
-        cta: 'Request a Quote',
-        learn: 'Learn More'
+        title: 'Quality Aluminum Windows & Doors',
+        subtitle: 'Serving Mauritius Since 2005',
+        description: 'Professional manufacturing and installation of aluminum windows, doors, and shutters for homes and businesses',
+        cta: 'Get a Free Quote',
+        learn: 'View Our Work'
       },
       about: {
-        title: 'About MOI',
-        subtitle: 'Excellence and Innovation Since 2005',
-        text1: 'Menuiserie de l\'Océan Indien Ltée specializes in the manufacturing, supply, and installation of high-quality aluminum joinery in Mauritius.',
-        text2: 'We are a Grade MEDIUM II Contractor registered with the Construction Industry Authority, with nearly 20 years of experience.',
-        text3: 'Our team of 10 skilled professionals has successfully completed projects worth up to Rs 100 million.',
-        text4: 'Proud members of the "Made in Moris" collective brand since 2022.',
-        stat1: 'Years Experience',
+        title: 'About Us',
+        subtitle: 'Your Trusted Partner in Aluminum Solutions',
+        text1: 'Since 2005, we\'ve been manufacturing and installing premium aluminum windows, doors, and shutters across Mauritius. As a registered Grade MEDIUM II contractor, we bring nearly 20 years of expertise to every project.',
+        text2: 'Our experienced team of 10 professionals has completed projects ranging from residential homes to commercial buildings, with total project values exceeding Rs 100 million.',
+        text3: 'We\'re proud members of the "Made in Moris" brand, showcasing our commitment to local craftsmanship and quality.',
+        text4: 'From design to installation, we ensure every product meets the highest standards of durability and aesthetics.',
+        stat1: 'Years in Business',
         stat2: 'Projects Completed',
-        stat3: 'Satisfied Clients',
-        stat4: 'Team Members'
+        stat3: 'Happy Clients',
+        stat4: 'Expert Team'
       },
       products: {
         title: 'Our Products',
-        subtitle: 'Comprehensive Range of Aluminum Solutions',
+        subtitle: 'Complete Range of Aluminum Solutions',
         windows: {
           title: 'Windows',
-          items: ['Strong window', 'Sliding window wooden finish', 'Opening', 'Casement window', 'Aluminum door with Georgian bars', 'Awning']
+          desc: 'Energy-efficient aluminum windows in various styles',
+          items: ['Sliding Windows', 'Casement Windows', 'Awning Windows', 'Fixed Windows', 'Bay Windows', 'Georgian Bar Windows']
         },
         doors: {
           title: 'Doors & Shutters',
-          items: ['Tilt and turn', 'Aluminum', 'Aluminum rockets', 'Mosquito net', 'Roller shutter with Georgian bars', 'Electric window roller shutter', 'Aluminum louvered door', 'Casement aluminum/mosquito/net shutters', 'Aluminum roller shutter']
+          desc: 'Secure and stylish entrance solutions',
+          items: ['Aluminum Doors', 'Sliding Doors', 'French Doors', 'Roller Shutters', 'Louvered Doors', 'Electric Shutters']
         },
         custom: {
           title: 'Custom Solutions',
-          desc: 'We offer fully customizable solutions for residential and commercial projects'
+          desc: 'Made-to-measure designs for any space',
+          items: ['Color Options Available', 'Custom Sizes', 'Georgian Bars', 'Mosquito Nets', 'Wood Finish', 'Security Features']
         }
       },
       gallery: {
-        title: 'Our Work',
-        subtitle: 'Showcase of Quality Projects'
+        title: 'Recent Projects',
+        subtitle: 'See Our Quality Work'
       },
       contact: {
-        title: 'Contact Us',
-        subtitle: 'Get in Touch for Your Next Project',
+        title: 'Get In Touch',
+        subtitle: 'Ready to start your project? Contact us today',
         form: {
-          name: 'Full Name',
-          email: 'Email Address',
-          phone: 'Phone Number',
-          message: 'Your Message',
+          name: 'Your Name',
+          email: 'Email',
+          phone: 'Phone',
+          message: 'Tell us about your project',
           submit: 'Send Message',
           sending: 'Sending...',
-          success: 'Thank you! We will contact you soon.',
-          error: 'Failed to send. Please try again.'
+          success: 'Thanks! We\'ll get back to you soon.',
+          error: 'Something went wrong. Please call us instead.'
         },
         info: {
-          address: 'Address',
+          address: 'Visit Us',
           addressLine1: 'Unit 29 - Block 8',
           addressLine2: 'DBM SME Park, Vuillemin',
           addressLine3: 'Quartier Militaire, Mauritius',
-          phone: 'Phone',
-          email: 'Email',
-          hours: 'Business Hours',
-          hoursText: 'Monday - Friday: 8:00 AM - 5:00 PM',
-          saturday: 'Saturday: 8:00 AM - 12:00 PM'
+          phone: 'Call Us',
+          email: 'Email Us',
+          hours: 'Opening Hours',
+          hoursText: 'Mon - Fri: 8:00 AM - 5:00 PM',
+          saturday: 'Sat: 8:00 AM - 12:00 PM'
         }
       },
       footer: {
         company: 'Menuiserie de l\'Océan Indien Ltée',
-        tagline: 'Quality Aluminum Joinery Since 2005',
+        tagline: 'Quality Aluminum Products Since 2005',
         rights: 'All rights reserved',
-        madeIn: 'Made in Moris',
+        madeIn: 'Proudly Made in Moris',
         registered: 'Registered Contractor - Grade MEDIUM II'
       }
     },
@@ -93,74 +96,77 @@
         contact: 'Contact'
       },
       hero: {
-        title: 'Expert en Menuiserie Aluminium',
-        subtitle: 'Fabrication & Installation',
-        description: 'Fenêtres, portes et volets en aluminium de qualité à Maurice depuis 2005',
-        cta: 'Demander un Devis',
-        learn: 'En Savoir Plus'
+        title: 'Fenêtres et Portes en Aluminium',
+        subtitle: 'À Maurice Depuis 2005',
+        description: 'Fabrication et installation professionnelle de fenêtres, portes et volets en aluminium',
+        cta: 'Demandez un Devis',
+        learn: 'Voir Nos Travaux'
       },
       about: {
-        title: 'À Propos de MOI',
-        subtitle: 'Excellence et Innovation Depuis 2005',
-        text1: 'Menuiserie de l\'Océan Indien Ltée est spécialisée dans la fabrication, la fourniture et l\'installation de menuiserie aluminium de haute qualité à Maurice.',
-        text2: 'Nous sommes un entrepreneur de grade MOYEN II enregistré auprès de l\'Autorité de l\'industrie de la construction, avec près de 20 ans d\'expérience.',
-        text3: 'Notre équipe de 10 professionnels qualifiés a réalisé avec succès des projets d\'une valeur allant jusqu\'à 100 millions de roupies.',
-        text4: 'Fiers membres de la marque collective "Made in Moris" depuis 2022.',
-        stat1: 'Ans d\'Expérience',
+        title: 'À Propos',
+        subtitle: 'Votre Partenaire de Confiance',
+        text1: 'Depuis 2005, nous fabriquons et installons des fenêtres, portes et volets en aluminium de qualité supérieure à travers Maurice. En tant qu\'entrepreneur enregistré Grade MOYEN II, nous apportons près de 20 ans d\'expertise.',
+        text2: 'Notre équipe expérimentée de 10 professionnels a réalisé des projets résidentiels et commerciaux d\'une valeur totale dépassant Rs 100 millions.',
+        text3: 'Nous sommes fiers membres de la marque "Made in Moris", démontrant notre engagement envers l\'artisanat local et la qualité.',
+        text4: 'De la conception à l\'installation, nous assurons que chaque produit répond aux plus hauts standards.',
+        stat1: 'Années d\'Expérience',
         stat2: 'Projets Réalisés',
         stat3: 'Clients Satisfaits',
-        stat4: 'Membres d\'Équipe'
+        stat4: 'Équipe Experte'
       },
       products: {
         title: 'Nos Produits',
-        subtitle: 'Gamme Complète de Solutions en Aluminium',
+        subtitle: 'Gamme Complète de Solutions',
         windows: {
           title: 'Fenêtres',
-          items: ['Fenêtre robuste', 'Fenêtre coulissante finition bois', 'Ouverture', 'Fenêtre à battant', 'Porte aluminium avec barreaux géorgiens', 'Auvent']
+          desc: 'Fenêtres en aluminium économes en énergie',
+          items: ['Fenêtres Coulissantes', 'Fenêtres à Battant', 'Fenêtres Auvent', 'Fenêtres Fixes', 'Bow Windows', 'Barreaux Géorgiens']
         },
         doors: {
           title: 'Portes & Volets',
-          items: ['Oscillo-battant', 'Aluminium', 'Roquets aluminium', 'Moustiquaire', 'Volet roulant avec barreaux géorgiens', 'Volet roulant électrique', 'Porte persienne aluminium', 'Volets aluminium/moustiquaire', 'Volet roulant aluminium']
+          desc: 'Solutions d\'entrée sécurisées et élégantes',
+          items: ['Portes Aluminium', 'Portes Coulissantes', 'Portes Françaises', 'Volets Roulants', 'Portes Persiennes', 'Volets Électriques']
         },
         custom: {
-          title: 'Solutions Sur Mesure',
-          desc: 'Nous offrons des solutions entièrement personnalisables pour projets résidentiels et commerciaux'
+          title: 'Sur Mesure',
+          desc: 'Conceptions adaptées à tout espace',
+          items: ['Choix de Couleurs', 'Dimensions Sur Mesure', 'Barreaux Géorgiens', 'Moustiquaires', 'Finition Bois', 'Sécurité Renforcée']
         }
       },
       gallery: {
-        title: 'Nos Réalisations',
-        subtitle: 'Vitrine de Projets de Qualité'
+        title: 'Projets Récents',
+        subtitle: 'Découvrez Notre Travail'
       },
       contact: {
         title: 'Contactez-Nous',
-        subtitle: 'Prenez Contact Pour Votre Prochain Projet',
+        subtitle: 'Prêt à démarrer votre projet?',
         form: {
-          name: 'Nom Complet',
-          email: 'Adresse Email',
-          phone: 'Numéro de Téléphone',
-          message: 'Votre Message',
+          name: 'Votre Nom',
+          email: 'Email',
+          phone: 'Téléphone',
+          message: 'Parlez-nous de votre projet',
           submit: 'Envoyer',
           sending: 'Envoi...',
-          success: 'Merci! Nous vous contactons bientôt.',
-          error: 'Échec de l\'envoi. Veuillez réessayer.'
+          success: 'Merci! Nous vous recontacterons bientôt.',
+          error: 'Erreur. Veuillez nous appeler.'
         },
         info: {
-          address: 'Adresse',
+          address: 'Nous Rendre Visite',
           addressLine1: 'Unité 29 - Bloc 8',
           addressLine2: 'DBM SME Park, Vuillemin',
           addressLine3: 'Quartier Militaire, Maurice',
-          phone: 'Téléphone',
-          email: 'Email',
+          phone: 'Appelez-Nous',
+          email: 'Écrivez-Nous',
           hours: 'Heures d\'Ouverture',
-          hoursText: 'Lundi - Vendredi: 8h00 - 17h00',
-          saturday: 'Samedi: 8h00 - 12h00'
+          hoursText: 'Lun - Ven: 8h00 - 17h00',
+          saturday: 'Sam: 8h00 - 12h00'
         }
       },
       footer: {
         company: 'Menuiserie de l\'Océan Indien Ltée',
-        tagline: 'Menuiserie Aluminium de Qualité Depuis 2005',
+        tagline: 'Produits en Aluminium de Qualité Depuis 2005',
         rights: 'Tous droits réservés',
-        madeIn: 'Made in Moris',
+        madeIn: 'Fièrement Made in Moris',
         registered: 'Entrepreneur Enregistré - Grade MOYEN II'
       }
     }
@@ -260,8 +266,8 @@
                 <i class="fas fa-phone"></i>
                 ${t.hero.cta}
               </a>
-              <a href="#about" class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-blue-900 transition flex items-center justify-center gap-2">
-                <i class="fas fa-info-circle"></i>
+              <a href="#gallery" class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-blue-900 transition flex items-center justify-center gap-2">
+                <i class="fas fa-images"></i>
                 ${t.hero.learn}
               </a>
             </div>
@@ -282,7 +288,7 @@
               <p class="text-lg text-gray-700">${t.about.text1}</p>
               <p class="text-lg text-gray-700">${t.about.text2}</p>
               <p class="text-lg text-gray-700">${t.about.text3}</p>
-              <p class="text-lg text-gray-700 font-semibold text-blue-900">${t.about.text4}</p>
+              <p class="text-lg text-gray-700">${t.about.text4}</p>
             </div>
             <div class="bg-gradient-to-br from-blue-900 to-cyan-600 rounded-2xl p-12 text-white shadow-2xl">
               <div class="text-center">
@@ -327,7 +333,8 @@
             <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
               <div class="bg-gradient-to-br from-blue-900 to-blue-700 p-8 text-white">
                 <i class="fas fa-window-maximize text-5xl mb-4"></i>
-                <h3 class="text-2xl font-bold">${t.products.windows.title}</h3>
+                <h3 class="text-2xl font-bold mb-2">${t.products.windows.title}</h3>
+                <p class="text-blue-100">${t.products.windows.desc}</p>
               </div>
               <div class="p-6">
                 <ul class="space-y-3">
@@ -345,7 +352,8 @@
             <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
               <div class="bg-gradient-to-br from-cyan-600 to-cyan-500 p-8 text-white">
                 <i class="fas fa-door-open text-5xl mb-4"></i>
-                <h3 class="text-2xl font-bold">${t.products.doors.title}</h3>
+                <h3 class="text-2xl font-bold mb-2">${t.products.doors.title}</h3>
+                <p class="text-blue-100">${t.products.doors.desc}</p>
               </div>
               <div class="p-6">
                 <ul class="space-y-3">
@@ -363,35 +371,25 @@
             <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
               <div class="bg-gradient-to-br from-blue-800 to-cyan-700 p-8 text-white">
                 <i class="fas fa-cogs text-5xl mb-4"></i>
-                <h3 class="text-2xl font-bold">${t.products.custom.title}</h3>
+                <h3 class="text-2xl font-bold mb-2">${t.products.custom.title}</h3>
+                <p class="text-blue-100">${t.products.custom.desc}</p>
               </div>
               <div class="p-6">
-                <p class="text-gray-700 mb-6">${t.products.custom.desc}</p>
-                <div class="space-y-4">
-                  <div class="flex items-center gap-3 text-gray-700">
-                    <i class="fas fa-palette text-cyan-600"></i>
-                    <span>${currentLang === 'en' ? 'Color customization' : 'Personnalisation couleur'}</span>
-                  </div>
-                  <div class="flex items-center gap-3 text-gray-700">
-                    <i class="fas fa-ruler-combined text-cyan-600"></i>
-                    <span>${currentLang === 'en' ? 'Custom dimensions' : 'Dimensions sur mesure'}</span>
-                  </div>
-                  <div class="flex items-center gap-3 text-gray-700">
-                    <i class="fas fa-building text-cyan-600"></i>
-                    <span>${currentLang === 'en' ? 'Commercial projects' : 'Projets commerciaux'}</span>
-                  </div>
-                  <div class="flex items-center gap-3 text-gray-700">
-                    <i class="fas fa-home text-cyan-600"></i>
-                    <span>${currentLang === 'en' ? 'Residential projects' : 'Projets résidentiels'}</span>
-                  </div>
-                </div>
+                <ul class="space-y-3">
+                  ${t.products.custom.items.map(item => `
+                    <li class="flex items-start gap-2 text-gray-700">
+                      <i class="fas fa-check text-cyan-600 mt-1"></i>
+                      <span>${item}</span>
+                    </li>
+                  `).join('')}
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Gallery Section -->
+      <!-- Gallery Section with REAL PHOTOS -->
       <section id="gallery" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-16">
@@ -400,7 +398,60 @@
           </div>
           
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            ${generateGalleryItems()}
+            <!-- Real Product Photo 1 -->
+            <div class="product-image bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+              <img src="/static/door-red.jpg" alt="Red Panel Aluminum Door" class="w-full h-80 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-blue-900 mb-2">${currentLang === 'en' ? 'Aluminum Door with Red Panel' : 'Porte Aluminium Panneau Rouge'}</h3>
+                <p class="text-gray-600">${currentLang === 'en' ? 'Modern design with glass and solid panel combination' : 'Design moderne avec combinaison verre et panneau'}</p>
+              </div>
+            </div>
+
+            <!-- Real Product Photo 2 -->
+            <div class="product-image bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+              <img src="/static/door-red-glass.jpg" alt="Glass Aluminum Door" class="w-full h-80 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-blue-900 mb-2">${currentLang === 'en' ? 'Glass & Panel Door' : 'Porte Verre & Panneau'}</h3>
+                <p class="text-gray-600">${currentLang === 'en' ? 'Elegant door with clear glass side panel' : 'Porte élégante avec panneau latéral en verre'}</p>
+              </div>
+            </div>
+
+            <!-- Real Product Photo 3 -->
+            <div class="product-image bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+              <img src="/static/door-frosted.jpg" alt="Frosted Glass Door" class="w-full h-80 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-blue-900 mb-2">${currentLang === 'en' ? 'Louvered Door' : 'Porte Persienne'}</h3>
+                <p class="text-gray-600">${currentLang === 'en' ? 'Frosted glass with ventilation slats for privacy' : 'Verre dépoli avec persienne pour intimité'}</p>
+              </div>
+            </div>
+
+            <!-- Brochure Image 1 -->
+            <div class="product-image bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+              <img src="/static/brochure1.jpg" alt="MOI Products" class="w-full h-80 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-blue-900 mb-2">${currentLang === 'en' ? 'Our Product Range' : 'Notre Gamme'}</h3>
+                <p class="text-gray-600">${currentLang === 'en' ? 'Wide selection of windows and doors' : 'Large sélection de fenêtres et portes'}</p>
+              </div>
+            </div>
+
+            <!-- Brochure Image 2 -->
+            <div class="product-image bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+              <img src="/static/brochure2.jpg" alt="Product Catalog" class="w-full h-80 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-blue-900 mb-2">${currentLang === 'en' ? 'Shutters & Accessories' : 'Volets & Accessoires'}</h3>
+                <p class="text-gray-600">${currentLang === 'en' ? 'Complete range of shutters and fittings' : 'Gamme complète de volets et accessoires'}</p>
+              </div>
+            </div>
+
+            <!-- Call to Action Card -->
+            <div class="bg-gradient-to-br from-blue-900 to-cyan-600 rounded-2xl p-8 flex flex-col justify-center items-center text-white card-hover">
+              <i class="fas fa-phone-volume text-6xl mb-6"></i>
+              <h3 class="text-2xl font-bold mb-4 text-center">${currentLang === 'en' ? 'Want to see more?' : 'Envie d\'en voir plus?'}</h3>
+              <p class="text-center mb-6 text-blue-100">${currentLang === 'en' ? 'Contact us to discuss your project' : 'Contactez-nous pour discuter'}</p>
+              <a href="#contact" class="bg-white text-blue-900 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition">
+                ${currentLang === 'en' ? 'Contact Us' : 'Contactez-Nous'}
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -437,9 +488,9 @@
                   </div>
                   <div>
                     <h3 class="font-bold text-xl text-blue-900 mb-2">${t.contact.info.phone}</h3>
-                    <p class="text-gray-700">+230 543 730 25</p>
-                    <p class="text-gray-700">+230 594 021 90</p>
-                    <p class="text-gray-600 text-sm mt-1">${currentLang === 'en' ? 'Fax: +230 697 0411' : 'Fax: +230 697 0411'}</p>
+                    <a href="tel:+23054373025" class="text-gray-700 hover:text-blue-900 block">+230 543 730 25</a>
+                    <a href="tel:+23059402190" class="text-gray-700 hover:text-blue-900 block">+230 594 021 90</a>
+                    <p class="text-gray-600 text-sm mt-1">Fax: +230 697 0411</p>
                   </div>
                 </div>
               </div>
@@ -451,9 +502,9 @@
                   </div>
                   <div>
                     <h3 class="font-bold text-xl text-blue-900 mb-2">${t.contact.info.email}</h3>
-                    <p class="text-gray-700">moi.alu2012@gmail.com</p>
-                    <p class="text-gray-700">info.moialu@gmail.com</p>
-                    <p class="text-gray-700 mt-2">www.moialu.com</p>
+                    <a href="mailto:moi.alu2012@gmail.com" class="text-gray-700 hover:text-blue-900 block">moi.alu2012@gmail.com</a>
+                    <a href="mailto:info.moialu@gmail.com" class="text-gray-700 hover:text-blue-900 block">info.moialu@gmail.com</a>
+                    <a href="http://www.moialu.com" class="text-gray-700 hover:text-blue-900 block mt-2">www.moialu.com</a>
                   </div>
                 </div>
               </div>
@@ -550,25 +601,6 @@
     `;
 
     setupFormHandler();
-  }
-
-  // Generate gallery items
-  function generateGalleryItems() {
-    const items = [
-      { color: 'from-red-500 to-red-700', icon: 'fa-door-closed', label: currentLang === 'en' ? 'Red Panel Door' : 'Porte Panneau Rouge' },
-      { color: 'from-gray-600 to-gray-800', icon: 'fa-window-restore', label: currentLang === 'en' ? 'Frosted Glass Door' : 'Porte Verre Dépoli' },
-      { color: 'from-blue-500 to-blue-700', icon: 'fa-border-all', label: currentLang === 'en' ? 'Georgian Bar Windows' : 'Fenêtres Barreaux' },
-      { color: 'from-cyan-500 to-cyan-700', icon: 'fa-th-large', label: currentLang === 'en' ? 'Sliding Windows' : 'Fenêtres Coulissantes' },
-      { color: 'from-indigo-500 to-indigo-700', icon: 'fa-bars', label: currentLang === 'en' ? 'Louvered Shutters' : 'Volets Persienne' },
-      { color: 'from-teal-500 to-teal-700', icon: 'fa-columns', label: currentLang === 'en' ? 'Custom Facades' : 'Façades Sur Mesure' }
-    ];
-
-    return items.map(item => `
-      <div class="product-image bg-gradient-to-br ${item.color} rounded-2xl h-64 flex flex-col items-center justify-center text-white shadow-lg card-hover">
-        <i class="fas ${item.icon} text-6xl mb-4"></i>
-        <p class="text-xl font-bold">${item.label}</p>
-      </div>
-    `).join('');
   }
 
   // Setup event listeners
