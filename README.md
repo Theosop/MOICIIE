@@ -26,11 +26,15 @@ Menuiserie de l'Océan Indien Ltée specializes in the manufacturing, supply, an
 - ✅ Product showcase with comprehensive catalog
 - ✅ Interactive contact form with API integration
 - ✅ Company information and history
-- ✅ Gallery of product types
+- ✅ **NEW: mgi.mg-inspired gallery with category filters**
+- ✅ **NEW: Interactive project filtering (All, Doors, Shutters, Glass, Windows)**
+- ✅ **NEW: Varied grid layout with featured projects**
+- ✅ **NEW: Enhanced hover effects and animations**
 - ✅ Smooth scrolling navigation
 - ✅ Modern gradient design with Tailwind CSS
 - ✅ Mobile-friendly hamburger menu
 - ✅ Professional brand consistency throughout
+- ✅ Luxury design system with Playfair Display + Inter fonts
 
 ### Functional URIs
 
@@ -45,10 +49,15 @@ Menuiserie de l'Océan Indien Ltée specializes in the manufacturing, supply, an
 - `GET /static/style.css` - Custom styles
 
 ### Page Sections
-- **Home** - Hero section with company introduction
-- **About** - Company history, certifications, and statistics
+- **Home** - Full-height luxury hero with animated floating logo
+- **About** - Company history, certifications, and icon-based statistics
 - **Products** - Windows, Doors, Shutters, and Custom Solutions
-- **Gallery** - Visual showcase of product types
+- **Gallery** - Interactive showcase with category filters (All, Doors, Shutters, Glass Work, Windows)
+  - Featured projects with 2-column spans
+  - Varied card layouts (standard, wide, info cards)
+  - Smooth filter animations
+  - Professional hover overlays
+  - "Load More" functionality ready
 - **Contact** - Contact information and inquiry form
 
 ## 🛠 Tech Stack
@@ -167,16 +176,29 @@ Quartier Militaire, Mauritius
 
 ## 🎨 Design Features
 
+### Visual Design
 - Official MOI logo (blue brand identity) displayed prominently
+- Luxury typography: Playfair Display (headings) + Inter (body)
 - Modern gradient backgrounds (blue to cyan)
-- Card hover animations
+- Premium gold badges for featured content
+- Glassmorphism effects with backdrop blur
+- Professional icon circles with gradients
+
+### Interactions
+- Card hover animations with lift and scale
 - Smooth scroll behavior
 - Sticky navigation with backdrop blur
-- Responsive grid layouts
-- Font Awesome icons
-- Google Fonts (Inter)
+- Interactive category filters with smooth transitions
+- Image overlay effects on hover
+- Premium dividers and spacing
+
+### Layout
+- Responsive grid layouts (1/2/3 columns)
+- Font Awesome icons throughout
 - Mobile-first approach
+- Varied card sizes (featured, wide, standard)
 - Professional brand consistency across all pages
+- mgi.mg-inspired modular design
 
 ## 🔄 Next Steps
 
@@ -243,8 +265,20 @@ webapp/
 - **Product Categories**: 3 categories
 - **Contact Methods**: 4 (phone, email, form, address)
 
+## 🎯 Recent Updates
+
+### October 22, 2025 - Gallery Redesign
+- ✅ Implemented mgi.mg-inspired gallery layout
+- ✅ Added interactive category filters (5 categories)
+- ✅ Created varied grid system with featured projects
+- ✅ Enhanced hover effects with gradient overlays
+- ✅ Added JavaScript filter functionality
+- ✅ Improved responsive design for gallery
+- ✅ Professional animations and transitions
+- 📄 See `GALLERY_UPDATE.md` for full details
+
 ---
 
-**Last Updated**: October 21, 2025
+**Last Updated**: October 22, 2025
 **Status**: ✅ Active Development
 **Maintainer**: MOI Development Team
