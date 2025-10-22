@@ -177,11 +177,47 @@
   let mobileMenuOpen = false;
 
   // Initialize application
+  // Setup gallery filters
+  function setupGalleryFilters() {
+    const filterButtons = document.querySelectorAll('.filter-tab');
+    const galleryItems = document.querySelectorAll('[data-category]');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const category = button.getAttribute('data-category');
+        
+        // Update active button
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        
+        // Filter gallery items with animation
+        galleryItems.forEach(item => {
+          const itemCategories = item.getAttribute('data-category').split(' ');
+          
+          if (category === 'all' || itemCategories.includes(category)) {
+            item.style.display = '';
+            setTimeout(() => {
+              item.style.opacity = '1';
+              item.style.transform = 'scale(1)';
+            }, 10);
+          } else {
+            item.style.opacity = '0';
+            item.style.transform = 'scale(0.9)';
+            setTimeout(() => {
+              item.style.display = 'none';
+            }, 300);
+          }
+        });
+      });
+    });
+  }
+
   function init() {
     renderApp();
     setupEventListeners();
     setupSmoothScroll();
     setupStickyNav();
+    setupGalleryFilters();
   }
 
   // Render main application
@@ -479,105 +515,172 @@
         </div>
       </section>
 
-      <!-- Gallery Section - Luxury -->
-      <section id="gallery" class="section-padding bg-white">
+      <!-- Gallery Section - Inspired by mgi.mg modular layout -->
+      <section id="gallery" class="section-padding bg-gradient-to-br from-gray-50 to-blue-50/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <!-- Section Header -->
           <div class="text-center mb-20">
             <div class="inline-block mb-4">
-              <span class="text-cyan-600 font-semibold text-sm uppercase tracking-wider">Our Work</span>
+              <span class="text-cyan-600 font-semibold text-sm uppercase tracking-wider">Nos Réalisations</span>
             </div>
             <h2 class="text-4xl md:text-6xl font-display font-bold text-blue-900 mb-6">${t.gallery.title}</h2>
             <div class="premium-divider max-w-md mx-auto"></div>
             <p class="text-xl text-gray-600 mt-6 max-w-2xl mx-auto">${t.gallery.subtitle}</p>
           </div>
+
+          <!-- Category Filter Tabs (mgi.mg inspired) -->
+          <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <button class="filter-tab active" data-category="all">
+              <i class="fas fa-th mr-2"></i>
+              ${currentLang === 'en' ? 'All Projects' : 'Tous les Projets'}
+            </button>
+            <button class="filter-tab" data-category="doors">
+              <i class="fas fa-door-open mr-2"></i>
+              ${currentLang === 'en' ? 'Doors' : 'Portes'}
+            </button>
+            <button class="filter-tab" data-category="shutters">
+              <i class="fas fa-bars mr-2"></i>
+              ${currentLang === 'en' ? 'Shutters' : 'Volets'}
+            </button>
+            <button class="filter-tab" data-category="glass">
+              <i class="fas fa-border-all mr-2"></i>
+              ${currentLang === 'en' ? 'Glass Work' : 'Vitrerie'}
+            </button>
+            <button class="filter-tab" data-category="windows">
+              <i class="fas fa-window-maximize mr-2"></i>
+              ${currentLang === 'en' ? 'Windows' : 'Fenêtres'}
+            </button>
+          </div>
           
-          <!-- Gallery Grid -->
-          <div class="gallery-grid">
-            <!-- Real Product Photo 1 -->
-            <div class="luxury-card group">
-              <div class="image-overlay aspect-ratio-box">
-                <img src="/static/door-red.jpg" alt="Red Panel Aluminum Door" class="w-full h-full object-cover" loading="lazy">
-              </div>
-              <div class="p-8">
-                <div class="flex items-center gap-2 mb-3">
-                  <span class="premium-badge text-xs">Premium</span>
+          <!-- Gallery Grid with varied layout (mgi.mg style) -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-auto">
+            
+            <!-- Featured Large Project (spans 2 columns on large screens) -->
+            <div class="luxury-card group lg:col-span-2 lg:row-span-2" data-category="doors">
+              <div class="image-overlay aspect-ratio-box" style="padding-bottom: 60%;">
+                <img src="/static/door-red.jpg" alt="Premium Aluminum Door" class="w-full h-full object-cover" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-blue-900/90 via-blue-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end p-8">
+                  <div class="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    <span class="inline-block px-4 py-1 bg-cyan-500 rounded-full text-sm font-semibold mb-3">Featured Project</span>
+                    <h3 class="text-3xl font-display font-bold mb-2">${currentLang === 'en' ? 'Modern Aluminum Door' : 'Porte Aluminium Moderne'}</h3>
+                    <p class="text-blue-100">${currentLang === 'en' ? 'Premium design with red panel and glass combination' : 'Design premium avec panneau rouge et verre'}</p>
+                  </div>
                 </div>
-                <h3 class="text-2xl font-display font-bold text-blue-900 mb-3">${currentLang === 'en' ? 'Aluminum Door with Red Panel' : 'Porte Aluminium Panneau Rouge'}</h3>
-                <p class="text-gray-600 leading-relaxed">${currentLang === 'en' ? 'Modern design with glass and solid panel combination' : 'Design moderne avec combinaison verre et panneau'}</p>
               </div>
             </div>
 
-            <!-- Real Product Photo 2 -->
-            <div class="luxury-card group">
+            <!-- Standard Project 1 -->
+            <div class="luxury-card group" data-category="doors glass">
               <div class="image-overlay aspect-ratio-box">
                 <img src="/static/door-red-glass.jpg" alt="Glass Aluminum Door" class="w-full h-full object-cover" loading="lazy">
-              </div>
-              <div class="p-8">
-                <div class="flex items-center gap-2 mb-3">
-                  <span class="premium-badge text-xs">Elegant</span>
+                <div class="absolute inset-0 bg-blue-900/80 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                  <div class="text-white text-center p-6">
+                    <i class="fas fa-search-plus text-4xl mb-4"></i>
+                    <h4 class="text-xl font-bold">${currentLang === 'en' ? 'View Details' : 'Voir Détails'}</h4>
+                  </div>
                 </div>
-                <h3 class="text-2xl font-display font-bold text-blue-900 mb-3">${currentLang === 'en' ? 'Glass & Panel Door' : 'Porte Verre & Panneau'}</h3>
-                <p class="text-gray-600 leading-relaxed">${currentLang === 'en' ? 'Elegant door with clear glass side panel' : 'Porte élégante avec panneau latéral en verre'}</p>
+              </div>
+              <div class="p-6">
+                <span class="premium-badge text-xs mb-2 inline-block">Elegant</span>
+                <h3 class="text-xl font-display font-bold text-blue-900 mb-2">${currentLang === 'en' ? 'Glass & Panel Door' : 'Porte Verre & Panneau'}</h3>
+                <p class="text-gray-600 text-sm">${currentLang === 'en' ? 'Elegant entrance with clear glass panel' : 'Entrée élégante avec panneau en verre'}</p>
               </div>
             </div>
 
-            <!-- Real Product Photo 3 -->
-            <div class="luxury-card group">
+            <!-- Standard Project 2 -->
+            <div class="luxury-card group" data-category="doors shutters">
               <div class="image-overlay aspect-ratio-box">
-                <img src="/static/door-frosted.jpg" alt="Frosted Glass Door" class="w-full h-full object-cover" loading="lazy">
-              </div>
-              <div class="p-8">
-                <div class="flex items-center gap-2 mb-3">
-                  <span class="premium-badge text-xs">Privacy</span>
+                <img src="/static/door-frosted.jpg" alt="Louvered Door" class="w-full h-full object-cover" loading="lazy">
+                <div class="absolute inset-0 bg-blue-900/80 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                  <div class="text-white text-center p-6">
+                    <i class="fas fa-search-plus text-4xl mb-4"></i>
+                    <h4 class="text-xl font-bold">${currentLang === 'en' ? 'View Details' : 'Voir Détails'}</h4>
+                  </div>
                 </div>
-                <h3 class="text-2xl font-display font-bold text-blue-900 mb-3">${currentLang === 'en' ? 'Louvered Door' : 'Porte Persienne'}</h3>
-                <p class="text-gray-600 leading-relaxed">${currentLang === 'en' ? 'Frosted glass with ventilation slats for privacy' : 'Verre dépoli avec persienne pour intimité'}</p>
+              </div>
+              <div class="p-6">
+                <span class="premium-badge text-xs mb-2 inline-block">Privacy</span>
+                <h3 class="text-xl font-display font-bold text-blue-900 mb-2">${currentLang === 'en' ? 'Louvered Door' : 'Porte Persienne'}</h3>
+                <p class="text-gray-600 text-sm">${currentLang === 'en' ? 'Privacy with style and ventilation' : 'Intimité avec style et ventilation'}</p>
               </div>
             </div>
 
-            <!-- Brochure Image 1 -->
-            <div class="luxury-card group">
-              <div class="image-overlay aspect-ratio-box">
-                <img src="/static/brochure1.jpg" alt="MOI Products" class="w-full h-full object-cover" loading="lazy">
-              </div>
-              <div class="p-8">
-                <div class="flex items-center gap-2 mb-3">
-                  <i class="fas fa-book-open text-cyan-600"></i>
+            <!-- Wide Project (spans 2 columns) -->
+            <div class="luxury-card group lg:col-span-2" data-category="windows">
+              <div class="image-overlay aspect-ratio-box" style="padding-bottom: 40%;">
+                <img src="/static/brochure1.jpg" alt="Window Range" class="w-full h-full object-cover" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center p-8">
+                  <div class="text-white max-w-md">
+                    <i class="fas fa-window-maximize text-5xl mb-4 text-cyan-400"></i>
+                    <h3 class="text-2xl font-display font-bold mb-3">${currentLang === 'en' ? 'Complete Window Range' : 'Gamme Complète de Fenêtres'}</h3>
+                    <p class="text-blue-100">${currentLang === 'en' ? 'Energy-efficient windows in various styles and colors' : 'Fenêtres écoénergétiques en divers styles et couleurs'}</p>
+                  </div>
                 </div>
-                <h3 class="text-2xl font-display font-bold text-blue-900 mb-3">${currentLang === 'en' ? 'Our Product Range' : 'Notre Gamme'}</h3>
-                <p class="text-gray-600 leading-relaxed">${currentLang === 'en' ? 'Wide selection of windows and doors' : 'Large sélection de fenêtres et portes'}</p>
               </div>
             </div>
 
-            <!-- Brochure Image 2 -->
-            <div class="luxury-card group">
+            <!-- Standard Project 3 -->
+            <div class="luxury-card group" data-category="shutters">
               <div class="image-overlay aspect-ratio-box">
-                <img src="/static/brochure2.jpg" alt="Product Catalog" class="w-full h-full object-cover" loading="lazy">
-              </div>
-              <div class="p-8">
-                <div class="flex items-center gap-2 mb-3">
-                  <i class="fas fa-th-large text-cyan-600"></i>
+                <img src="/static/brochure2.jpg" alt="Shutters" class="w-full h-full object-cover" loading="lazy">
+                <div class="absolute inset-0 bg-blue-900/80 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                  <div class="text-white text-center p-6">
+                    <i class="fas fa-search-plus text-4xl mb-4"></i>
+                    <h4 class="text-xl font-bold">${currentLang === 'en' ? 'View Details' : 'Voir Détails'}</h4>
+                  </div>
                 </div>
-                <h3 class="text-2xl font-display font-bold text-blue-900 mb-3">${currentLang === 'en' ? 'Shutters & Accessories' : 'Volets & Accessoires'}</h3>
-                <p class="text-gray-600 leading-relaxed">${currentLang === 'en' ? 'Complete range of shutters and fittings' : 'Gamme complète de volets et accessoires'}</p>
+              </div>
+              <div class="p-6">
+                <span class="premium-badge text-xs mb-2 inline-block">Security</span>
+                <h3 class="text-xl font-display font-bold text-blue-900 mb-2">${currentLang === 'en' ? 'Shutters & Accessories' : 'Volets & Accessoires'}</h3>
+                <p class="text-gray-600 text-sm">${currentLang === 'en' ? 'Complete range of roller shutters' : 'Gamme complète de volets roulants'}</p>
+              </div>
+            </div>
+
+            <!-- Info Card - Upload Your Photos -->
+            <div class="luxury-card bg-gradient-to-br from-cyan-500 to-blue-600 p-8 flex flex-col justify-center items-center text-white lg:col-span-2" data-category="all">
+              <div class="text-center">
+                <div class="icon-circle bg-white/20 text-white mx-auto mb-6 w-20 h-20">
+                  <i class="fas fa-images text-3xl"></i>
+                </div>
+                <h3 class="text-2xl font-display font-bold mb-4">${currentLang === 'en' ? 'More Projects Coming Soon' : 'Plus de Projets Bientôt'}</h3>
+                <p class="text-lg text-cyan-50 mb-6 max-w-md">
+                  ${currentLang === 'en' 
+                    ? 'We\'re updating our gallery with recent installations. Check back soon or contact us to see our latest work!' 
+                    : 'Nous mettons à jour notre galerie avec nos installations récentes. Revenez bientôt ou contactez-nous!'}
+                </p>
+                <div class="flex gap-4 justify-center">
+                  <a href="#contact" class="btn-primary bg-white text-blue-600 hover:bg-gray-100">
+                    ${currentLang === 'en' ? 'Contact Us' : 'Contactez-Nous'}
+                  </a>
+                </div>
               </div>
             </div>
 
             <!-- Call to Action Card -->
-            <div class="luxury-card bg-gradient-to-br from-blue-900 via-blue-800 to-cyan-600 p-12 flex flex-col justify-center items-center text-white relative overflow-hidden">
+            <div class="luxury-card bg-gradient-to-br from-blue-900 via-blue-800 to-cyan-700 p-8 flex flex-col justify-center items-center text-white relative overflow-hidden" data-category="all">
               <div class="absolute inset-0 opacity-10 luxury-pattern"></div>
               <div class="relative z-10 text-center">
-                <div class="icon-circle bg-white/20 text-white mx-auto mb-6 w-20 h-20">
-                  <i class="fas fa-phone-volume text-3xl"></i>
+                <div class="icon-circle bg-white/20 text-white mx-auto mb-4 w-16 h-16">
+                  <i class="fas fa-phone-volume text-2xl"></i>
                 </div>
-                <h3 class="text-3xl font-display font-bold mb-4">${currentLang === 'en' ? 'Want to see more?' : 'Envie d\'en voir plus?'}</h3>
-                <p class="text-xl mb-8 text-blue-100">${currentLang === 'en' ? 'Contact us to discuss your project' : 'Contactez-nous pour discuter'}</p>
-                <a href="#contact" class="btn-primary bg-white text-blue-900 hover:bg-gray-100">
-                  ${currentLang === 'en' ? 'Contact Us' : 'Contactez-Nous'}
+                <h3 class="text-2xl font-display font-bold mb-3">${currentLang === 'en' ? 'Get a Quote' : 'Demander un Devis'}</h3>
+                <p class="text-blue-100 mb-6">${currentLang === 'en' ? 'Free consultation & quote' : 'Consultation gratuite'}</p>
+                <a href="tel:+23057206020" class="btn-primary bg-white text-blue-900 hover:bg-gray-100 text-sm">
+                  <i class="fas fa-phone mr-2"></i>
+                  ${currentLang === 'en' ? 'Call Now' : 'Appelez'}
                 </a>
               </div>
             </div>
+
+          </div>
+
+          <!-- Load More Button -->
+          <div class="text-center mt-12">
+            <button class="btn-secondary" onclick="alert('${currentLang === 'en' ? 'More projects coming soon!' : 'Plus de projets bientôt!'}')">
+              <i class="fas fa-plus-circle mr-2"></i>
+              ${currentLang === 'en' ? 'Load More Projects' : 'Voir Plus de Projets'}
+            </button>
           </div>
         </div>
       </section>
