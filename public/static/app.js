@@ -9,6 +9,7 @@
         title: 'Menuiserie de l\'Océan Indien',
         subtitle: 'Premium Aluminium Joinery Since 2005 • Mauritius',
         cta: 'View Our Services',
+        scroll: 'SCROLL',
         tagline: 'New Key Value Proposition',
         values: {
           security: 'Security & Strength',
@@ -53,6 +54,7 @@
         title: 'Menuiserie de l\'Océan Indien',
         subtitle: 'Menuiserie Aluminium Premium Depuis 2005 • Maurice',
         cta: 'Voir Nos Services',
+        scroll: 'DÉFILER',
         tagline: 'Nouvelle Proposition de Valeur Clé',
         values: {
           security: 'Sécurité & Robustesse',
@@ -97,6 +99,7 @@
         title: '印度洋门窗公司',
         subtitle: '自2005年起提供优质铝合金门窗 • 毛里求斯',
         cta: '查看我们的服务',
+        scroll: '向下滚动',
         tagline: '新的关键价值主张',
         values: {
           security: '安全坚固',
@@ -165,31 +168,95 @@
         </div>
       </nav>
 
-      <!-- Hero Section - Stunning Villa Background with Value Props -->
+      <!-- Hero Section - Aesthetic Modern Design -->
       <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <!-- Background Image with Overlay -->
+        <!-- Background Image with Elegant Overlay -->
         <div class="absolute inset-0 z-0">
-          <img src="/static/hero-mauritius-2.jpg" alt="Luxury Villa in Mauritius" class="w-full h-full object-cover">
-          <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60"></div>
+          <img src="/static/hero-mauritius-2.jpg" alt="Luxury Villa in Mauritius" class="w-full h-full object-cover scale-105 animate-slow-zoom">
+          <div class="absolute inset-0 bg-gradient-to-br from-blue-900/50 via-black/40 to-blue-900/60"></div>
+          <!-- Elegant Geometric Overlay -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
         </div>
         
         <!-- Content -->
-        <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 pb-16">
-          <!-- Logo and Title - No White Card -->
-          <div class="mb-8">
-            <div class="mb-6">
-              <img src="/static/logo.png" alt="MOI Logo" class="h-24 w-24 mx-auto mb-4 drop-shadow-2xl">
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-32 pb-20">
+          <!-- Elegant Logo Container -->
+          <div class="mb-8 animate-fade-in">
+            <div class="inline-block p-6 bg-white/10 backdrop-blur-md rounded-3xl border border-white/20 shadow-2xl mb-8">
+              <img src="/static/logo.png" alt="MOI Logo" class="h-28 w-28 mx-auto filter drop-shadow-2xl">
             </div>
-            <h1 class="text-4xl md:text-5xl font-bold text-white mb-3 uppercase tracking-wide drop-shadow-lg">
-              ${t.hero.title}
+          </div>
+          
+          <!-- Title with Elegant Typography -->
+          <div class="mb-12 animate-fade-in-up">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tight">
+              <span class="block bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent drop-shadow-2xl">
+                ${t.hero.title}
+              </span>
             </h1>
-            <p class="text-xl md:text-2xl text-white font-semibold mb-12 drop-shadow-lg">${t.hero.subtitle}</p>
             
-            <a href="#services" class="inline-block bg-blue-600 text-white px-12 py-4 rounded-xl hover:bg-blue-700 transition text-xl font-bold shadow-2xl border-2 border-white">
-              ${t.hero.cta}
+            <!-- Decorative Line -->
+            <div class="flex items-center justify-center my-6">
+              <div class="h-px w-20 bg-gradient-to-r from-transparent via-white/50 to-transparent"></div>
+              <div class="mx-4 w-2 h-2 rounded-full bg-white/70"></div>
+              <div class="h-px w-20 bg-gradient-to-r from-transparent via-white/50 to-transparent"></div>
+            </div>
+            
+            <p class="text-2xl md:text-3xl text-white/95 font-light tracking-wide leading-relaxed max-w-3xl mx-auto">
+              ${t.hero.subtitle}
+            </p>
+          </div>
+          
+          <!-- Call to Action -->
+          <div class="animate-fade-in-up animation-delay-300">
+            <a href="#services" class="group inline-flex items-center gap-3 bg-white/95 hover:bg-white text-blue-900 px-10 py-5 rounded-full text-lg font-semibold shadow-2xl hover:shadow-blue-500/50 transition-all duration-300 transform hover:scale-105 border-2 border-white/50">
+              <span>${t.hero.cta}</span>
+              <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
             </a>
           </div>
+          
+          <!-- Scroll Indicator -->
+          <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div class="flex flex-col items-center gap-2 text-white/70">
+              <span class="text-sm font-light tracking-widest">${t.hero.scroll || 'SCROLL'}</span>
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+              </svg>
+            </div>
+          </div>
         </div>
+        
+        <!-- Custom Animations -->
+        <style>
+          @keyframes slow-zoom {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+          }
+          @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+          }
+          @keyframes fade-in-up {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+          }
+          .animate-slow-zoom {
+            animation: slow-zoom 20s ease-in-out infinite;
+          }
+          .animate-fade-in {
+            animation: fade-in 1s ease-out;
+          }
+          .animate-fade-in-up {
+            animation: fade-in-up 1s ease-out;
+          }
+          .animation-delay-300 {
+            animation-delay: 0.3s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+          }
+        </style>
       </section>
 
       <!-- Services Section - MGI Card Style -->
@@ -295,3 +362,4 @@
     render();
   }
 })();
+();
