@@ -183,47 +183,7 @@
             <h1 class="text-4xl md:text-5xl font-bold text-white mb-3 uppercase tracking-wide drop-shadow-lg">
               ${t.hero.title}
             </h1>
-            <p class="text-xl md:text-2xl text-white font-semibold mb-8 drop-shadow-lg">${t.hero.subtitle}</p>
-            
-            <!-- Key Value Propositions Grid -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-              <div class="bg-blue-600 text-white p-4 rounded-lg">
-                <div class="text-3xl mb-2">🔒</div>
-                <div class="font-bold text-sm">${t.hero.values?.security || 'Security & Strength'}</div>
-              </div>
-              <div class="bg-blue-600 text-white p-4 rounded-lg">
-                <div class="text-3xl mb-2">🌊</div>
-                <div class="font-bold text-sm">${t.hero.values?.corrosion || 'Corrosion Resistant'}</div>
-              </div>
-              <div class="bg-blue-600 text-white p-4 rounded-lg">
-                <div class="text-3xl mb-2">⚡</div>
-                <div class="font-bold text-sm">${t.hero.values?.maintenance || 'Low Maintenance'}</div>
-              </div>
-              <div class="bg-blue-600 text-white p-4 rounded-lg">
-                <div class="text-3xl mb-2">💰</div>
-                <div class="font-bold text-sm">${t.hero.values?.quality || 'Affordable Quality'}</div>
-              </div>
-            </div>
-            
-            <!-- Second Row of Values -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-              <div class="bg-white/90 backdrop-blur-sm text-blue-700 p-4 rounded-lg shadow-xl border-2 border-white">
-                <div class="text-3xl mb-2">⭐</div>
-                <div class="font-bold text-sm">${t.hero.values?.smeda || 'SMEDA Registered'}</div>
-              </div>
-              <div class="bg-white/90 backdrop-blur-sm text-blue-700 p-4 rounded-lg shadow-xl border-2 border-white">
-                <div class="text-3xl mb-2">🌴</div>
-                <div class="font-bold text-sm">${t.hero.values?.climate || 'Perfect for Ocean Climate'}</div>
-              </div>
-              <div class="bg-white/90 backdrop-blur-sm text-blue-700 p-4 rounded-lg shadow-xl border-2 border-white">
-                <div class="text-3xl mb-2">🏭</div>
-                <div class="font-bold text-sm">${t.hero.values?.manufacturing || 'Professional Manufacturing'}</div>
-              </div>
-              <div class="bg-white/90 backdrop-blur-sm text-blue-700 p-4 rounded-lg shadow-xl border-2 border-white">
-                <div class="text-3xl mb-2">🏝️</div>
-                <div class="font-bold text-sm">${t.hero.values?.island || 'Durable Island Solutions'}</div>
-              </div>
-            </div>
+            <p class="text-xl md:text-2xl text-white font-semibold mb-12 drop-shadow-lg">${t.hero.subtitle}</p>
             
             <a href="#services" class="inline-block bg-blue-600 text-white px-12 py-4 rounded-xl hover:bg-blue-700 transition text-xl font-bold shadow-2xl border-2 border-white">
               ${t.hero.cta}
