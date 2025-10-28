@@ -21,20 +21,18 @@ Menuiserie de l'Océan Indien Ltée specializes in the manufacturing, supply, an
 
 ### Current Features
 - ✅ Official MOI logo integration (navigation, hero, footer)
-- ✅ Bilingual support (English/French)
+- ✅ **Trilingual support (English/French/中文 Chinese)**
 - ✅ Responsive design for all devices
-- ✅ Product showcase with comprehensive catalog
+- ✅ **MGI.mg-inspired clean service card layout**
+- ✅ **6 service cards with contextual product images**
 - ✅ Interactive contact form with API integration
-- ✅ Company information and history
-- ✅ **NEW: mgi.mg-inspired gallery with category filters**
-- ✅ **NEW: Interactive project filtering (All, Doors, Shutters, Glass, Windows)**
-- ✅ **NEW: Varied grid layout with featured projects**
-- ✅ **NEW: Enhanced hover effects and animations**
-- ✅ Smooth scrolling navigation
-- ✅ Modern gradient design with Tailwind CSS
-- ✅ Mobile-friendly hamburger menu
-- ✅ Professional brand consistency throughout
-- ✅ Luxury design system with Playfair Display + Inter fonts
+- ✅ Company information and statistics
+- ✅ Fixed navigation header with smooth scrolling
+- ✅ Simple hero section with centered branding
+- ✅ Modern minimalist design with Tailwind CSS
+- ✅ Clean service grid (3 columns desktop, responsive)
+- ✅ Professional hover effects and transitions
+- ✅ Optimized performance (78% code reduction)
 
 ### Functional URIs
 
@@ -45,20 +43,23 @@ Menuiserie de l'Océan Indien Ltée specializes in the manufacturing, supply, an
 
 #### Static Routes
 - `GET /` - Main website homepage
-- `GET /static/app.js` - Frontend JavaScript application
+- `GET /static/app.js` - Frontend JavaScript application (MGI layout - 233 lines)
 - `GET /static/style.css` - Custom styles
+- `GET /static/[images]` - Product photos (brochure1.jpg, door-red.jpg, etc.)
 
 ### Page Sections
-- **Home** - Full-height luxury hero with animated floating logo
-- **About** - Company history, certifications, and icon-based statistics
-- **Products** - Windows, Doors, Shutters, and Custom Solutions
-- **Gallery** - Interactive showcase with category filters (All, Doors, Shutters, Glass Work, Windows)
-  - Featured projects with 2-column spans
-  - Varied card layouts (standard, wide, info cards)
-  - Smooth filter animations
-  - Professional hover overlays
-  - "Load More" functionality ready
-- **Contact** - Contact information and inquiry form
+- **Navigation** - Fixed header with logo, links, and language switcher (EN/FR/中文)
+- **Hero** - Clean centered section with company logo and tagline
+- **Services** - 6 service cards in responsive grid:
+  - Aluminum Windows (brochure1.jpg)
+  - Aluminum Doors (door-red.jpg)
+  - Glass Partitions (door-red-glass.jpg)
+  - Roller Shutters (door-frosted.jpg)
+  - Glass Balustrades (glass-balcony-railing.jpg)
+  - Custom Solutions (brochure2.jpg)
+- **About** - Company description with 4 statistics (Years, Projects, Capacity, Team)
+- **Contact** - 3-column grid with phone, email, and address cards
+- **Footer** - Dark footer with logo and company credentials
 
 ## 🛠 Tech Stack
 
@@ -176,29 +177,29 @@ Quartier Militaire, Mauritius
 
 ## 🎨 Design Features
 
-### Visual Design
+### Visual Design (MGI-Inspired)
 - Official MOI logo (blue brand identity) displayed prominently
-- Luxury typography: Playfair Display (headings) + Inter (body)
-- Modern gradient backgrounds (blue to cyan)
-- Premium gold badges for featured content
-- Glassmorphism effects with backdrop blur
-- Professional icon circles with gradients
+- Clean typography with system fonts
+- Subtle gradient backgrounds (gray-50 to blue-50)
+- White service cards with border outlines
+- Minimalist design philosophy
+- Professional spacing and alignment
 
 ### Interactions
-- Card hover animations with lift and scale
+- Service card hover effects (scale image, add shadow)
 - Smooth scroll behavior
-- Sticky navigation with backdrop blur
-- Interactive category filters with smooth transitions
-- Image overlay effects on hover
-- Premium dividers and spacing
+- Fixed navigation header
+- Language switcher with active state highlighting
+- Clean hover transitions on links
+- Simple, professional animations
 
 ### Layout
-- Responsive grid layouts (1/2/3 columns)
-- Font Awesome icons throughout
+- Responsive service grid (3/2/1 columns)
+- Centered content with max-width containers
 - Mobile-first approach
-- Varied card sizes (featured, wide, standard)
-- Professional brand consistency across all pages
-- mgi.mg-inspired modular design
+- Consistent card sizes with 4:3 aspect ratio images
+- Clean section separation
+- MGI.mg-inspired minimalist structure
 
 ## 🔄 Next Steps
 
@@ -257,28 +258,38 @@ webapp/
 
 ## 📊 Project Statistics
 
-- **Lines of Code**: ~3,800 (backend) + ~31,000 (frontend)
+- **Lines of Code**: ~200 (backend) + ~233 (frontend)
 - **Dependencies**: 4 production, 4 development
-- **Build Size**: ~30.79 KB (worker bundle)
-- **Supported Languages**: 2 (English, French)
-- **Page Sections**: 5 main sections
-- **Product Categories**: 3 categories
-- **Contact Methods**: 4 (phone, email, form, address)
+- **Build Size**: ~32.28 KB (worker bundle)
+- **Supported Languages**: 3 (English, French, Chinese/中文)
+- **Page Sections**: 5 main sections (Nav, Hero, Services, About, Contact, Footer)
+- **Service Cards**: 6 services with product images
+- **Contact Methods**: 3 (phone, email, address)
+- **Product Images**: 6 high-quality photos (471KB total)
 
 ## 🎯 Recent Updates
 
-### October 22, 2025 - Gallery Redesign
-- ✅ Implemented mgi.mg-inspired gallery layout
-- ✅ Added interactive category filters (5 categories)
-- ✅ Created varied grid system with featured projects
-- ✅ Enhanced hover effects with gradient overlays
-- ✅ Added JavaScript filter functionality
-- ✅ Improved responsive design for gallery
-- ✅ Professional animations and transitions
-- 📄 See `GALLERY_UPDATE.md` for full details
+### October 28, 2025 - MGI Layout Implementation
+- ✅ Complete website redesign based on https://www.mgi.mg/
+- ✅ Simplified from 1,047 lines to 233 lines (78% reduction)
+- ✅ Implemented clean service card grid (3 columns responsive)
+- ✅ Added Chinese language support (3rd language)
+- ✅ Mapped 6 services to real product images contextually
+- ✅ Created minimalist navigation and hero sections
+- ✅ Added company statistics section (4 stat boxes)
+- ✅ Streamlined contact section with icon cards
+- ✅ Improved performance and code maintainability
+- 📄 See `MGI_LAYOUT_IMPLEMENTATION.md` for full details
+
+### October 27, 2025 - Trilingual Documentation
+- ✅ Created English company profile (COMPANY_PROFILE_EN.md)
+- ✅ Created Chinese company profile (COMPANY_PROFILE_ZH.md)
+- ✅ Created bilingual digital business card
+- ✅ Generated QR code for website (moi-website-qr.png)
+- ✅ Added Chinese language to website
 
 ---
 
-**Last Updated**: October 22, 2025
-**Status**: ✅ Active Development
+**Last Updated**: October 28, 2025
+**Status**: ✅ Active Development - MGI Layout
 **Maintainer**: MOI Development Team
