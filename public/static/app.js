@@ -4,7 +4,7 @@
 
   const translations = {
     en: {
-      nav: { home: 'Home', services: 'Our Services', projects: 'Projects', contact: 'Contact' },
+      nav: { home: 'Home', services: 'Our Services', about: 'About', contact: 'Contact' },
       hero: {
         title: 'Menuiserie de l\'Océan Indien',
         subtitle: 'Premium Aluminium Joinery Since 2005 • Mauritius',
@@ -34,19 +34,7 @@
           { title: 'Custom Solutions', desc: 'Tailored designs for any space', img: '/static/custom-shower-partition.jpg' }
         ]
       },
-      projects: {
-        title: 'Our Projects',
-        subtitle: 'Real MOI installations across Mauritius',
-        items: [
-          { title: 'Glass Partition - Reception Area', desc: 'Elegant reception area design', img: '/static/glass-partition-reception.jpg' },
-          { title: 'Red Glass Aluminium Door', desc: 'Contemporary entrance with glass panels', img: '/static/door-red-glass.jpg' },
-          { title: 'Glass Balcony Railing', desc: 'Modern outdoor safety solutions', img: '/static/glass-balcony-railing.jpg' },
-          { title: 'Residential Installation', desc: 'Custom aluminium solutions', img: '/static/new-photo-3.jpg' },
-          { title: 'Commercial Project', desc: 'Professional aluminium works', img: '/static/new-photo-5.jpg' },
-          { title: 'MOI Catalogue Page 1', desc: 'Range of aluminium products', img: '/static/brochure1.jpg' },
-          { title: 'MOI Catalogue Page 2', desc: 'Quality installations showcase', img: '/static/brochure2.jpg' }
-        ]
-      },
+
       about: {
         title: 'About Us',
         text1: 'Since 2005, MOI has been manufacturing and installing premium aluminium solutions across Mauritius.',
@@ -65,7 +53,7 @@
       }
     },
     fr: {
-      nav: { home: 'Accueil', services: 'Nos Services', projects: 'Projets', contact: 'Contact' },
+      nav: { home: 'Accueil', services: 'Nos Services', about: 'À Propos', contact: 'Contact' },
       hero: {
         title: 'Menuiserie de l\'Océan Indien',
         subtitle: 'Menuiserie Aluminium Premium Depuis 2005 • Maurice',
@@ -95,19 +83,7 @@
           { title: 'Solutions Sur Mesure', desc: 'Conceptions adaptées', img: '/static/custom-shower-partition.jpg' }
         ]
       },
-      projects: {
-        title: 'Nos Projets',
-        subtitle: 'Vraies installations MOI à Maurice',
-        items: [
-          { title: 'Cloison Verre - Réception', desc: 'Design espace réception élégant', img: '/static/glass-partition-reception.jpg' },
-          { title: 'Porte Aluminium Verre Rouge', desc: 'Entrée contemporaine avec panneaux verre', img: '/static/door-red-glass.jpg' },
-          { title: 'Garde-corps Verre Balcon', desc: 'Solutions sécurité extérieure modernes', img: '/static/glass-balcony-railing.jpg' },
-          { title: 'Installation Résidentielle', desc: 'Solutions aluminium sur mesure', img: '/static/new-photo-3.jpg' },
-          { title: 'Projet Commercial', desc: 'Travaux aluminium professionnels', img: '/static/new-photo-5.jpg' },
-          { title: 'Catalogue MOI Page 1', desc: 'Gamme de produits aluminium', img: '/static/brochure1.jpg' },
-          { title: 'Catalogue MOI Page 2', desc: 'Vitrine installations qualité', img: '/static/brochure2.jpg' }
-        ]
-      },
+
       about: {
         title: 'À Propos',
         text1: 'Depuis 2005, MOI fabrique et installe des solutions en aluminium à Maurice.',
@@ -126,7 +102,7 @@
       }
     },
     zh: {
-      nav: { home: '首页', services: '我们的服务', projects: '项目', contact: '联系我们' },
+      nav: { home: '首页', services: '我们的服务', about: '关于我们', contact: '联系我们' },
       hero: {
         title: '印度洋门窗公司',
         subtitle: '自2005年起提供优质铝合金门窗 • 毛里求斯',
@@ -156,19 +132,7 @@
           { title: '定制方案', desc: '为任何空间量身定制', img: '/static/custom-shower-partition.jpg' }
         ]
       },
-      projects: {
-        title: '我们的项目',
-        subtitle: 'MOI在毛里求斯的真实安装项目',
-        items: [
-          { title: '玻璃隔断 - 接待区', desc: '优雅接待区设计', img: '/static/glass-partition-reception.jpg' },
-          { title: '红色玻璃铝合金门', desc: '带玻璃面板的现代入口', img: '/static/door-red-glass.jpg' },
-          { title: '玻璃阳台护栏', desc: '现代户外安全解决方案', img: '/static/glass-balcony-railing.jpg' },
-          { title: '住宅安装项目', desc: '定制铝合金解决方案', img: '/static/new-photo-3.jpg' },
-          { title: '商业项目', desc: '专业铝合金工程', img: '/static/new-photo-5.jpg' },
-          { title: 'MOI产品目录 第1页', desc: '铝合金产品系列', img: '/static/brochure1.jpg' },
-          { title: 'MOI产品目录 第2页', desc: '优质安装展示', img: '/static/brochure2.jpg' }
-        ]
-      },
+
       about: {
         title: '关于我们',
         text1: '自2005年以来，MOI一直在毛里求斯制造和安装高品质铝合金解决方案。',
@@ -198,13 +162,13 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex justify-between items-center h-16">
             <div class="flex items-center gap-2">
-              <img src="/static/logo.png" alt="MOI" class="h-12 w-12">
-              <span class="font-bold text-lg text-gray-900">MOI</span>
+              <img src="/static/logo.png" alt="Menuiserie de l'Océan Indien" class="h-12 w-12">
+              <span class="font-bold text-lg text-gray-900">Menuiserie de l'Océan Indien</span>
             </div>
             <div class="hidden md:flex gap-8 items-center">
               <a href="#home" class="text-gray-700 hover:text-blue-600">${t.nav.home}</a>
               <a href="#services" class="text-gray-700 hover:text-blue-600">${t.nav.services}</a>
-              <a href="#about" class="text-gray-700 hover:text-blue-600">About</a>
+              <a href="#about" class="text-gray-700 hover:text-blue-600">${t.nav.about}</a>
               <a href="#contact" class="text-gray-700 hover:text-blue-600">${t.nav.contact}</a>
               <div class="flex gap-2 ml-4 border-l pl-4">
                 <button onclick="window.moiApp.setLang('en')" class="px-2 py-1 text-sm ${currentLang==='en'?'bg-blue-600 text-white':'text-gray-600'} rounded">EN</button>
@@ -309,39 +273,6 @@
         </div>
       </section>
 
-      <!-- Projects Gallery Section - Stunning Mauritius Buildings -->
-      <section id="projects" class="py-20 bg-gray-50 relative overflow-hidden">
-        <!-- Background Pattern -->
-        <div class="absolute inset-0 opacity-5">
-          <div class="absolute inset-0" style="background-image: repeating-linear-gradient(45deg, #1e3a8a 0, #1e3a8a 1px, transparent 0, transparent 50%); background-size: 20px 20px;"></div>
-        </div>
-        
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div class="text-center mb-16 scroll-animate">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">${t.projects.title}</h2>
-            <p class="text-lg text-gray-600">${t.projects.subtitle}</p>
-          </div>
-          
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            ${t.projects.items.map((project, index) => `
-              <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer scroll-animate transform hover:scale-105" style="animation-delay: ${index * 0.15}s">
-                <div class="aspect-[4/3] overflow-hidden">
-                  <img src="${project.img}" alt="${project.title}" class="w-full h-full object-cover group-hover:scale-125 group-hover:rotate-3 transition-all duration-700">
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-500"></div>
-                <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-                  <h3 class="text-2xl font-bold mb-2">${project.title}</h3>
-                  <p class="text-white/90 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">${project.desc}</p>
-                  <div class="mt-4 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">
-                    <span class="text-xs font-semibold px-3 py-1 bg-blue-500/80 rounded-full">View Details</span>
-                  </div>
-                </div>
-              </div>
-            `).join('')}
-          </div>
-        </div>
-      </section>
-
       <!-- About Section - Clean -->
       <section id="about" class="py-20 bg-gray-50">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -409,9 +340,9 @@
       <!-- Footer -->
       <footer class="bg-gray-900 text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <img src="/static/logo.png" alt="MOI" class="h-16 w-16 mx-auto mb-4 opacity-90">
+          <img src="/static/logo.png" alt="Menuiserie de l'Océan Indien" class="h-16 w-16 mx-auto mb-4 opacity-90">
           <p class="text-gray-400 mb-2">Menuiserie de l'Océan Indien Ltée</p>
-          <p class="text-sm text-gray-500">© 2025 MOI. All rights reserved. | Made in Moris | Grade MEDIUM II Contractor</p>
+          <p class="text-sm text-gray-500">© 2025 Menuiserie de l'Océan Indien Ltée. All rights reserved. | Made in Moris | Grade MEDIUM II Contractor</p>
         </div>
       </footer>
     `;
