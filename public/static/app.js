@@ -7,7 +7,7 @@
       nav: { home: 'Home', services: 'Our Services', projects: 'Projects', contact: 'Contact' },
       hero: {
         title: 'Menuiserie de l\'Océan Indien',
-        subtitle: 'Quality Aluminum Solutions Since 2005',
+        subtitle: 'Premium Aluminium Joinery Since 2005 • Mauritius',
         cta: 'View Our Services',
         tagline: 'New Key Value Proposition',
         values: {
@@ -25,8 +25,8 @@
         title: 'Our Services',
         subtitle: 'Complete range of aluminum joinery solutions',
         items: [
-          { title: 'Aluminum Windows', desc: 'Energy-efficient windows in various styles', img: '/static/aluminum-windows-commercial.jpg' },
-          { title: 'Aluminum Doors', desc: 'Secure and stylish entrance solutions', img: '/static/door-red.jpg' },
+          { title: 'Aluminium Windows', desc: 'Energy-efficient windows in various styles', img: '/static/aluminum-windows-commercial.jpg' },
+          { title: 'Aluminium Doors', desc: 'Secure and stylish entrance solutions', img: '/static/door-red.jpg' },
           { title: 'Glass Partitions', desc: 'Modern office and home divisions', img: '/static/glass-partition-office.jpg' },
           { title: 'Roller Shutters', desc: 'Security and privacy solutions', img: '/static/door-frosted.jpg' },
           { title: 'Glass Balustrades', desc: 'Contemporary safety railings', img: '/static/glass-balustrade-balcony.jpg' },
@@ -35,7 +35,7 @@
       },
       about: {
         title: 'About Us',
-        text1: 'Since 2005, MOI has been manufacturing and installing premium aluminum solutions across Mauritius.',
+        text1: 'Since 2005, MOI has been manufacturing and installing premium aluminium solutions across Mauritius.',
         text2: 'Grade MEDIUM II Contractor • Made in Moris Member • 20 Years Experience'
       },
       contact: {
@@ -51,7 +51,7 @@
       nav: { home: 'Accueil', services: 'Nos Services', projects: 'Projets', contact: 'Contact' },
       hero: {
         title: 'Menuiserie de l\'Océan Indien',
-        subtitle: 'Solutions en Aluminium de Qualité Depuis 2005',
+        subtitle: 'Menuiserie Aluminium Premium Depuis 2005 • Maurice',
         cta: 'Voir Nos Services',
         tagline: 'Nouvelle Proposition de Valeur Clé',
         values: {
@@ -95,7 +95,7 @@
       nav: { home: '首页', services: '我们的服务', projects: '项目', contact: '联系我们' },
       hero: {
         title: '印度洋门窗公司',
-        subtitle: '自2005年提供优质铝合金解决方案',
+        subtitle: '自2005年起提供优质铝合金门窗 • 毛里求斯',
         cta: '查看我们的服务',
         tagline: '新的关键价值主张',
         values: {
@@ -169,7 +169,7 @@
       <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
         <!-- Background Image with Overlay -->
         <div class="absolute inset-0 z-0">
-          <img src="/static/hero-villa-pool.jpg" alt="Luxury Villa" class="w-full h-full object-cover">
+          <img src="/static/hero-mauritius-2.jpg" alt="Luxury Villa in Mauritius" class="w-full h-full object-cover">
           <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60"></div>
         </div>
         
