@@ -169,6 +169,89 @@
         madeIn: 'Fièrement Made in Moris',
         registered: 'Entrepreneur Enregistré - Grade MOYEN II'
       }
+    },
+    zh: {
+      nav: {
+        home: '首页',
+        about: '关于我们',
+        products: '产品',
+        gallery: '项目展示',
+        contact: '联系我们'
+      },
+      hero: {
+        title: '优质铝合金门窗',
+        subtitle: '自2005年服务毛里求斯',
+        description: '为住宅和商业项目提供专业的铝合金门窗制造和安装服务',
+        cta: '免费报价',
+        learn: '查看我们的作品'
+      },
+      about: {
+        title: '关于我们',
+        subtitle: '您值得信赖的铝合金解决方案合作伙伴',
+        text1: '自2005年以来，我们一直在毛里求斯制造和安装高品质铝合金门窗和卷帘。作为注册的中级II级承包商，我们为每个项目带来近20年的专业经验。',
+        text2: '我们10人的专业团队已完成从住宅到商业建筑的项目，项目总价值超过1亿卢比。',
+        text3: '我们是"毛里求斯制造"品牌的成员，展示我们对本地工艺和质量的承诺。',
+        text4: '从设计到安装，我们确保每件产品都符合最高的耐用性和美观标准。',
+        stat1: '年经营历史',
+        stat2: '完成项目',
+        stat3: '满意客户',
+        stat4: '专业团队'
+      },
+      products: {
+        title: '我们的产品',
+        subtitle: '完整的铝合金解决方案系列',
+        windows: {
+          title: '窗户',
+          desc: '多种风格的节能铝合金窗',
+          items: ['推拉窗', '平开窗', '上悬窗', '固定窗', '凸窗', '格鲁吉亚风格窗']
+        },
+        doors: {
+          title: '门和卷帘',
+          desc: '安全时尚的入口解决方案',
+          items: ['铝合金门', '推拉门', '法式对开门', '卷帘门', '百叶门', '电动卷帘']
+        },
+        custom: {
+          title: '定制方案',
+          desc: '为任何空间量身定制',
+          items: ['颜色选择', '定制尺寸', '格鲁吉亚栏杆', '防蚊网', '木纹效果', '安全功能']
+        }
+      },
+      gallery: {
+        title: '最近项目',
+        subtitle: '查看我们的优质作品'
+      },
+      contact: {
+        title: '联系我们',
+        subtitle: '准备开始您的项目？立即联系我们',
+        form: {
+          name: '您的姓名',
+          email: '邮箱',
+          phone: '电话',
+          message: '告诉我们您的项目',
+          submit: '发送消息',
+          sending: '发送中...',
+          success: '谢谢！我们会尽快与您联系。',
+          error: '出错了。请直接致电我们。'
+        },
+        info: {
+          address: '访问我们',
+          addressLine1: 'Unit 29 - Block 8',
+          addressLine2: 'DBM SME Park, Vuillemin',
+          addressLine3: 'Quartier Militaire, 毛里求斯',
+          phone: '致电我们',
+          email: '发送邮件',
+          hours: '营业时间',
+          hoursText: '周一至周五: 上午8:00 - 下午5:00',
+          saturday: '周六: 上午8:00 - 中午12:00'
+        }
+      },
+      footer: {
+        company: '印度洋门窗有限公司',
+        tagline: '自2005年提供优质铝制品',
+        rights: '版权所有',
+        madeIn: '毛里求斯制造',
+        registered: '注册承包商 - 中级II级'
+      }
     }
   };
 
@@ -255,6 +338,9 @@
                 <button onclick="window.moiApp.setLanguage('fr')" class="lang-btn px-3 py-1 rounded ${currentLang === 'fr' ? 'bg-blue-900 text-white' : 'text-gray-600 hover:bg-gray-100'}">
                   FR
                 </button>
+                <button onclick="window.moiApp.setLanguage('zh')" class="lang-btn px-3 py-1 rounded ${currentLang === 'zh' ? 'bg-blue-900 text-white' : 'text-gray-600 hover:bg-gray-100'}">
+                  中文
+                </button>
               </div>
             </div>
 
@@ -273,12 +359,15 @@
             <a href="#products" class="block py-2 text-gray-700 mobile-nav-link">${t.nav.products}</a>
             <a href="#gallery" class="block py-2 text-gray-700 mobile-nav-link">${t.nav.gallery}</a>
             <a href="#contact" class="block py-2 text-gray-700 mobile-nav-link">${t.nav.contact}</a>
-            <div class="flex gap-2 pt-2 border-t">
-              <button onclick="window.moiApp.setLanguage('en')" class="flex-1 px-3 py-2 rounded ${currentLang === 'en' ? 'bg-blue-900 text-white' : 'bg-gray-100 text-gray-600'}">
-                English
+            <div class="grid grid-cols-3 gap-2 pt-2 border-t">
+              <button onclick="window.moiApp.setLanguage('en')" class="px-3 py-2 rounded ${currentLang === 'en' ? 'bg-blue-900 text-white' : 'bg-gray-100 text-gray-600'}">
+                EN
               </button>
-              <button onclick="window.moiApp.setLanguage('fr')" class="flex-1 px-3 py-2 rounded ${currentLang === 'fr' ? 'bg-blue-900 text-white' : 'bg-gray-100 text-gray-600'}">
-                Français
+              <button onclick="window.moiApp.setLanguage('fr')" class="px-3 py-2 rounded ${currentLang === 'fr' ? 'bg-blue-900 text-white' : 'bg-gray-100 text-gray-600'}">
+                FR
+              </button>
+              <button onclick="window.moiApp.setLanguage('zh')" class="px-3 py-2 rounded ${currentLang === 'zh' ? 'bg-blue-900 text-white' : 'bg-gray-100 text-gray-600'}">
+                中文
               </button>
             </div>
           </div>
