@@ -54,8 +54,11 @@
       },
       contact: {
         title: 'Contact Us',
-        phone: '+230 543 730 25',
+        phone: '+230 5437 3025',
+        mobile: '+230 5940 2190',
         email: 'moi.alu2012@gmail.com',
+        email2: 'info.moialu@gmail.com',
+        website: 'www.moialu.com',
         address: 'Unit 29 - Block 8, DBM SME Park, Vuillemin, Quartier Militaire',
         qrTitle: 'Scan to Visit Our Website',
         qrSubtitle: 'Scan this QR code with your phone camera'
@@ -112,8 +115,11 @@
       },
       contact: {
         title: 'Contactez-Nous',
-        phone: '+230 543 730 25',
+        phone: '+230 5437 3025',
+        mobile: '+230 5940 2190',
         email: 'moi.alu2012@gmail.com',
+        email2: 'info.moialu@gmail.com',
+        website: 'www.moialu.com',
         address: 'Unité 29 - Bloc 8, DBM SME Park, Vuillemin, Quartier Militaire',
         qrTitle: 'Scannez pour Visiter Notre Site',
         qrSubtitle: 'Scannez ce code QR avec votre appareil photo'
@@ -170,8 +176,11 @@
       },
       contact: {
         title: '联系我们',
-        phone: '+230 543 730 25',
+        phone: '+230 5437 3025',
+        mobile: '+230 5940 2190',
         email: 'moi.alu2012@gmail.com',
+        email2: 'info.moialu@gmail.com',
+        website: 'www.moialu.com',
         address: 'Unit 29 - Block 8, DBM SME Park, Vuillemin, Quartier Militaire',
         qrTitle: '扫码访问我们的网站',
         qrSubtitle: '使用手机相机扫描此二维码'
@@ -348,22 +357,37 @@
         </div>
       </section>
 
-      <!-- Contact Section - Simple -->
+      <!-- Contact Section - Updated with Full Details -->
       <section id="contact" class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">${t.contact.title}</h2>
-          <div class="grid md:grid-cols-3 gap-8 text-center">
-            <div class="p-6 border border-gray-200 rounded-lg">
+          
+          <!-- Contact Grid -->
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <!-- Phone -->
+            <div class="p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow scroll-animate">
               <div class="text-3xl mb-3">📞</div>
               <div class="font-bold text-gray-900 mb-2">Phone</div>
-              <a href="tel:+23054373025" class="text-blue-600 hover:text-blue-700">${t.contact.phone}</a>
+              <a href="tel:+23054373025" class="block text-blue-600 hover:text-blue-700 text-sm mb-1">${t.contact.phone}</a>
             </div>
-            <div class="p-6 border border-gray-200 rounded-lg">
+            
+            <!-- Mobile -->
+            <div class="p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow scroll-animate">
+              <div class="text-3xl mb-3">📱</div>
+              <div class="font-bold text-gray-900 mb-2">Mobile</div>
+              <a href="tel:+23059402190" class="block text-blue-600 hover:text-blue-700 text-sm">${t.contact.mobile}</a>
+            </div>
+            
+            <!-- Email -->
+            <div class="p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow scroll-animate">
               <div class="text-3xl mb-3">✉️</div>
               <div class="font-bold text-gray-900 mb-2">Email</div>
-              <a href="mailto:${t.contact.email}" class="text-blue-600 hover:text-blue-700">${t.contact.email}</a>
+              <a href="mailto:${t.contact.email}" class="block text-blue-600 hover:text-blue-700 text-sm mb-1">${t.contact.email}</a>
+              <a href="mailto:${t.contact.email2}" class="block text-blue-600 hover:text-blue-700 text-sm">${t.contact.email2}</a>
             </div>
-            <div class="p-6 border border-gray-200 rounded-lg">
+            
+            <!-- Location -->
+            <div class="p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow scroll-animate">
               <div class="text-3xl mb-3">📍</div>
               <div class="font-bold text-gray-900 mb-2">Location</div>
               <p class="text-sm text-gray-600">${t.contact.address}</p>
@@ -371,12 +395,12 @@
           </div>
           
           <!-- QR Code Section -->
-          <div class="mt-16 text-center">
+          <div class="mt-16 text-center scroll-animate">
             <h3 class="text-2xl font-bold text-gray-900 mb-4">${t.contact.qrTitle || 'Scan to Visit Our Website'}</h3>
             <p class="text-gray-600 mb-6">${t.contact.qrSubtitle || 'Scan this QR code with your phone camera'}</p>
-            <div class="inline-block p-6 bg-white border-2 border-gray-200 rounded-xl shadow-lg">
+            <div class="inline-block p-6 bg-white border-2 border-gray-200 rounded-xl shadow-lg hover:shadow-2xl transition-shadow">
               <img src="/static/moi-website-qr.png" alt="MOI Website QR Code" class="w-48 h-48 mx-auto">
-              <p class="mt-4 text-sm text-gray-500 font-medium">www.moialu.com</p>
+              <p class="mt-4 text-sm text-gray-500 font-medium">${t.contact.website}</p>
             </div>
           </div>
         </div>
