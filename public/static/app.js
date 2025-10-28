@@ -36,14 +36,15 @@
       },
       projects: {
         title: 'Our Projects',
-        subtitle: 'Stunning aluminium installations across Mauritius',
+        subtitle: 'Real MOI installations across Mauritius',
         items: [
-          { title: 'Modern Commercial Building', desc: 'Glass & aluminium facade', img: '/static/modern-commercial-1.jpg' },
-          { title: 'Mind Space Building', desc: 'Contemporary aluminium cladding', img: '/static/mindspace-building.jpg' },
-          { title: 'Luxury Modern Villa', desc: 'Residential glass solutions', img: '/static/modern-villa-luxury.jpg' },
-          { title: 'Commercial Glass Facade', desc: 'High-rise curtain wall', img: '/static/glass-facade-commercial.jpg' },
-          { title: 'Glass Balustrade Installation', desc: 'Balcony safety solutions', img: '/static/glass-balustrade-balcony.jpg' },
-          { title: 'Office Glass Partitions', desc: 'Modern workspace divisions', img: '/static/glass-partition-office.jpg' }
+          { title: 'Glass Balustrade - Balcony', desc: 'Modern balcony safety railings', img: '/static/glass-balustrade-balcony.jpg' },
+          { title: 'Glass Partition - Office', desc: 'Professional workspace divisions', img: '/static/glass-partition-office.jpg' },
+          { title: 'Custom Shower Partition', desc: 'Elegant bathroom solutions', img: '/static/custom-shower-partition.jpg' },
+          { title: 'Commercial Aluminium Windows', desc: 'Energy-efficient window installation', img: '/static/aluminum-windows-commercial.jpg' },
+          { title: 'Aluminium Door - Red', desc: 'Stylish entrance solutions', img: '/static/door-red.jpg' },
+          { title: 'Frosted Glass Door', desc: 'Privacy and security solutions', img: '/static/door-frosted.jpg' },
+          { title: 'Glass Partition - Reception', desc: 'Elegant reception area design', img: '/static/glass-partition-reception.jpg' }
         ]
       },
       about: {
@@ -93,14 +94,15 @@
       },
       projects: {
         title: 'Nos Projets',
-        subtitle: 'Installations aluminium exceptionnelles à Maurice',
+        subtitle: 'Vraies installations MOI à Maurice',
         items: [
-          { title: 'Bâtiment Commercial Moderne', desc: 'Façade verre & aluminium', img: '/static/modern-commercial-1.jpg' },
-          { title: 'Bâtiment Mind Space', desc: 'Revêtement aluminium contemporain', img: '/static/mindspace-building.jpg' },
-          { title: 'Villa Moderne Luxe', desc: 'Solutions verre résidentielles', img: '/static/modern-villa-luxury.jpg' },
-          { title: 'Façade Verre Commercial', desc: 'Mur-rideau haute altitude', img: '/static/glass-facade-commercial.jpg' },
-          { title: 'Installation Garde-corps Verre', desc: 'Solutions sécurité balcon', img: '/static/glass-balustrade-balcony.jpg' },
-          { title: 'Cloisons Verre Bureau', desc: 'Divisions espace de travail moderne', img: '/static/glass-partition-office.jpg' }
+          { title: 'Garde-corps Verre - Balcon', desc: 'Rampes de sécurité modernes', img: '/static/glass-balustrade-balcony.jpg' },
+          { title: 'Cloison Verre - Bureau', desc: 'Divisions espace de travail professionnel', img: '/static/glass-partition-office.jpg' },
+          { title: 'Cloison Douche Sur Mesure', desc: 'Solutions salle de bain élégantes', img: '/static/custom-shower-partition.jpg' },
+          { title: 'Fenêtres Aluminium Commercial', desc: 'Installation fenêtres économes', img: '/static/aluminum-windows-commercial.jpg' },
+          { title: 'Porte Aluminium - Rouge', desc: 'Solutions entrée élégantes', img: '/static/door-red.jpg' },
+          { title: 'Porte Verre Dépoli', desc: 'Solutions intimité et sécurité', img: '/static/door-frosted.jpg' },
+          { title: 'Cloison Verre - Réception', desc: 'Design espace réception élégant', img: '/static/glass-partition-reception.jpg' }
         ]
       },
       about: {
@@ -150,14 +152,15 @@
       },
       projects: {
         title: '我们的项目',
-        subtitle: '毛里求斯优秀铝合金安装项目',
+        subtitle: 'MOI在毛里求斯的真实安装项目',
         items: [
-          { title: '现代商业建筑', desc: '玻璃与铝合金外立面', img: '/static/modern-commercial-1.jpg' },
-          { title: 'Mind Space 大厦', desc: '当代铝合金外墙', img: '/static/mindspace-building.jpg' },
-          { title: '奢华现代别墅', desc: '住宅玻璃解决方案', img: '/static/modern-villa-luxury.jpg' },
-          { title: '商业玻璃外墙', desc: '高层幕墙', img: '/static/glass-facade-commercial.jpg' },
-          { title: '玻璃栏杆安装', desc: '阳台安全解决方案', img: '/static/glass-balustrade-balcony.jpg' },
-          { title: '办公室玻璃隔断', desc: '现代工作空间划分', img: '/static/glass-partition-office.jpg' }
+          { title: '玻璃栏杆 - 阳台', desc: '现代阳台安全护栏', img: '/static/glass-balustrade-balcony.jpg' },
+          { title: '玻璃隔断 - 办公室', desc: '专业工作空间划分', img: '/static/glass-partition-office.jpg' },
+          { title: '定制淋浴隔断', desc: '优雅浴室解决方案', img: '/static/custom-shower-partition.jpg' },
+          { title: '商业铝合金窗户', desc: '节能窗户安装', img: '/static/aluminum-windows-commercial.jpg' },
+          { title: '铝合金门 - 红色', desc: '时尚入口解决方案', img: '/static/door-red.jpg' },
+          { title: '磨砂玻璃门', desc: '隐私和安全解决方案', img: '/static/door-frosted.jpg' },
+          { title: '玻璃隔断 - 接待处', desc: '优雅接待区设计', img: '/static/glass-partition-reception.jpg' }
         ]
       },
       about: {
