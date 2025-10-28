@@ -38,13 +38,13 @@
         title: 'Our Projects',
         subtitle: 'Real MOI installations across Mauritius',
         items: [
-          { title: 'Glass Balustrade - Balcony', desc: 'Modern balcony safety railings', img: '/static/glass-balustrade-balcony.jpg' },
-          { title: 'Glass Partition - Office', desc: 'Professional workspace divisions', img: '/static/glass-partition-office.jpg' },
-          { title: 'Custom Shower Partition', desc: 'Elegant bathroom solutions', img: '/static/custom-shower-partition.jpg' },
-          { title: 'Commercial Aluminium Windows', desc: 'Energy-efficient window installation', img: '/static/aluminum-windows-commercial.jpg' },
-          { title: 'Aluminium Door - Red', desc: 'Stylish entrance solutions', img: '/static/door-red.jpg' },
-          { title: 'Frosted Glass Door', desc: 'Privacy and security solutions', img: '/static/door-frosted.jpg' },
-          { title: 'Glass Partition - Reception', desc: 'Elegant reception area design', img: '/static/glass-partition-reception.jpg' }
+          { title: 'Glass Partition - Reception Area', desc: 'Elegant reception area design', img: '/static/glass-partition-reception.jpg' },
+          { title: 'Red Glass Aluminium Door', desc: 'Contemporary entrance with glass panels', img: '/static/door-red-glass.jpg' },
+          { title: 'Glass Balcony Railing', desc: 'Modern outdoor safety solutions', img: '/static/glass-balcony-railing.jpg' },
+          { title: 'Residential Installation', desc: 'Custom aluminium solutions', img: '/static/new-photo-3.jpg' },
+          { title: 'Commercial Project', desc: 'Professional aluminium works', img: '/static/new-photo-5.jpg' },
+          { title: 'MOI Catalogue Page 1', desc: 'Range of aluminium products', img: '/static/brochure1.jpg' },
+          { title: 'MOI Catalogue Page 2', desc: 'Quality installations showcase', img: '/static/brochure2.jpg' }
         ]
       },
       about: {
@@ -99,13 +99,13 @@
         title: 'Nos Projets',
         subtitle: 'Vraies installations MOI à Maurice',
         items: [
-          { title: 'Garde-corps Verre - Balcon', desc: 'Rampes de sécurité modernes', img: '/static/glass-balustrade-balcony.jpg' },
-          { title: 'Cloison Verre - Bureau', desc: 'Divisions espace de travail professionnel', img: '/static/glass-partition-office.jpg' },
-          { title: 'Cloison Douche Sur Mesure', desc: 'Solutions salle de bain élégantes', img: '/static/custom-shower-partition.jpg' },
-          { title: 'Fenêtres Aluminium Commercial', desc: 'Installation fenêtres économes', img: '/static/aluminum-windows-commercial.jpg' },
-          { title: 'Porte Aluminium - Rouge', desc: 'Solutions entrée élégantes', img: '/static/door-red.jpg' },
-          { title: 'Porte Verre Dépoli', desc: 'Solutions intimité et sécurité', img: '/static/door-frosted.jpg' },
-          { title: 'Cloison Verre - Réception', desc: 'Design espace réception élégant', img: '/static/glass-partition-reception.jpg' }
+          { title: 'Cloison Verre - Réception', desc: 'Design espace réception élégant', img: '/static/glass-partition-reception.jpg' },
+          { title: 'Porte Aluminium Verre Rouge', desc: 'Entrée contemporaine avec panneaux verre', img: '/static/door-red-glass.jpg' },
+          { title: 'Garde-corps Verre Balcon', desc: 'Solutions sécurité extérieure modernes', img: '/static/glass-balcony-railing.jpg' },
+          { title: 'Installation Résidentielle', desc: 'Solutions aluminium sur mesure', img: '/static/new-photo-3.jpg' },
+          { title: 'Projet Commercial', desc: 'Travaux aluminium professionnels', img: '/static/new-photo-5.jpg' },
+          { title: 'Catalogue MOI Page 1', desc: 'Gamme de produits aluminium', img: '/static/brochure1.jpg' },
+          { title: 'Catalogue MOI Page 2', desc: 'Vitrine installations qualité', img: '/static/brochure2.jpg' }
         ]
       },
       about: {
@@ -160,13 +160,13 @@
         title: '我们的项目',
         subtitle: 'MOI在毛里求斯的真实安装项目',
         items: [
-          { title: '玻璃栏杆 - 阳台', desc: '现代阳台安全护栏', img: '/static/glass-balustrade-balcony.jpg' },
-          { title: '玻璃隔断 - 办公室', desc: '专业工作空间划分', img: '/static/glass-partition-office.jpg' },
-          { title: '定制淋浴隔断', desc: '优雅浴室解决方案', img: '/static/custom-shower-partition.jpg' },
-          { title: '商业铝合金窗户', desc: '节能窗户安装', img: '/static/aluminum-windows-commercial.jpg' },
-          { title: '铝合金门 - 红色', desc: '时尚入口解决方案', img: '/static/door-red.jpg' },
-          { title: '磨砂玻璃门', desc: '隐私和安全解决方案', img: '/static/door-frosted.jpg' },
-          { title: '玻璃隔断 - 接待处', desc: '优雅接待区设计', img: '/static/glass-partition-reception.jpg' }
+          { title: '玻璃隔断 - 接待区', desc: '优雅接待区设计', img: '/static/glass-partition-reception.jpg' },
+          { title: '红色玻璃铝合金门', desc: '带玻璃面板的现代入口', img: '/static/door-red-glass.jpg' },
+          { title: '玻璃阳台护栏', desc: '现代户外安全解决方案', img: '/static/glass-balcony-railing.jpg' },
+          { title: '住宅安装项目', desc: '定制铝合金解决方案', img: '/static/new-photo-3.jpg' },
+          { title: '商业项目', desc: '专业铝合金工程', img: '/static/new-photo-5.jpg' },
+          { title: 'MOI产品目录 第1页', desc: '铝合金产品系列', img: '/static/brochure1.jpg' },
+          { title: 'MOI产品目录 第2页', desc: '优质安装展示', img: '/static/brochure2.jpg' }
         ]
       },
       about: {
@@ -368,14 +368,14 @@
             <div class="p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow scroll-animate">
               <div class="text-3xl mb-3">📞</div>
               <div class="font-bold text-gray-900 mb-2">Phone</div>
-              <a href="tel:+23054373025" class="block text-blue-600 hover:text-blue-700 text-sm mb-1">${t.contact.phone}</a>
+              <a href="tel:+23054373025" class="block text-blue-600 hover:text-blue-700 text-sm mb-1">+230 5437 3025</a>
             </div>
             
             <!-- Mobile -->
             <div class="p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow scroll-animate">
               <div class="text-3xl mb-3">📱</div>
               <div class="font-bold text-gray-900 mb-2">Mobile</div>
-              <a href="tel:+23059402190" class="block text-blue-600 hover:text-blue-700 text-sm">${t.contact.mobile}</a>
+              <a href="tel:+23059402190" class="block text-blue-600 hover:text-blue-700 text-sm">+230 5940 2190</a>
             </div>
             
             <!-- Email -->
