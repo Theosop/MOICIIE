@@ -31,7 +31,9 @@
         title: 'Contact Us',
         phone: '+230 543 730 25',
         email: 'moi.alu2012@gmail.com',
-        address: 'Unit 29 - Block 8, DBM SME Park, Vuillemin, Quartier Militaire'
+        address: 'Unit 29 - Block 8, DBM SME Park, Vuillemin, Quartier Militaire',
+        qrTitle: 'Scan to Visit Our Website',
+        qrSubtitle: 'Scan this QR code with your phone camera'
       }
     },
     fr: {
@@ -62,7 +64,9 @@
         title: 'Contactez-Nous',
         phone: '+230 543 730 25',
         email: 'moi.alu2012@gmail.com',
-        address: 'Unité 29 - Bloc 8, DBM SME Park, Vuillemin, Quartier Militaire'
+        address: 'Unité 29 - Bloc 8, DBM SME Park, Vuillemin, Quartier Militaire',
+        qrTitle: 'Scannez pour Visiter Notre Site',
+        qrSubtitle: 'Scannez ce code QR avec votre appareil photo'
       }
     },
     zh: {
@@ -93,7 +97,9 @@
         title: '联系我们',
         phone: '+230 543 730 25',
         email: 'moi.alu2012@gmail.com',
-        address: 'Unit 29 - Block 8, DBM SME Park, Vuillemin, Quartier Militaire'
+        address: 'Unit 29 - Block 8, DBM SME Park, Vuillemin, Quartier Militaire',
+        qrTitle: '扫码访问我们的网站',
+        qrSubtitle: '使用手机相机扫描此二维码'
       }
     }
   };
@@ -202,6 +208,16 @@
               <div class="text-3xl mb-3">📍</div>
               <div class="font-bold text-gray-900 mb-2">Location</div>
               <p class="text-sm text-gray-600">${t.contact.address}</p>
+            </div>
+          </div>
+          
+          <!-- QR Code Section -->
+          <div class="mt-16 text-center">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">${t.contact.qrTitle || 'Scan to Visit Our Website'}</h3>
+            <p class="text-gray-600 mb-6">${t.contact.qrSubtitle || 'Scan this QR code with your phone camera'}</p>
+            <div class="inline-block p-6 bg-white border-2 border-gray-200 rounded-xl shadow-lg">
+              <img src="/static/moi-website-qr.png" alt="MOI Website QR Code" class="w-48 h-48 mx-auto">
+              <p class="mt-4 text-sm text-gray-500 font-medium">www.moialu.com</p>
             </div>
           </div>
         </div>
