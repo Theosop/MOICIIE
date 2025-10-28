@@ -175,15 +175,15 @@
         
         <!-- Content -->
         <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 pb-16">
-          <!-- Logo and Title Card -->
-          <div class="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 md:p-12 mb-8 border-4 border-blue-600">
+          <!-- Logo and Title - No White Card -->
+          <div class="mb-8">
             <div class="mb-6">
-              <img src="/static/logo.png" alt="MOI Logo" class="h-20 w-20 mx-auto mb-4">
+              <img src="/static/logo.png" alt="MOI Logo" class="h-24 w-24 mx-auto mb-4 drop-shadow-2xl">
             </div>
-            <h1 class="text-3xl md:text-4xl font-bold text-blue-700 mb-2 uppercase tracking-wide">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-3 uppercase tracking-wide drop-shadow-lg">
               ${t.hero.title}
             </h1>
-            <p class="text-lg text-gray-700 font-medium mb-6">${t.hero.subtitle}</p>
+            <p class="text-xl md:text-2xl text-white font-semibold mb-8 drop-shadow-lg">${t.hero.subtitle}</p>
             
             <!-- Key Value Propositions Grid -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
@@ -206,28 +206,26 @@
             </div>
             
             <!-- Second Row of Values -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-              <div class="bg-white border-2 border-blue-600 text-blue-700 p-4 rounded-lg">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+              <div class="bg-white/90 backdrop-blur-sm text-blue-700 p-4 rounded-lg shadow-xl border-2 border-white">
                 <div class="text-3xl mb-2">⭐</div>
                 <div class="font-bold text-sm">${t.hero.values?.smeda || 'SMEDA Registered'}</div>
               </div>
-              <div class="bg-white border-2 border-blue-600 text-blue-700 p-4 rounded-lg">
+              <div class="bg-white/90 backdrop-blur-sm text-blue-700 p-4 rounded-lg shadow-xl border-2 border-white">
                 <div class="text-3xl mb-2">🌴</div>
                 <div class="font-bold text-sm">${t.hero.values?.climate || 'Perfect for Ocean Climate'}</div>
               </div>
-              <div class="bg-white border-2 border-blue-600 text-blue-700 p-4 rounded-lg">
+              <div class="bg-white/90 backdrop-blur-sm text-blue-700 p-4 rounded-lg shadow-xl border-2 border-white">
                 <div class="text-3xl mb-2">🏭</div>
                 <div class="font-bold text-sm">${t.hero.values?.manufacturing || 'Professional Manufacturing'}</div>
               </div>
-              <div class="bg-white border-2 border-blue-600 text-blue-700 p-4 rounded-lg">
+              <div class="bg-white/90 backdrop-blur-sm text-blue-700 p-4 rounded-lg shadow-xl border-2 border-white">
                 <div class="text-3xl mb-2">🏝️</div>
                 <div class="font-bold text-sm">${t.hero.values?.island || 'Durable Island Solutions'}</div>
               </div>
             </div>
             
-            <p class="text-sm text-blue-800 font-semibold mb-6">${t.hero.tagline || '[New Key Value Proposition]'}</p>
-            
-            <a href="#services" class="inline-block bg-blue-600 text-white px-10 py-4 rounded-lg hover:bg-blue-700 transition text-lg font-bold shadow-lg">
+            <a href="#services" class="inline-block bg-blue-600 text-white px-12 py-4 rounded-xl hover:bg-blue-700 transition text-xl font-bold shadow-2xl border-2 border-white">
               ${t.hero.cta}
             </a>
           </div>
