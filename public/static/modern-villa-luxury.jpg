@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+    
+        <!-- Meta Data -->
+        <meta charset="UTF-8"/>
+        <link rel="profile" href="https://gmpg.org/xfn/11" />
+        <link rel="pingback" href="https://cplustudio.com/xmlrpc.php" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        
+                <!-- Favicon -->        
+        <link rel="shortcut icon" href="https://cplustudio.com/wp-content/uploads/2025/07/icon-reverse_1@2x.png" type="image/x-icon"/>
+                
+        <meta name='robots' content='noindex, follow' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<!-- Google tag (gtag.js) consent mode dataLayer added by Site Kit -->
+<script type="text/javascript" id="google_gtagjs-js-consent-mode-data-layer">
+/* <![CDATA[ */
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {"ad_personalization":"denied","ad_storage":"denied","ad_user_data":"denied","analytics_storage":"denied","functionality_storage":"denied","security_storage":"denied","personalization_storage":"denied","region":["AT","BE","BG","CH","CY","CZ","DE","DK","EE","ES","FI","FR","GB","GR","HR","HU","IE","IS","IT","LI","LT","LU","LV","MT","NL","NO","PL","PT","RO","SE","SI","SK"],"wait_for_update":500});
+window._googlesitekitConsentCategoryMap = {"statistics":["analytics_storage"],"marketing":["ad_storage","ad_user_data","ad_personalization"],"functional":["functionality_storage","security_storage"],"preferences":["personalization_storage"]};
+window._googlesitekitConsents = {"ad_personalization":"denied","ad_storage":"denied","ad_user_data":"denied","analytics_storage":"denied","functionality_storage":"denied","security_storage":"denied","personalization_storage":"denied","region":["AT","BE","BG","CH","CY","CZ","DE","DK","EE","ES","FI","FR","GB","GR","HR","HU","IE","IS","IT","LI","LT","LU","LV","MT","NL","NO","PL","PT","RO","SE","SI","SK"],"wait_for_update":500};
+/* ]]> */
+</script>
+<!-- End Google tag (gtag.js) consent mode dataLayer added by Site Kit -->
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v26.1 (Yoast SEO v26.2) - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Page not found - C+ Studio Architects</title>
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:title" content="Page not found - C+ Studio Architects" />
+	<meta property="og:site_name" content="C+ Studio Architects" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://cplustudio.com/#website","url":"https://cplustudio.com/","name":"C+ Studio Architects","description":"Architecture - Interior Design","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://cplustudio.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="C+ Studio Architects &raquo; Feed" href="https://cplustudio.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="C+ Studio Architects &raquo; Comments Feed" href="https://cplustudio.com/comments/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/cplustudio.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.2"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://cplustudio.com/wp-includes/css/dist/block-library/style.min.css?ver=6.8.2' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://cplustudio.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.2' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css' href='https://cplustudio.com/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.4.7.4' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<link rel='stylesheet' id='monolit-css-plugins-css' href='https://cplustudio.com/wp-content/themes/monolit/assets/css/plugins.css' type='text/css' media='all' />
+<link rel='stylesheet' id='monolit-fonts-css' href='https://fonts.googleapis.com/css?family=Roboto%3A400%2C300%2C200%2C100%2C400italic%2C700%2C900%7CMuli&#038;subset=latin%2Cvietnamese%2Clatin-ext%2Ccyrillic%2Ccyrillic-ext%2Cgreek-ext%2Cgreek' type='text/css' media='all' />
+<link rel='stylesheet' id='monolit-style-css' href='https://cplustudio.com/wp-content/themes/monolit/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='monolit-custom-style-css' href='https://cplustudio.com/wp-content/themes/monolit/assets/css/custom.css' type='text/css' media='all' />
+<style id='monolit-custom-style-inline-css' type='text/css'>
+body{background-color:rgba(27,27,27,1)}header.monolit-header{background-color:rgba(27,27,27,1)}header.monolit-header nav li ul{background-color:rgba(27,27,27,1)}@media only screen and (max-width:1036px){.nav-holder{background-color:rgba(27,27,27,1);top:80px;padding-top:10px}}.share-inner{background-color:rgba(27,27,27,1)}.share-inner{top:80px}.share-container{line-height:60px}.visshare{height:60px}footer.content-footer{background:rgba(27,27,27,1)}footer.fixed-footer{background:rgba(27,27,27,1)}.content{background-color:#FFFFFF}.dark-bg{background-color:#1B1B1B}.dark-bg .section-title,.dark-bg,.dark-bg .num,.dark-bg .inline-facts h6,.dark-bg .skills-description{color:#DBDBDB}.dark-bg .section-title.dec-title span:before{background:#DBDBDB}.dark-bg .sect-subtitle{color:#DBDBDB}.dark-bg .sect-subtitle:after,.dark-bg .sect-subtitle:before,.dark-bg .inline-facts-holder:before{background:#DBDBDB}.overlay{background:rgba(27,27,27,1)}.port-desc-holder:before{background:-moz-linear-gradient(top,transparent 0%,#1b1b1b 100%);/* FF3.6+ */ background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,transparent),color-stop(100%,#1b1b1b));/* Chrome,Safari4+ */ background:-webkit-linear-gradient(top,transparent 0%,#1b1b1b 100%);/* Chrome10+,Safari5.1+ */ background:-o-linear-gradient(top,transparent 0%,#1b1b1b 100%);/* Opera 11.10+ */ background:-ms-linear-gradient(top,transparent 0%,#1b1b1b 100%);/* IE10+ */ background:linear-gradient(to bottom,transparent 0%,#1b1b1b 100%);/* W3C */}.portfolio_item .port-desc-holder:before,.gallery-item .port-desc-holder:before{opacity:0.4}.footer-item,.footer-item p,.footer-item span{color:#DBDBDB}.footer-item a,.footer-item ul li a{color:#DD9933}.content-footer .text-link,.footer-item .text-link{color:#DBDBDB}.footer-item .text-link:before{background:#DBDBDB}.copyright,.to-top{color:#DBDBDB}.footer-wrap:before{background:#DBDBDB}footer.fixed-footer .footer-social li a{color:#DBDBDB}nav li a{color:#ffffff}nav li a:focus,nav li a:hover{color:#eaeaea}nav li a.ancestor-act-link,nav li a.parent-act-link,nav li a.act-link{color:#DD9933}.nav-holder nav li a.ancestor-act-link:before,.nav-holder nav li a.parent-act-link:before,.nav-holder nav li a.act-link:before{background-color:#DD9933}nav li ul a{color:#ffffff}nav li ul a:focus,nav li ul a:hover{color:#eaeaea}nav li ul a.ancestor-act-link,nav li ul a.parent-act-link,nav li ul a.act-link{color:#DD9933}.show-share span,.share-icon,.share-icon:before{color:#DBDBDB}
+</style>
+<script type="text/javascript" id="gtmkit-js-before" data-cfasync="false" data-nowprocket="" data-cookieconsent="ignore">
+/* <![CDATA[ */
+		window.gtmkit_settings = {"datalayer_name":"dataLayer","console_log":false};
+		window.gtmkit_data = {};
+		window.dataLayer = window.dataLayer || [];
+				
+/* ]]> */
+</script>
+<script type="text/javascript" id="breeze-prefetch-js-extra">
+/* <![CDATA[ */
+var breeze_prefetch = {"local_url":"https:\/\/cplustudio.com","ignore_remote_prefetch":"1","ignore_list":["wp-admin","wp-login.php"]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://cplustudio.com/wp-content/plugins/breeze/assets/js/js-front-end/breeze-prefetch-links.min.js?ver=2.2.20" id="breeze-prefetch-js"></script>
+<script type="text/javascript" src="https://cplustudio.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://cplustudio.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://cplustudio.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.4.7.4" id="tp-tools-js"></script>
+<script type="text/javascript" src="https://cplustudio.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.7.4" id="revmin-js"></script>
+<script type="text/javascript" id="gtmkit-container-js-after" data-cfasync="false" data-nowprocket="" data-cookieconsent="ignore">
+/* <![CDATA[ */
+/* Google Tag Manager */
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','AW-954098392');
+/* End Google Tag Manager */
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://cplustudio.com/wp-content/plugins/gtm-kit/assets/integration/contact-form-7.js?ver=2.6.0" id="gtmkit-cf7-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="gtmkit-datalayer-js-before" data-cfasync="false" data-nowprocket="" data-cookieconsent="ignore">
+/* <![CDATA[ */
+const gtmkit_dataLayer_content = {"pagePostType":"404-error","pageType":"404-error"};
+dataLayer.push( gtmkit_dataLayer_content );
+/* ]]> */
+</script>
+
+<!-- Google tag (gtag.js) snippet added by Site Kit -->
+<!-- Google Analytics snippet added by Site Kit -->
+<!-- Google Ads snippet added by Site Kit -->
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-7JQ7D0KNV6" id="google_gtagjs-js" async></script>
+<script type="text/javascript" id="google_gtagjs-js-after">
+/* <![CDATA[ */
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["cplustudio.com"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "G-7JQ7D0KNV6");
+gtag("config", "AW-954098392");
+ window._googlesitekit = window._googlesitekit || {}; window._googlesitekit.throttledEvents = []; window._googlesitekit.gtagEvent = (name, data) => { var key = JSON.stringify( { name, data } ); if ( !! window._googlesitekit.throttledEvents[ key ] ) { return; } window._googlesitekit.throttledEvents[ key ] = true; setTimeout( () => { delete window._googlesitekit.throttledEvents[ key ]; }, 5 ); gtag( "event", name, { ...data, event_source: "site-kit" } ); }; 
+/* ]]> */
+</script>
+<script></script><link rel="https://api.w.org/" href="https://cplustudio.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://cplustudio.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.8.2" />
+<meta name="generator" content="Redux 4.5.8" /><meta name="generator" content="Site Kit by Google 1.164.0" /><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-954098392"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-954098392');
+</script>
+
+<!-- Google AdSense meta tags added by Site Kit -->
+<meta name="google-adsense-platform-account" content="ca-host-pub-2644536267352236">
+<meta name="google-adsense-platform-domain" content="sitekit.withgoogle.com">
+<!-- End Google AdSense meta tags added by Site Kit -->
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+
+<!-- Google Tag Manager snippet added by Site Kit -->
+<script type="text/javascript">
+/* <![CDATA[ */
+
+			( function( w, d, s, l, i ) {
+				w[l] = w[l] || [];
+				w[l].push( {'gtm.start': new Date().getTime(), event: 'gtm.js'} );
+				var f = d.getElementsByTagName( s )[0],
+					j = d.createElement( s ), dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore( j, f );
+			} )( window, document, 'script', 'dataLayer', 'GTM-MKW8G9R' );
+			
+/* ]]> */
+</script>
+
+<!-- End Google Tag Manager snippet added by Site Kit -->
+<meta name="generator" content="Powered by Slider Revolution 5.4.7.4 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<script type="text/javascript">function setREVStartSize(e){									
+						try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+							if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+						}catch(d){console.log("Failure at Presize of Slider:"+d)}						
+					};</script>
+<noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>        
+    </head>
+    <body data-rsssl=1 class="error404 wp-theme-monolit monolit-has-addons hfeed shop-list-three-cols shop-list-tablet-three-cols wpb-js-composer js-comp-ver-8.0.1 vc_responsive">
+            <div class="hor-nav-layout no-dis"></div>
+                    <!-- loader -->
+        <div id="monolit-loader" class="loader">
+            <div id="movingBallG">
+                <div class="movingBallLineG"></div>
+                <div id="movingBallG_1" class="movingBallG"></div>
+            </div>
+        </div>
+        <!-- loader end -->
+        <!--================= main start ================-->
+        <div id="main-theme">
+                    <!--=============== header ===============-->   
+            <header class="monolit-header">
+                <!-- header-inner  -->
+                <div class="header-inner">
+                    <!-- header logo -->
+                    <div class="logo-holder"
+                                         style="width:220px;" 
+                    >
+                        <a href="https://cplustudio.com/">
+                                                                                                            </a>
+                    </div>
+                    <!-- header logo end -->
+                    <!-- mobile nav button -->
+                    <div class="nav-button-holder">
+                        <div class="nav-button vis-m"><span></span><span></span><span></span></div>
+                    </div>
+                    <!-- mobile nav button end -->
+                    <!-- navigation  -->
+                    <div class="nav-holder">
+                                            <nav
+                                                >
+                            <ul id="menu-main-menu" class="monolit_main-nav"><li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-107"><a href="https://cplustudio.com/">Home</a></li>
+<li id="menu-item-302" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-302"><a href="https://cplustudio.com/our-portfolio-architectural-interior/">Portfolio</a></li>
+<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="https://cplustudio.com/architectural-services/">Services</a></li>
+<li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="https://cplustudio.com/contact-us/">Contact Us</a></li>
+</ul>                        </nav>
+                                        </div>
+                    <!-- navigation  end -->
+                </div>
+                <!-- header-inner  end -->
+                <!-- share button  -->
+                                    <div class="show-share isShare"><span>Share</span><i class="fa fa-chain-broken"></i> </div>
+                                <!-- share  end-->
+            </header>
+            <!--=============== header end ===============-->  
+
+            <!--=============== wrapper ===============-->  
+            <div id="wrapper">
+                <!-- content-holder  -->
+                <div class="content-holder content-holder-main">
+                    
+                    <div class="dynamic-title"><h1>Page not found</h1></div>
+
+                                        <div class="content full-height">
+    <div class="hero-wrap">
+        <div class="bg"  data-bg="https://cplustudio.com/wp-content/uploads/2016/07/people-bg.jpg"></div>
+        <div class="overlay"></div>
+        <div class="hero-wrap-item nFound-page-wrap">
+            <span class="nFound-Page">404</span>
+            
+            <h2>Page not found</h2>                        <a href="https://cplustudio.com/" class="hero-link">Back to home page</a>    
+                    </div>
+    </div>
+</div>
+ 
+                
+                                        <!-- share  -->
+                    <div class="share-inner">
+                        <div class="share-container  isShare"  data-share="['facebook&#039;,&#039;Instagram&#039;,&#039;pinterest&#039;,&#039;googleplus&#039;,&#039;linkedin']"></div>
+                        <div class="close-share"></div>
+                    </div>
+                    <!-- share end -->
+                                    </div>
+                <!-- content-holder  end-->
+            </div>
+            <!-- wrapper end -->
+                        <!-- Fixed footer -->
+                        <footer class="fixed-footer monolit-footer">
+                            <div class="footer-social">
+                <ul>
+    <li><a href="https://www.facebook.com/cplustudio/" target="_blank"><i class="fa fa-facebook"></i></a></li> 
+    <li><a href="https://www.instagram.com/cplustudio/" target="_blank"><i class="fa fa-instagram"></i></a></li> 
+</ul>                </div>
+                                <!-- Header  title --> 
+                <div class="footer-title">
+                    <h2><a href="#"></a></h2>
+                </div>
+                <!-- Header  title  end-->
+                            </footer>
+            <!-- Fixed footer end-->
+                    </div>
+        <!-- Main end -->
+        <script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/monolit\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript">
+  document.addEventListener(
+    "wpcf7mailsent",
+    function (event) {
+      if ("10" == event.detail.contactFormId) {
+        gtag("event", "conversion", {
+          send_to: "AW-954098392/6I1HCPur4_EaENjF-cYD",
+        })
+      }
+    },
+    false,
+  )
+</script>
+<script>
+  document.addEventListener("click", function (e) {
+    if (e.target.closest('[href*="mailto:"]')) {
+      gtag("event", "conversion", {
+        send_to: "AW-954098392/hncvCP6r4_EaENjF-cYD",
+      })
+    }
+    if (e.target.closest('[href*="tel:"]')) {
+      gtag("event", "conversion", {
+        send_to: "AW-954098392/Xr1qCMfg4_EaENjF-cYD",
+      })
+    }
+  })
+</script>
+
+			<script type="text/javascript">
+				var _paq = _paq || [];
+								_paq.push(['trackPageView']);
+								(function () {
+					var u = "https://analytics1.wpmudev.com/";
+					_paq.push(['setTrackerUrl', u + 'track/']);
+					_paq.push(['setSiteId', '16474']);
+					var d   = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+					g.type  = 'text/javascript';
+					g.async = true;
+					g.defer = true;
+					g.src   = 'https://analytics.wpmucdn.com/matomo.js';
+					s.parentNode.insertBefore(g, s);
+				})();
+			</script>
+					<!-- Google Tag Manager (noscript) snippet added by Site Kit -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKW8G9R" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<!-- End Google Tag Manager (noscript) snippet added by Site Kit -->
+		<link rel='stylesheet' id='redux-custom-fonts-css' href='//cplustudio.com/wp-content/uploads/redux/custom-fonts/fonts.css?ver=1747311709' type='text/css' media='all' />
+<script type="text/javascript" src="https://cplustudio.com/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://cplustudio.com/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://cplustudio.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.2" id="swv-js"></script>
+<script type="text/javascript" id="contact-form-7-js-before">
+/* <![CDATA[ */
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/cplustudio.com\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    }
+};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://cplustudio.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.2" id="contact-form-7-js"></script>
+<script type="text/javascript" id="monolit-addons-js-extra">
+/* <![CDATA[ */
+var _monolit_add_ons = {"url":"https:\/\/cplustudio.com\/wp-admin\/admin-ajax.php","nonce":"30356c03b1","like":"Like","unlike":"Unlike"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://cplustudio.com/wp-content/plugins/monolit-add-ons/assets/js/monolit-add-ons.min.js" id="monolit-addons-js"></script>
+<script type="text/javascript" src="https://cplustudio.com/wp-content/themes/monolit/assets/js/plugins.js" id="monolit-js-plugins-js"></script>
+<script type="text/javascript" src="https://cplustudio.com/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
+<script type="text/javascript" id="monolit-scripts-js-extra">
+/* <![CDATA[ */
+var _monolit = {"shuffle_off":"0","parallax_off":"0","enable_image_click":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://cplustudio.com/wp-content/themes/monolit/assets/js/scripts.js" id="monolit-scripts-js"></script>
+<script type="text/javascript" src="https://cplustudio.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-consent-mode-bc2e26cfa69fcd4a8261.js" id="googlesitekit-consent-mode-js"></script>
+<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6LeDAawaAAAAACQfEuW8iwpGTUEVhBJnanLO0kvC&amp;ver=3.0" id="google-recaptcha-js"></script>
+<script type="text/javascript" src="https://cplustudio.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script type="text/javascript" id="wpcf7-recaptcha-js-before">
+/* <![CDATA[ */
+var wpcf7_recaptcha = {
+    "sitekey": "6LeDAawaAAAAACQfEuW8iwpGTUEVhBJnanLO0kvC",
+    "actions": {
+        "homepage": "homepage",
+        "contactform": "contactform"
+    }
+};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://cplustudio.com/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=6.1.2" id="wpcf7-recaptcha-js"></script>
+<script type="text/javascript" src="https://cplustudio.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-contact-form-7-858d8c72283d3fbfaa98.js" id="googlesitekit-events-provider-contact-form-7-js" defer></script>
+<script type="text/javascript" src="https://cplustudio.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-wpforms-9774e7805b244d82c869.js" id="googlesitekit-events-provider-wpforms-js" defer></script>
+<script></script>        
+    </body>
+</html>
+<!-- plugin=object-cache-pro client=phpredis metric#hits=2153 metric#misses=13 metric#hit-ratio=99.4 metric#bytes=1611748 metric#prefetches=0 metric#store-reads=60 metric#store-writes=6 metric#store-hits=65 metric#store-misses=7 metric#sql-queries=10 metric#ms-total=1626.22 metric#ms-cache=21.09 metric#ms-cache-avg=0.3245 metric#ms-cache-ratio=1.3 sample#redis-hits=7579853 sample#redis-misses=456142 sample#redis-hit-ratio=94.3 sample#redis-ops-per-sec=125 sample#redis-evicted-keys=0 sample#redis-used-memory=181319232 sample#redis-used-memory-rss=185577472 sample#redis-memory-fragmentation-ratio=1.0 sample#redis-connected-clients=2 sample#redis-tracking-clients=0 sample#redis-rejected-connections=0 sample#redis-keys=4775 -->
