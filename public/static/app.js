@@ -8,7 +8,18 @@
       hero: {
         title: 'Menuiserie de l\'Océan Indien',
         subtitle: 'Quality Aluminum Solutions Since 2005',
-        cta: 'View Our Services'
+        cta: 'View Our Services',
+        tagline: 'New Key Value Proposition',
+        values: {
+          security: 'Security & Strength',
+          corrosion: 'Corrosion Resistant',
+          maintenance: 'Low Maintenance',
+          quality: 'Affordable Quality',
+          smeda: 'SMEDA Registered',
+          climate: 'Perfect for Ocean Climate',
+          manufacturing: 'Professional Manufacturing',
+          island: 'Durable Island Solutions'
+        }
       },
       services: {
         title: 'Our Services',
@@ -41,7 +52,18 @@
       hero: {
         title: 'Menuiserie de l\'Océan Indien',
         subtitle: 'Solutions en Aluminium de Qualité Depuis 2005',
-        cta: 'Voir Nos Services'
+        cta: 'Voir Nos Services',
+        tagline: 'Nouvelle Proposition de Valeur Clé',
+        values: {
+          security: 'Sécurité & Robustesse',
+          corrosion: 'Résistant à la Corrosion',
+          maintenance: 'Faible Entretien',
+          quality: 'Qualité Abordable',
+          smeda: 'Agréé SMEDA',
+          climate: 'Parfait pour Climat Océanique',
+          manufacturing: 'Fabrication Professionnelle',
+          island: 'Solutions Durables Île'
+        }
       },
       services: {
         title: 'Nos Services',
@@ -74,7 +96,18 @@
       hero: {
         title: '印度洋门窗公司',
         subtitle: '自2005年提供优质铝合金解决方案',
-        cta: '查看我们的服务'
+        cta: '查看我们的服务',
+        tagline: '新的关键价值主张',
+        values: {
+          security: '安全坚固',
+          corrosion: '防腐蚀',
+          maintenance: '低维护',
+          quality: '优质实惠',
+          smeda: 'SMEDA认证',
+          climate: '适合海洋气候',
+          manufacturing: '专业制造',
+          island: '岛屿耐用方案'
+        }
       },
       services: {
         title: '我们的服务',
@@ -132,15 +165,72 @@
         </div>
       </nav>
 
-      <!-- Hero MGI Style - Clean & Simple -->
-      <section id="home" class="pt-32 pb-20 bg-gradient-to-br from-gray-50 to-blue-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div class="mb-6">
-            <img src="/static/logo.png" alt="MOI Logo" class="h-24 w-24 mx-auto mb-4">
+      <!-- Hero Section - Stunning Villa Background with Value Props -->
+      <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+          <img src="/static/hero-villa-pool.jpg" alt="Luxury Villa" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60"></div>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 pb-16">
+          <!-- Logo and Title Card -->
+          <div class="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 md:p-12 mb-8 border-4 border-blue-600">
+            <div class="mb-6">
+              <img src="/static/logo.png" alt="MOI Logo" class="h-20 w-20 mx-auto mb-4">
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold text-blue-700 mb-2 uppercase tracking-wide">
+              ${t.hero.title}
+            </h1>
+            <p class="text-lg text-gray-700 font-medium mb-6">${t.hero.subtitle}</p>
+            
+            <!-- Key Value Propositions Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+              <div class="bg-blue-600 text-white p-4 rounded-lg">
+                <div class="text-3xl mb-2">🔒</div>
+                <div class="font-bold text-sm">${t.hero.values?.security || 'Security & Strength'}</div>
+              </div>
+              <div class="bg-blue-600 text-white p-4 rounded-lg">
+                <div class="text-3xl mb-2">🌊</div>
+                <div class="font-bold text-sm">${t.hero.values?.corrosion || 'Corrosion Resistant'}</div>
+              </div>
+              <div class="bg-blue-600 text-white p-4 rounded-lg">
+                <div class="text-3xl mb-2">⚡</div>
+                <div class="font-bold text-sm">${t.hero.values?.maintenance || 'Low Maintenance'}</div>
+              </div>
+              <div class="bg-blue-600 text-white p-4 rounded-lg">
+                <div class="text-3xl mb-2">💰</div>
+                <div class="font-bold text-sm">${t.hero.values?.quality || 'Affordable Quality'}</div>
+              </div>
+            </div>
+            
+            <!-- Second Row of Values -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+              <div class="bg-white border-2 border-blue-600 text-blue-700 p-4 rounded-lg">
+                <div class="text-3xl mb-2">⭐</div>
+                <div class="font-bold text-sm">${t.hero.values?.smeda || 'SMEDA Registered'}</div>
+              </div>
+              <div class="bg-white border-2 border-blue-600 text-blue-700 p-4 rounded-lg">
+                <div class="text-3xl mb-2">🌴</div>
+                <div class="font-bold text-sm">${t.hero.values?.climate || 'Perfect for Ocean Climate'}</div>
+              </div>
+              <div class="bg-white border-2 border-blue-600 text-blue-700 p-4 rounded-lg">
+                <div class="text-3xl mb-2">🏭</div>
+                <div class="font-bold text-sm">${t.hero.values?.manufacturing || 'Professional Manufacturing'}</div>
+              </div>
+              <div class="bg-white border-2 border-blue-600 text-blue-700 p-4 rounded-lg">
+                <div class="text-3xl mb-2">🏝️</div>
+                <div class="font-bold text-sm">${t.hero.values?.island || 'Durable Island Solutions'}</div>
+              </div>
+            </div>
+            
+            <p class="text-sm text-blue-800 font-semibold mb-6">${t.hero.tagline || '[New Key Value Proposition]'}</p>
+            
+            <a href="#services" class="inline-block bg-blue-600 text-white px-10 py-4 rounded-lg hover:bg-blue-700 transition text-lg font-bold shadow-lg">
+              ${t.hero.cta}
+            </a>
           </div>
-          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">${t.hero.title}</h1>
-          <p class="text-xl text-gray-600 mb-8">${t.hero.subtitle}</p>
-          <a href="#services" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">${t.hero.cta}</a>
         </div>
       </section>
 
