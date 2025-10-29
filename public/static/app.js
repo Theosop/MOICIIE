@@ -38,9 +38,9 @@
         title: 'Featured Projects',
         subtitle: 'Quality aluminium installations',
         items: [
-          { title: 'Glass Partition - Reception', desc: 'Professional reception area design', img: '/static/glass-partition-reception.jpg' },
-          { title: 'Glass Balcony Railing', desc: 'Modern outdoor safety solution', img: '/static/glass-balcony-railing.jpg' },
-          { title: 'Red Glass Door', desc: 'Contemporary entrance design', img: '/static/door-red-glass.jpg' }
+          { title: 'Modern Aluminium Installation', desc: 'High-quality residential project', img: '/static/project-pic1.jpg' },
+          { title: 'Premium Glass & Aluminium', desc: 'Contemporary commercial solution', img: '/static/project-pic2.jpg' },
+          { title: 'Elegant Aluminium Work', desc: 'Professional installation showcase', img: '/static/project-pic3.jpg' }
         ]
       },
       about: {
@@ -95,9 +95,9 @@
         title: 'Projets Sélectionnés',
         subtitle: 'Installations aluminium de qualité',
         items: [
-          { title: 'Cloison Verre - Réception', desc: 'Design professionnel zone réception', img: '/static/glass-partition-reception.jpg' },
-          { title: 'Garde-corps Verre Balcon', desc: 'Solution sécurité extérieure moderne', img: '/static/glass-balcony-railing.jpg' },
-          { title: 'Porte Verre Rouge', desc: 'Design entrée contemporaine', img: '/static/door-red-glass.jpg' }
+          { title: 'Installation Aluminium Moderne', desc: 'Projet résidentiel haute qualité', img: '/static/project-pic1.jpg' },
+          { title: 'Verre & Aluminium Premium', desc: 'Solution commerciale contemporaine', img: '/static/project-pic2.jpg' },
+          { title: 'Travail Aluminium Élégant', desc: 'Vitrine installation professionnelle', img: '/static/project-pic3.jpg' }
         ]
       },
       about: {
@@ -152,9 +152,9 @@
         title: '精选项目',
         subtitle: '优质铝合金安装案例',
         items: [
-          { title: '玻璃隔断 - 接待处', desc: '专业接待区域设计', img: '/static/glass-partition-reception.jpg' },
-          { title: '玻璃阳台护栏', desc: '现代户外安全解决方案', img: '/static/glass-balcony-railing.jpg' },
-          { title: '红色玻璃门', desc: '现代入口设计', img: '/static/door-red-glass.jpg' }
+          { title: '现代铝合金安装', desc: '高品质住宅项目', img: '/static/project-pic1.jpg' },
+          { title: '优质玻璃与铝合金', desc: '现代商业解决方案', img: '/static/project-pic2.jpg' },
+          { title: '优雅铝合金工程', desc: '专业安装展示', img: '/static/project-pic3.jpg' }
         ]
       },
       about: {
