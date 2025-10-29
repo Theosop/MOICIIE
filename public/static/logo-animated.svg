@@ -1,0 +1,77 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes openLeftDoor {
+        0%, 70% { transform: rotateY(0deg); }
+        100% { transform: rotateY(-120deg); }
+      }
+      
+      @keyframes openRightDoor {
+        0%, 70% { transform: rotateY(0deg); }
+        100% { transform: rotateY(120deg); }
+      }
+      
+      @keyframes fadeInLogo {
+        0%, 80% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      
+      .left-door {
+        transform-origin: left center;
+        animation: openLeftDoor 3s ease-in-out infinite;
+      }
+      
+      .right-door {
+        transform-origin: right center;
+        animation: openRightDoor 3s ease-in-out infinite;
+      }
+      
+      .center-logo {
+        animation: fadeInLogo 3s ease-in-out infinite;
+      }
+    </style>
+    
+    <linearGradient id="doorGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="60" cy="60" r="58" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Left Door -->
+  <g class="left-door">
+    <rect x="25" y="30" width="30" height="60" fill="url(#doorGradient)" rx="2"/>
+    <rect x="25" y="30" width="30" height="60" fill="none" stroke="#1e3a8a" stroke-width="2" rx="2"/>
+    <!-- Door panel lines -->
+    <line x1="25" y1="45" x2="55" y2="45" stroke="#1e3a8a" stroke-width="1" opacity="0.3"/>
+    <line x1="25" y1="60" x2="55" y2="60" stroke="#1e3a8a" stroke-width="1" opacity="0.3"/>
+    <line x1="25" y1="75" x2="55" y2="75" stroke="#1e3a8a" stroke-width="1" opacity="0.3"/>
+    <!-- Door handle -->
+    <circle cx="50" cy="60" r="2" fill="#fbbf24"/>
+  </g>
+  
+  <!-- Right Door -->
+  <g class="right-door">
+    <rect x="65" y="30" width="30" height="60" fill="url(#doorGradient)" rx="2"/>
+    <rect x="65" y="30" width="30" height="60" fill="none" stroke="#1e3a8a" stroke-width="2" rx="2"/>
+    <!-- Door panel lines -->
+    <line x1="65" y1="45" x2="95" y2="45" stroke="#1e3a8a" stroke-width="1" opacity="0.3"/>
+    <line x1="65" y1="60" x2="95" y2="60" stroke="#1e3a8a" stroke-width="1" opacity="0.3"/>
+    <line x1="65" y1="75" x2="95" y2="75" stroke="#1e3a8a" stroke-width="1" opacity="0.3"/>
+    <!-- Door handle -->
+    <circle cx="70" cy="60" r="2" fill="#fbbf24"/>
+  </g>
+  
+  <!-- Center Logo (MOI letters revealed when doors open) -->
+  <g class="center-logo">
+    <text x="60" y="68" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="url(#logoGradient)" text-anchor="middle">MOI</text>
+    <path d="M 45 75 L 75 75" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

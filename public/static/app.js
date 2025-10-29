@@ -40,7 +40,7 @@
         items: [
           { title: 'Modern Aluminium Installation', desc: 'High-quality residential project', img: '/static/project-pic1.jpg' },
           { title: 'Premium Glass & Aluminium', desc: 'Contemporary commercial solution', img: '/static/project-pic2.jpg' },
-          { title: 'Professional Workshop', desc: 'Expert craftsmanship in action', img: '/static/project-workshop.jpg' },
+          { title: 'Elegant Aluminium Design', desc: 'Sophisticated installation showcase', img: '/static/project-pic5.jpg' },
           { title: 'Quality Aluminium Fabrication', desc: 'Precision manufacturing process', img: '/static/project-pic4.jpg' }
         ]
       },
@@ -98,7 +98,7 @@
         items: [
           { title: 'Installation Aluminium Moderne', desc: 'Projet résidentiel haute qualité', img: '/static/project-pic1.jpg' },
           { title: 'Verre & Aluminium Premium', desc: 'Solution commerciale contemporaine', img: '/static/project-pic2.jpg' },
-          { title: 'Atelier Professionnel', desc: 'Savoir-faire expert en action', img: '/static/project-workshop.jpg' },
+          { title: 'Design Aluminium Élégant', desc: 'Vitrine installation sophistiquée', img: '/static/project-pic5.jpg' },
           { title: 'Fabrication Aluminium Qualité', desc: 'Processus de fabrication précis', img: '/static/project-pic4.jpg' }
         ]
       },
@@ -156,7 +156,7 @@
         items: [
           { title: '现代铝合金安装', desc: '高品质住宅项目', img: '/static/project-pic1.jpg' },
           { title: '优质玻璃与铝合金', desc: '现代商业解决方案', img: '/static/project-pic2.jpg' },
-          { title: '专业车间', desc: '专业工艺展示', img: '/static/project-workshop.jpg' },
+          { title: '优雅铝合金设计', desc: '精致安装展示', img: '/static/project-pic5.jpg' },
           { title: '优质铝合金制造', desc: '精密制造工艺', img: '/static/project-pic4.jpg' }
         ]
       },
@@ -188,8 +188,10 @@
       <nav class="fixed w-full bg-white shadow-sm z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex justify-between items-center h-16">
-            <div class="flex items-center gap-2">
-              <img src="/static/logo.png" alt="Menuiserie de l'Océan Indien" class="h-12 w-12">
+            <div class="flex items-center gap-3">
+              <a href="#home" class="animated-logo">
+                <img src="/static/logo-animated.svg" alt="Menuiserie de l'Océan Indien - Animated Logo">
+              </a>
               <span class="font-bold text-lg text-gray-900">Menuiserie de l'Océan Indien</span>
             </div>
             <div class="hidden md:flex gap-8 items-center">

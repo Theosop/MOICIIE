@@ -252,3 +252,26 @@ html {
     opacity: 0.7;
   }
 }
+
+/* Animated Logo - Opening Doors Effect */
+.animated-logo {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.animated-logo:hover {
+  transform: scale(1.05);
+}
+
+.animated-logo svg {
+  width: 48px;
+  height: 48px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .animated-logo svg {
+    width: 40px;
+    height: 40px;
+  }
+}
