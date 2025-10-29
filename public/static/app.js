@@ -4,7 +4,7 @@
 
   const translations = {
     en: {
-      nav: { home: 'Home', services: 'Our Services', about: 'About', contact: 'Contact' },
+      nav: { home: 'Home', services: 'Our Services', projects: 'Projects', about: 'About', contact: 'Contact' },
       hero: {
         title: 'Menuiserie de l\'Océan Indien',
         subtitle: 'Premium Aluminium Joinery Since 2005 • Mauritius',
@@ -34,7 +34,15 @@
           { title: 'Custom Solutions', desc: 'Tailored designs for any space', img: '/static/custom-shower-partition.jpg' }
         ]
       },
-
+      projects: {
+        title: 'Featured Projects',
+        subtitle: 'Quality aluminium installations',
+        items: [
+          { title: 'Glass Partition - Reception', desc: 'Professional reception area design', img: '/static/glass-partition-reception.jpg' },
+          { title: 'Glass Balcony Railing', desc: 'Modern outdoor safety solution', img: '/static/glass-balcony-railing.jpg' },
+          { title: 'Red Glass Door', desc: 'Contemporary entrance design', img: '/static/door-red-glass.jpg' }
+        ]
+      },
       about: {
         title: 'About Us',
         text1: 'Since 2005, MOI has been manufacturing and installing premium aluminium solutions across Mauritius.',
@@ -53,7 +61,7 @@
       }
     },
     fr: {
-      nav: { home: 'Accueil', services: 'Nos Services', about: 'À Propos', contact: 'Contact' },
+      nav: { home: 'Accueil', services: 'Nos Services', projects: 'Projets', about: 'À Propos', contact: 'Contact' },
       hero: {
         title: 'Menuiserie de l\'Océan Indien',
         subtitle: 'Menuiserie Aluminium Premium Depuis 2005 • Maurice',
@@ -83,7 +91,15 @@
           { title: 'Solutions Sur Mesure', desc: 'Conceptions adaptées', img: '/static/custom-shower-partition.jpg' }
         ]
       },
-
+      projects: {
+        title: 'Projets Sélectionnés',
+        subtitle: 'Installations aluminium de qualité',
+        items: [
+          { title: 'Cloison Verre - Réception', desc: 'Design professionnel zone réception', img: '/static/glass-partition-reception.jpg' },
+          { title: 'Garde-corps Verre Balcon', desc: 'Solution sécurité extérieure moderne', img: '/static/glass-balcony-railing.jpg' },
+          { title: 'Porte Verre Rouge', desc: 'Design entrée contemporaine', img: '/static/door-red-glass.jpg' }
+        ]
+      },
       about: {
         title: 'À Propos',
         text1: 'Depuis 2005, MOI fabrique et installe des solutions en aluminium à Maurice.',
@@ -102,7 +118,7 @@
       }
     },
     zh: {
-      nav: { home: '首页', services: '我们的服务', about: '关于我们', contact: '联系我们' },
+      nav: { home: '首页', services: '我们的服务', projects: '项目案例', about: '关于我们', contact: '联系我们' },
       hero: {
         title: '印度洋门窗公司',
         subtitle: '自2005年起提供优质铝合金门窗 • 毛里求斯',
@@ -132,7 +148,15 @@
           { title: '定制方案', desc: '为任何空间量身定制', img: '/static/custom-shower-partition.jpg' }
         ]
       },
-
+      projects: {
+        title: '精选项目',
+        subtitle: '优质铝合金安装案例',
+        items: [
+          { title: '玻璃隔断 - 接待处', desc: '专业接待区域设计', img: '/static/glass-partition-reception.jpg' },
+          { title: '玻璃阳台护栏', desc: '现代户外安全解决方案', img: '/static/glass-balcony-railing.jpg' },
+          { title: '红色玻璃门', desc: '现代入口设计', img: '/static/door-red-glass.jpg' }
+        ]
+      },
       about: {
         title: '关于我们',
         text1: '自2005年以来，MOI一直在毛里求斯制造和安装高品质铝合金解决方案。',
@@ -260,6 +284,39 @@
                 <div class="p-6">
                   <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300">${item.title}</h3>
                   <p class="text-gray-600 mb-4">${item.desc}</p>
+                  <a href="#contact" class="text-blue-600 font-medium hover:text-blue-700 inline-flex items-center group-hover:gap-3 transition-all duration-300">
+                    Learn More
+                    <svg class="w-4 h-4 ml-1 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects Section -->
+      <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16 scroll-animate">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">${t.projects.title}</h2>
+            <p class="text-lg text-gray-600">${t.projects.subtitle}</p>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            ${t.projects.items.map((project, index) => `
+              <div class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-2xl transition-all duration-500 group scroll-animate cursor-pointer transform hover:-translate-y-2" style="animation-delay: ${index * 0.15}s">
+                <div class="aspect-[4/3] overflow-hidden bg-gray-100 relative">
+                  <img src="${project.img}" alt="${project.title}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                  <div class="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                    <span class="text-white font-semibold text-lg">${project.title}</span>
+                  </div>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300">${project.title}</h3>
+                  <p class="text-gray-600 mb-4">${project.desc}</p>
                   <a href="#contact" class="text-blue-600 font-medium hover:text-blue-700 inline-flex items-center group-hover:gap-3 transition-all duration-300">
                     Learn More
                     <svg class="w-4 h-4 ml-1 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
