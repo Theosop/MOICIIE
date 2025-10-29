@@ -4,7 +4,7 @@
 
   const translations = {
     en: {
-      nav: { home: 'Home', services: 'Our Services', projects: 'Projects', about: 'About', contact: 'Contact' },
+      nav: { home: 'Home', services: 'Our Services', products: 'Products', partners: 'Partners', projects: 'Projects', about: 'About', contact: 'Contact' },
       hero: {
         title: 'Menuiserie de l\'Océan Indien',
         subtitle: 'Premium Aluminium Joinery Since 2005 • Mauritius',
@@ -32,6 +32,66 @@
           { title: 'Roller Shutters', desc: 'Security and privacy solutions', img: '/static/roller-shutter-residential.jpg' },
           { title: 'Glass Balustrades', desc: 'Contemporary safety railings', img: '/static/glass-balustrade-balcony.jpg' },
           { title: 'Custom Solutions', desc: 'Tailored designs for any space', img: '/static/custom-shower-partition.jpg' }
+        ]
+      },
+      products: {
+        title: 'Our Products',
+        subtitle: 'Complete range of aluminium solutions',
+        windows: {
+          title: 'Windows & Mosquito Net',
+          items: [
+            'Sliding Window',
+            'Top Hung',
+            'Casement Window Wooden Finish',
+            'Jalousie Aluminum (Toilet, Bathroom, Kitchen)',
+            'Tilt and Turn',
+            'Aluminum Rocker',
+            'Casement Window with Georgian Bars',
+            'Mosquito Net'
+          ]
+        },
+        doors: {
+          title: 'Doors',
+          items: [
+            'Aluminum Sliding Door 2 (Double Glazing)',
+            'Aluminum Sliding Prestige 3',
+            'Aluminum Door 1 Panel',
+            'Aluminum Door with Georgian Bars',
+            'Aluminum Door 1 Leaf',
+            'Aluminum Door 2 Leaves'
+          ]
+        },
+        shutters: {
+          title: 'Shutters',
+          items: [
+            'Aluminum Door with Roller Shutter',
+            'Electric Aluminum Roller Shutter',
+            'Aluminum Window with Roller Shutter',
+            'Aluminum Italian Shutter',
+            'Aluminum Louvered Door'
+          ]
+        }
+      },
+      partners: {
+        title: 'Commercial Partners',
+        subtitle: 'Trusted international suppliers',
+        items: [
+          {
+            name: 'ACEBOND INTERNATIONAL LIMITED',
+            address: '12/F San Toi Building, 137-139 Connaught Road Central, Hong Kong',
+            website: 'www.acebond.net'
+          },
+          {
+            name: 'ASSA ABLOY PORTUGAL, Unipessoal, LDA',
+            address: 'Rua Cidade de Córdova, 3A, Zona Industrial de Alfragide Sul, 2610-038-Alfragide, Portugal',
+            nif: 'PT500243700',
+            website: 'www.assaabloy.pt'
+          },
+          {
+            name: 'GEORGINA NETO DOS SANTOS LDA',
+            address: 'Mourisca Do Vouga, Apartado 3007 - 901, Agueda, Portugal',
+            website: 'ingns.com'
+          }
         ]
       },
       projects: {
@@ -62,7 +122,7 @@
       }
     },
     fr: {
-      nav: { home: 'Accueil', services: 'Nos Services', projects: 'Projets', about: 'À Propos', contact: 'Contact' },
+      nav: { home: 'Accueil', services: 'Nos Services', products: 'Produits', partners: 'Partenaires', projects: 'Projets', about: 'À Propos', contact: 'Contact' },
       hero: {
         title: 'Menuiserie de l\'Océan Indien',
         subtitle: 'Menuiserie Aluminium Premium Depuis 2005 • Maurice',
@@ -90,6 +150,66 @@
           { title: 'Volets Roulants', desc: 'Sécurité et intimité', img: '/static/roller-shutter-residential.jpg' },
           { title: 'Garde-corps Verre', desc: 'Rampes de sécurité contemporaines', img: '/static/glass-balustrade-balcony.jpg' },
           { title: 'Solutions Sur Mesure', desc: 'Conceptions adaptées', img: '/static/custom-shower-partition.jpg' }
+        ]
+      },
+      products: {
+        title: 'Nos Produits',
+        subtitle: 'Gamme complète de solutions en aluminium',
+        windows: {
+          title: 'Fenêtres et Moustiquaire',
+          items: [
+            'Fenêtre Coulissante',
+            'Battant Supérieur',
+            'Fenêtre à Battant Finition Bois',
+            'Jalousie Aluminium (Toilette, Salle de Bain, Cuisine)',
+            'Oscillo-Battant',
+            'Basculante Aluminium',
+            'Fenêtre à Battant avec Barreaux Géorgiens',
+            'Moustiquaire'
+          ]
+        },
+        doors: {
+          title: 'Portes',
+          items: [
+            'Porte Coulissante Aluminium 2 (Double Vitrage)',
+            'Porte Coulissante Prestige 3',
+            'Porte Aluminium 1 Panneau',
+            'Porte Aluminium avec Barreaux Géorgiens',
+            'Porte Aluminium 1 Vantail',
+            'Porte Aluminium 2 Vantaux'
+          ]
+        },
+        shutters: {
+          title: 'Volets',
+          items: [
+            'Porte Aluminium avec Volet Roulant',
+            'Volet Roulant Électrique Aluminium',
+            'Fenêtre Aluminium avec Volet Roulant',
+            'Volet Italien Aluminium',
+            'Porte Persienne Aluminium'
+          ]
+        }
+      },
+      partners: {
+        title: 'Partenaires Commerciaux',
+        subtitle: 'Fournisseurs internationaux de confiance',
+        items: [
+          {
+            name: 'ACEBOND INTERNATIONAL LIMITED',
+            address: '12/F San Toi Building, 137-139 Connaught Road Central, Hong Kong',
+            website: 'www.acebond.net'
+          },
+          {
+            name: 'ASSA ABLOY PORTUGAL, Unipessoal, LDA',
+            address: 'Rua Cidade de Córdova, 3A, Zona Industrial de Alfragide Sul, 2610-038-Alfragide, Portugal',
+            nif: 'PT500243700',
+            website: 'www.assaabloy.pt'
+          },
+          {
+            name: 'GEORGINA NETO DOS SANTOS LDA',
+            address: 'Mourisca Do Vouga, Apartado 3007 - 901, Agueda, Portugal',
+            website: 'ingns.com'
+          }
         ]
       },
       projects: {
@@ -120,7 +240,7 @@
       }
     },
     zh: {
-      nav: { home: '首页', services: '我们的服务', projects: '项目案例', about: '关于我们', contact: '联系我们' },
+      nav: { home: '首页', services: '我们的服务', products: '产品', partners: '合作伙伴', projects: '项目案例', about: '关于我们', contact: '联系我们' },
       hero: {
         title: '印度洋门窗公司',
         subtitle: '自2005年起提供优质铝合金门窗 • 毛里求斯',
@@ -148,6 +268,66 @@
           { title: '卷帘门', desc: '安全和隐私解决方案', img: '/static/roller-shutter-residential.jpg' },
           { title: '玻璃栏杆', desc: '现代安全护栏', img: '/static/glass-balustrade-balcony.jpg' },
           { title: '定制方案', desc: '为任何空间量身定制', img: '/static/custom-shower-partition.jpg' }
+        ]
+      },
+      products: {
+        title: '我们的产品',
+        subtitle: '全系列铝合金解决方案',
+        windows: {
+          title: '窗户和纱窗',
+          items: [
+            '推拉窗',
+            '上悬窗',
+            '木纹平开窗',
+            '铝合金百叶窗（厕所、浴室、厨房）',
+            '内开内倒窗',
+            '铝合金摇窗',
+            '带格鲁吉亚栏杆的平开窗',
+            '纱窗'
+          ]
+        },
+        doors: {
+          title: '门',
+          items: [
+            '铝合金推拉门2（双层玻璃）',
+            '铝合金豪华推拉门3',
+            '铝合金门1扇',
+            '带格鲁吉亚栏杆的铝合金门',
+            '铝合金门1叶',
+            '铝合金门2叶'
+          ]
+        },
+        shutters: {
+          title: '百叶窗',
+          items: [
+            '带卷帘的铝合金门',
+            '电动铝合金卷帘',
+            '带卷帘的铝合金窗',
+            '意大利式铝合金百叶窗',
+            '铝合金百叶门'
+          ]
+        }
+      },
+      partners: {
+        title: '商业合作伙伴',
+        subtitle: '值得信赖的国际供应商',
+        items: [
+          {
+            name: 'ACEBOND INTERNATIONAL LIMITED',
+            address: '香港中环干诺道中137-139号三台大厦12楼',
+            website: 'www.acebond.net'
+          },
+          {
+            name: 'ASSA ABLOY PORTUGAL, Unipessoal, LDA',
+            address: 'Rua Cidade de Córdova, 3A, Zona Industrial de Alfragide Sul, 2610-038-Alfragide, 葡萄牙',
+            nif: 'PT500243700',
+            website: 'www.assaabloy.pt'
+          },
+          {
+            name: 'GEORGINA NETO DOS SANTOS LDA',
+            address: 'Mourisca Do Vouga, Apartado 3007 - 901, Agueda, 葡萄牙',
+            website: 'ingns.com'
+          }
         ]
       },
       projects: {
@@ -195,6 +375,9 @@
             <div class="hidden md:flex gap-8 items-center">
               <a href="#home" class="text-gray-700 hover:text-blue-600">${t.nav.home}</a>
               <a href="#services" class="text-gray-700 hover:text-blue-600">${t.nav.services}</a>
+              <a href="#products" class="text-gray-700 hover:text-blue-600">${t.nav.products}</a>
+              <a href="#partners" class="text-gray-700 hover:text-blue-600">${t.nav.partners}</a>
+              <a href="#projects" class="text-gray-700 hover:text-blue-600">${t.nav.projects}</a>
               <a href="#about" class="text-gray-700 hover:text-blue-600">${t.nav.about}</a>
               <a href="#contact" class="text-gray-700 hover:text-blue-600">${t.nav.contact}</a>
               <div class="flex gap-2 ml-4 border-l pl-4">
@@ -288,13 +471,7 @@
                 </div>
                 <div class="p-6">
                   <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300">${item.title}</h3>
-                  <p class="text-gray-600 mb-4">${item.desc}</p>
-                  <a href="#contact" class="text-blue-600 font-medium hover:text-blue-700 inline-flex items-center group-hover:gap-3 transition-all duration-300">
-                    Learn More
-                    <svg class="w-4 h-4 ml-1 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                    </svg>
-                  </a>
+                  <p class="text-gray-600">${item.desc}</p>
                 </div>
               </div>
             `).join('')}
@@ -321,14 +498,113 @@
                 </div>
                 <div class="p-6">
                   <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300">${project.title}</h3>
-                  <p class="text-gray-600 mb-4">${project.desc}</p>
-                  <a href="#contact" class="text-blue-600 font-medium hover:text-blue-700 inline-flex items-center group-hover:gap-3 transition-all duration-300">
-                    Learn More
-                    <svg class="w-4 h-4 ml-1 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                    </svg>
-                  </a>
+                  <p class="text-gray-600">${project.desc}</p>
                 </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      </section>
+
+      <!-- Products Section -->
+      <section id="products" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16 scroll-animate">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">${t.products.title}</h2>
+            <p class="text-lg text-gray-600">${t.products.subtitle}</p>
+          </div>
+          
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- Windows & Mosquito Net -->
+            <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-blue-100 hover:shadow-xl transition-shadow scroll-animate">
+              <div class="text-4xl mb-4">🪟</div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">${t.products.windows.title}</h3>
+              <ul class="space-y-3">
+                ${t.products.windows.items.map(item => `
+                  <li class="flex items-start gap-2 text-gray-700">
+                    <svg class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <span>${item}</span>
+                  </li>
+                `).join('')}
+              </ul>
+            </div>
+            
+            <!-- Doors -->
+            <div class="bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl border border-green-100 hover:shadow-xl transition-shadow scroll-animate">
+              <div class="text-4xl mb-4">🚪</div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">${t.products.doors.title}</h3>
+              <ul class="space-y-3">
+                ${t.products.doors.items.map(item => `
+                  <li class="flex items-start gap-2 text-gray-700">
+                    <svg class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <span>${item}</span>
+                  </li>
+                `).join('')}
+              </ul>
+            </div>
+            
+            <!-- Shutters -->
+            <div class="bg-gradient-to-br from-purple-50 to-white p-8 rounded-2xl border border-purple-100 hover:shadow-xl transition-shadow scroll-animate">
+              <div class="text-4xl mb-4">🪟</div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">${t.products.shutters.title}</h3>
+              <ul class="space-y-3">
+                ${t.products.shutters.items.map(item => `
+                  <li class="flex items-start gap-2 text-gray-700">
+                    <svg class="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <span>${item}</span>
+                  </li>
+                `).join('')}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Partners Section -->
+      <section id="partners" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16 scroll-animate">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">${t.partners.title}</h2>
+            <p class="text-lg text-gray-600">${t.partners.subtitle}</p>
+          </div>
+          
+          <div class="grid md:grid-cols-3 gap-8">
+            ${t.partners.items.map(partner => `
+              <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 scroll-animate">
+                <div class="text-4xl mb-4">🤝</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">${partner.name}</h3>
+                <div class="space-y-3 text-sm text-gray-600 mb-6">
+                  <p class="flex items-start gap-2">
+                    <svg class="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                    <span>${partner.address}</span>
+                  </p>
+                  ${partner.nif ? `
+                    <p class="flex items-start gap-2">
+                      <svg class="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                      </svg>
+                      <span>NIF: ${partner.nif}</span>
+                    </p>
+                  ` : ''}
+                </div>
+                <a href="http://${partner.website}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium group">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                  </svg>
+                  <span class="group-hover:underline">${partner.website}</span>
+                  <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                  </svg>
+                </a>
               </div>
             `).join('')}
           </div>
