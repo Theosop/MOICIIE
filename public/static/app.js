@@ -40,7 +40,8 @@
         items: [
           { title: 'Modern Aluminium Installation', desc: 'High-quality residential project', img: '/static/project-pic1.jpg' },
           { title: 'Premium Glass & Aluminium', desc: 'Contemporary commercial solution', img: '/static/project-pic2.jpg' },
-          { title: 'Elegant Aluminium Work', desc: 'Professional installation showcase', img: '/static/project-pic3.jpg' }
+          { title: 'Professional Workshop', desc: 'Expert craftsmanship in action', img: '/static/project-workshop.jpg' },
+          { title: 'Quality Aluminium Fabrication', desc: 'Precision manufacturing process', img: '/static/project-pic4.jpg' }
         ]
       },
       about: {
@@ -97,7 +98,8 @@
         items: [
           { title: 'Installation Aluminium Moderne', desc: 'Projet résidentiel haute qualité', img: '/static/project-pic1.jpg' },
           { title: 'Verre & Aluminium Premium', desc: 'Solution commerciale contemporaine', img: '/static/project-pic2.jpg' },
-          { title: 'Travail Aluminium Élégant', desc: 'Vitrine installation professionnelle', img: '/static/project-pic3.jpg' }
+          { title: 'Atelier Professionnel', desc: 'Savoir-faire expert en action', img: '/static/project-workshop.jpg' },
+          { title: 'Fabrication Aluminium Qualité', desc: 'Processus de fabrication précis', img: '/static/project-pic4.jpg' }
         ]
       },
       about: {
@@ -154,7 +156,8 @@
         items: [
           { title: '现代铝合金安装', desc: '高品质住宅项目', img: '/static/project-pic1.jpg' },
           { title: '优质玻璃与铝合金', desc: '现代商业解决方案', img: '/static/project-pic2.jpg' },
-          { title: '优雅铝合金工程', desc: '专业安装展示', img: '/static/project-pic3.jpg' }
+          { title: '专业车间', desc: '专业工艺展示', img: '/static/project-workshop.jpg' },
+          { title: '优质铝合金制造', desc: '精密制造工艺', img: '/static/project-pic4.jpg' }
         ]
       },
       about: {
