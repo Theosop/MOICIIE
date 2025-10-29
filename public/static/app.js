@@ -301,8 +301,16 @@
           <div class="flex justify-between items-center h-16">
             <div class="flex items-center gap-2">
               <img src="/static/logo.png" alt="Menuiserie de l'Océan Indien" class="h-12 w-12">
-              <span class="font-bold text-lg text-gray-900">Menuiserie de l'Océan Indien</span>
+              <span class="font-bold text-lg text-gray-900 hidden sm:inline">Menuiserie de l'Océan Indien</span>
             </div>
+            
+            <!-- Mobile Language Selector -->
+            <div class="flex md:hidden gap-1.5">
+              <button onclick="window.moiApp.setLang('en')" class="px-2.5 py-1.5 text-xs font-bold ${currentLang==='en'?'bg-blue-600 text-white':'bg-gray-100 text-gray-700'} rounded-md">EN</button>
+              <button onclick="window.moiApp.setLang('fr')" class="px-2.5 py-1.5 text-xs font-bold ${currentLang==='fr'?'bg-blue-600 text-white':'bg-gray-100 text-gray-700'} rounded-md">FR</button>
+              <button onclick="window.moiApp.setLang('zh')" class="px-2.5 py-1.5 text-xs font-bold ${currentLang==='zh'?'bg-blue-600 text-white':'bg-gray-100 text-gray-700'} rounded-md">中文</button>
+            </div>
+            
             <div class="hidden md:flex gap-8 items-center">
               <a href="#home" class="text-gray-700 hover:text-blue-600">${t.nav.home}</a>
               <a href="#showcase" class="text-gray-700 hover:text-blue-600">${t.nav.showcase}</a>
@@ -311,10 +319,11 @@
               <a href="#projects" class="text-gray-700 hover:text-blue-600">${t.nav.projects}</a>
               <a href="#about" class="text-gray-700 hover:text-blue-600">${t.nav.about}</a>
               <a href="#contact" class="text-gray-700 hover:text-blue-600">${t.nav.contact}</a>
-              <div class="flex gap-2 ml-4 border-l pl-4">
-                <button onclick="window.moiApp.setLang('en')" class="px-2 py-1 text-sm ${currentLang==='en'?'bg-blue-600 text-white':'text-gray-600'} rounded">EN</button>
-                <button onclick="window.moiApp.setLang('fr')" class="px-2 py-1 text-sm ${currentLang==='fr'?'bg-blue-600 text-white':'text-gray-600'} rounded">FR</button>
-                <button onclick="window.moiApp.setLang('zh')" class="px-2 py-1 text-sm ${currentLang==='zh'?'bg-blue-600 text-white':'text-gray-600'} rounded">中文</button>
+              <div class="flex gap-2 ml-4 border-l pl-4 items-center">
+                <span class="text-xs text-gray-500 mr-1">Language:</span>
+                <button onclick="window.moiApp.setLang('en')" class="px-3 py-1.5 text-sm font-semibold ${currentLang==='en'?'bg-blue-600 text-white shadow-md':'bg-gray-100 text-gray-700 hover:bg-gray-200'} rounded-lg transition-all">EN</button>
+                <button onclick="window.moiApp.setLang('fr')" class="px-3 py-1.5 text-sm font-semibold ${currentLang==='fr'?'bg-blue-600 text-white shadow-md':'bg-gray-100 text-gray-700 hover:bg-gray-200'} rounded-lg transition-all">FR</button>
+                <button onclick="window.moiApp.setLang('zh')" class="px-3 py-1.5 text-sm font-semibold ${currentLang==='zh'?'bg-blue-600 text-white shadow-md':'bg-gray-100 text-gray-700 hover:bg-gray-200'} rounded-lg transition-all">中文</button>
               </div>
             </div>
           </div>
@@ -655,6 +664,15 @@
           <p class="text-sm text-gray-500">© 2025 Menuiserie de l'Océan Indien Ltée. All rights reserved. | Made in Moris | Grade MEDIUM II Contractor</p>
         </div>
       </footer>
+      
+      <!-- Floating Language Indicator (Mobile) -->
+      <div class="fixed bottom-6 right-6 md:hidden z-40 bg-white rounded-full shadow-2xl border-2 border-blue-600 p-1">
+        <div class="flex gap-1">
+          <button onclick="window.moiApp.setLang('en')" class="w-10 h-10 flex items-center justify-center text-xs font-bold ${currentLang==='en'?'bg-blue-600 text-white':'bg-white text-gray-700'} rounded-full transition-all">EN</button>
+          <button onclick="window.moiApp.setLang('fr')" class="w-10 h-10 flex items-center justify-center text-xs font-bold ${currentLang==='fr'?'bg-blue-600 text-white':'bg-white text-gray-700'} rounded-full transition-all">FR</button>
+          <button onclick="window.moiApp.setLang('zh')" class="w-10 h-10 flex items-center justify-center text-xs font-bold ${currentLang==='zh'?'bg-blue-600 text-white':'bg-white text-gray-700'} rounded-full transition-all">中文</button>
+        </div>
+      </div>
     `;
   }
 
