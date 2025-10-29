@@ -31,42 +31,22 @@
         ]
       },
       products: {
-        title: 'Our Products',
-        subtitle: 'Complete range of aluminium solutions',
-        windows: {
-          title: 'Windows & Mosquito Net',
-          items: [
-            'Sliding Window',
-            'Top Hung',
-            'Casement Window Wooden Finish',
-            'Jalousie Aluminum (Toilet, Bathroom, Kitchen)',
-            'Tilt and Turn',
-            'Aluminum Rocker',
-            'Casement Window with Georgian Bars',
-            'Mosquito Net'
-          ]
-        },
-        doors: {
-          title: 'Doors',
-          items: [
-            'Aluminum Sliding Door 2 (Double Glazing)',
-            'Aluminum Sliding Prestige 3',
-            'Aluminum Door 1 Panel',
-            'Aluminum Door with Georgian Bars',
-            'Aluminum Door 1 Leaf',
-            'Aluminum Door 2 Leaves'
-          ]
-        },
-        shutters: {
-          title: 'Shutters',
-          items: [
-            'Aluminum Door with Roller Shutter',
-            'Electric Aluminum Roller Shutter',
-            'Aluminum Window with Roller Shutter',
-            'Aluminum Italian Shutter',
-            'Aluminum Louvered Door'
-          ]
-        }
+        title: 'Product Catalog',
+        subtitle: 'Complete range of aluminum windows, doors and shutters',
+        items: [
+          { name: 'Sliding Window', img: '/static/prod-sliding-window.jpg', cat: 'Windows' },
+          { name: 'Top Hung Window', img: '/static/prod-top-hung.jpg', cat: 'Windows' },
+          { name: 'Casement Window Wooden Finish', img: '/static/prod-casement-wood.jpg', cat: 'Windows' },
+          { name: 'Jalousie Aluminum', img: '/static/prod-jalousie.jpg', cat: 'Windows' },
+          { name: 'Tilt and Turn Window', img: '/static/prod-tilt-turn.jpg', cat: 'Windows' },
+          { name: 'Aluminum Awning Window', img: '/static/prod-awning.jpg', cat: 'Windows' },
+          { name: 'Mosquito Net', img: '/static/prod-mosquito-net.jpg', cat: 'Windows' },
+          { name: 'Aluminum Sliding Door (Double Glazing)', img: '/static/prod-sliding-door-2.jpg', cat: 'Doors' },
+          { name: 'Aluminum Door with Georgian Bars', img: '/static/prod-door-georgian.jpg', cat: 'Doors' },
+          { name: 'Bi-Fold Door System', img: '/static/product-bifold-door.jpg', cat: 'Doors' },
+          { name: 'Electric Aluminum Roller Shutter', img: '/static/prod-electric-shutter.jpg', cat: 'Shutters' },
+          { name: 'Aluminum Roller Shutter', img: '/static/roller-shutter-residential.jpg', cat: 'Shutters' }
+        ]
       },
       partners: {
         title: 'Commercial Partners',
@@ -146,42 +126,22 @@
         ]
       },
       products: {
-        title: 'Nos Produits',
-        subtitle: 'Gamme complète de solutions en aluminium',
-        windows: {
-          title: 'Fenêtres et Moustiquaire',
-          items: [
-            'Fenêtre Coulissante',
-            'Battant Supérieur',
-            'Fenêtre à Battant Finition Bois',
-            'Jalousie Aluminium (Toilette, Salle de Bain, Cuisine)',
-            'Oscillo-Battant',
-            'Basculante Aluminium',
-            'Fenêtre à Battant avec Barreaux Géorgiens',
-            'Moustiquaire'
-          ]
-        },
-        doors: {
-          title: 'Portes',
-          items: [
-            'Porte Coulissante Aluminium 2 (Double Vitrage)',
-            'Porte Coulissante Prestige 3',
-            'Porte Aluminium 1 Panneau',
-            'Porte Aluminium avec Barreaux Géorgiens',
-            'Porte Aluminium 1 Vantail',
-            'Porte Aluminium 2 Vantaux'
-          ]
-        },
-        shutters: {
-          title: 'Volets',
-          items: [
-            'Porte Aluminium avec Volet Roulant',
-            'Volet Roulant Électrique Aluminium',
-            'Fenêtre Aluminium avec Volet Roulant',
-            'Volet Italien Aluminium',
-            'Porte Persienne Aluminium'
-          ]
-        }
+        title: 'Catalogue Produits',
+        subtitle: 'Gamme complète de fenêtres, portes et volets en aluminium',
+        items: [
+          { name: 'Fenêtre Coulissante', img: '/static/prod-sliding-window.jpg', cat: 'Fenêtres' },
+          { name: 'Fenêtre Battant Supérieur', img: '/static/prod-top-hung.jpg', cat: 'Fenêtres' },
+          { name: 'Fenêtre à Battant Finition Bois', img: '/static/prod-casement-wood.jpg', cat: 'Fenêtres' },
+          { name: 'Jalousie Aluminium', img: '/static/prod-jalousie.jpg', cat: 'Fenêtres' },
+          { name: 'Fenêtre Oscillo-Battant', img: '/static/prod-tilt-turn.jpg', cat: 'Fenêtres' },
+          { name: 'Fenêtre Basculante Aluminium', img: '/static/prod-awning.jpg', cat: 'Fenêtres' },
+          { name: 'Moustiquaire', img: '/static/prod-mosquito-net.jpg', cat: 'Fenêtres' },
+          { name: 'Porte Coulissante Aluminium (Double Vitrage)', img: '/static/prod-sliding-door-2.jpg', cat: 'Portes' },
+          { name: 'Porte Aluminium avec Barreaux Géorgiens', img: '/static/prod-door-georgian.jpg', cat: 'Portes' },
+          { name: 'Système Porte Pliante', img: '/static/product-bifold-door.jpg', cat: 'Portes' },
+          { name: 'Volet Roulant Électrique Aluminium', img: '/static/prod-electric-shutter.jpg', cat: 'Volets' },
+          { name: 'Volet Roulant Aluminium', img: '/static/roller-shutter-residential.jpg', cat: 'Volets' }
+        ]
       },
       partners: {
         title: 'Partenaires Commerciaux',
@@ -261,42 +221,22 @@
         ]
       },
       products: {
-        title: '我们的产品',
-        subtitle: '全系列铝合金解决方案',
-        windows: {
-          title: '窗户和纱窗',
-          items: [
-            '推拉窗',
-            '上悬窗',
-            '木纹平开窗',
-            '铝合金百叶窗（厕所、浴室、厨房）',
-            '内开内倒窗',
-            '铝合金摇窗',
-            '带格鲁吉亚栏杆的平开窗',
-            '纱窗'
-          ]
-        },
-        doors: {
-          title: '门',
-          items: [
-            '铝合金推拉门2（双层玻璃）',
-            '铝合金豪华推拉门3',
-            '铝合金门1扇',
-            '带格鲁吉亚栏杆的铝合金门',
-            '铝合金门1叶',
-            '铝合金门2叶'
-          ]
-        },
-        shutters: {
-          title: '百叶窗',
-          items: [
-            '带卷帘的铝合金门',
-            '电动铝合金卷帘',
-            '带卷帘的铝合金窗',
-            '意大利式铝合金百叶窗',
-            '铝合金百叶门'
-          ]
-        }
+        title: '产品目录',
+        subtitle: '铝合金门窗和百叶窗完整系列',
+        items: [
+          { name: '推拉窗', img: '/static/prod-sliding-window.jpg', cat: '窗户' },
+          { name: '上悬窗', img: '/static/prod-top-hung.jpg', cat: '窗户' },
+          { name: '木纹平开窗', img: '/static/prod-casement-wood.jpg', cat: '窗户' },
+          { name: '铝合金百叶窗', img: '/static/prod-jalousie.jpg', cat: '窗户' },
+          { name: '内开内倒窗', img: '/static/prod-tilt-turn.jpg', cat: '窗户' },
+          { name: '铝合金摇窗', img: '/static/prod-awning.jpg', cat: '窗户' },
+          { name: '纱窗', img: '/static/prod-mosquito-net.jpg', cat: '窗户' },
+          { name: '铝合金推拉门（双层玻璃）', img: '/static/prod-sliding-door-2.jpg', cat: '门' },
+          { name: '带格鲁吉亚栏杆的铝合金门', img: '/static/prod-door-georgian.jpg', cat: '门' },
+          { name: '折叠门系统', img: '/static/product-bifold-door.jpg', cat: '门' },
+          { name: '电动铝合金卷帘', img: '/static/prod-electric-shutter.jpg', cat: '百叶窗' },
+          { name: '铝合金卷帘', img: '/static/roller-shutter-residential.jpg', cat: '百叶窗' }
+        ]
       },
       partners: {
         title: '商业合作伙伴',
@@ -539,62 +479,31 @@
         </div>
       </section>
 
-      <!-- Products Section -->
+      <!-- Products Section - Grid with Photos -->
       <section id="products" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-16 scroll-animate">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">${t.products.title}</h2>
-            <p class="text-lg text-gray-600">${t.products.subtitle}</p>
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">${t.products.title}</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">${t.products.subtitle}</p>
           </div>
           
-          <div class="grid md:grid-cols-3 gap-8">
-            <!-- Windows & Mosquito Net -->
-            <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-blue-100 hover:shadow-xl transition-shadow scroll-animate">
-              <div class="text-4xl mb-4">🪟</div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-6">${t.products.windows.title}</h3>
-              <ul class="space-y-3">
-                ${t.products.windows.items.map(item => `
-                  <li class="flex items-start gap-2 text-gray-700">
-                    <svg class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                    </svg>
-                    <span>${item}</span>
-                  </li>
-                `).join('')}
-              </ul>
-            </div>
-            
-            <!-- Doors -->
-            <div class="bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl border border-green-100 hover:shadow-xl transition-shadow scroll-animate">
-              <div class="text-4xl mb-4">🚪</div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-6">${t.products.doors.title}</h3>
-              <ul class="space-y-3">
-                ${t.products.doors.items.map(item => `
-                  <li class="flex items-start gap-2 text-gray-700">
-                    <svg class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                    </svg>
-                    <span>${item}</span>
-                  </li>
-                `).join('')}
-              </ul>
-            </div>
-            
-            <!-- Shutters -->
-            <div class="bg-gradient-to-br from-purple-50 to-white p-8 rounded-2xl border border-purple-100 hover:shadow-xl transition-shadow scroll-animate">
-              <div class="text-4xl mb-4">🪟</div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-6">${t.products.shutters.title}</h3>
-              <ul class="space-y-3">
-                ${t.products.shutters.items.map(item => `
-                  <li class="flex items-start gap-2 text-gray-700">
-                    <svg class="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                    </svg>
-                    <span>${item}</span>
-                  </li>
-                `).join('')}
-              </ul>
-            </div>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            ${t.products.items.map((product, index) => `
+              <div class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 scroll-animate hover:-translate-y-2" style="animation-delay: ${index * 0.05}s">
+                <div class="aspect-square overflow-hidden bg-gray-100 relative">
+                  <img src="${product.img}" alt="${product.name}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div class="absolute top-3 right-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                    ${product.cat}
+                  </div>
+                </div>
+                <div class="p-4">
+                  <h3 class="font-bold text-gray-900 text-sm md:text-base leading-tight group-hover:text-blue-600 transition-colors duration-300">
+                    ${product.name}
+                  </h3>
+                </div>
+              </div>
+            `).join('')}
           </div>
         </div>
       </section>
