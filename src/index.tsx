@@ -30,6 +30,16 @@ app.post('/api/contact', async (c) => {
   }
 })
 
+// CIIE 2025 Poster route (redirect to static file without .html)
+app.get('/ciie-poster', (c) => {
+  return c.redirect('/static/ciie-poster')
+})
+
+// QR Poster route (redirect to static file without .html)
+app.get('/qr-poster', (c) => {
+  return c.redirect('/static/qr-poster')
+})
+
 // Main application route
 app.get('/', (c) => {
   return c.html(`
