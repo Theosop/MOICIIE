@@ -615,8 +615,7 @@
                 <div class="h-20 mb-6 flex items-center justify-center">
                   <img src="${logos[idx]}" alt="${partner.name}" class="max-h-full max-w-full object-contain">
                 </div>
-                <h3 class="text-lg font-bold text-gray-900 mb-4">${partner.name}</h3>`
-            }).join('')}
+                <h3 class="text-lg font-bold text-gray-900 mb-4">${partner.name}</h3>
                 <div class="space-y-3 text-sm text-gray-600 mb-6">
                   <p class="flex items-start gap-2">
                     <svg class="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -644,7 +643,8 @@
                   </svg>
                 </a>
               </div>
-            `).join('')}
+              `;
+            }).join('')}
           </div>
         </div>
       </section>
