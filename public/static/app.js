@@ -4,34 +4,30 @@
 
   const translations = {
     en: {
-      nav: { home: 'Home', services: 'Our Services', products: 'Products', partners: 'Partners', projects: 'Projects', about: 'About', contact: 'Contact' },
+      nav: { home: 'Home', showcase: 'Showcase', products: 'Products', partners: 'Partners', projects: 'Installation', about: 'Company', contact: 'Contact' },
       hero: {
         title: 'Menuiserie de l\'Océan Indien',
-        subtitle: 'Premium Aluminium Joinery Since 2005 • Mauritius',
-        cta: 'View Our Services',
+        subtitle: 'Premium Aluminium Solutions for Global Markets',
+        ciie: 'Exhibiting at CIIE 2025 - China International Import Expo',
+        tagline: 'Your Trusted Aluminium Partner from Mauritius',
+        cta: 'View Product Catalog',
         scroll: 'SCROLL',
-        tagline: 'New Key Value Proposition',
         values: {
-          security: 'Security & Strength',
-          corrosion: 'Corrosion Resistant',
-          maintenance: 'Low Maintenance',
-          quality: 'Affordable Quality',
-          smeda: 'SMEDA Registered',
-          climate: 'Perfect for Ocean Climate',
-          manufacturing: 'Professional Manufacturing',
-          island: 'Durable Island Solutions'
+          experience: '20+ Years Experience',
+          certified: 'SMEDA Grade Medium II',
+          export: 'Export Ready',
+          quality: 'European Standards',
+          capacity: '100M Rs Annual Capacity',
+          madein: 'Made in Mauritius'
         }
       },
-      services: {
-        title: 'Our Services',
-        subtitle: 'Complete range of aluminum joinery solutions',
+      showcase: {
+        title: 'Product Showcase',
+        subtitle: 'High-quality aluminium solutions for residential and commercial projects',
         items: [
-          { title: 'Aluminium Windows', desc: 'Energy-efficient windows in various styles', img: '/static/aluminum-windows-commercial.jpg' },
-          { title: 'Aluminium Doors', desc: 'Secure and stylish entrance solutions', img: '/static/door-red.jpg' },
-          { title: 'Glass Partitions', desc: 'Modern office and home divisions', img: '/static/glass-partition-office.jpg' },
-          { title: 'Roller Shutters', desc: 'Security and privacy solutions', img: '/static/roller-shutter-residential.jpg' },
-          { title: 'Glass Balustrades', desc: 'Contemporary safety railings', img: '/static/glass-balustrade-balcony.jpg' },
-          { title: 'Custom Solutions', desc: 'Tailored designs for any space', img: '/static/custom-shower-partition.jpg' }
+          { title: 'Premium Sliding Doors', desc: 'Luxury black frame systems with thermal break technology', img: '/static/luxury-sliding-doors.jpg' },
+          { title: 'Casement Windows', desc: 'Modern black frame windows with double glazing', img: '/static/product-casement-window.jpg' },
+          { title: 'Bi-Fold Doors', desc: 'Seamless indoor-outdoor connection systems', img: '/static/product-bifold-door.jpg' }
         ]
       },
       products: {
@@ -95,19 +91,20 @@
         ]
       },
       projects: {
-        title: 'Featured Projects',
-        subtitle: 'Quality aluminium installations',
+        title: 'Installation Examples',
+        subtitle: 'Professional aluminium installations in Mauritius',
         items: [
-          { title: 'Modern Aluminium Installation', desc: 'High-quality residential project', img: '/static/project-pic1.jpg' },
-          { title: 'Premium Glass & Aluminium', desc: 'Contemporary commercial solution', img: '/static/project-pic2.jpg' },
-          { title: 'Professional Workshop', desc: 'Expert craftsmanship in action', img: '/static/project-workshop.jpg' },
-          { title: 'Quality Aluminium Fabrication', desc: 'Precision manufacturing process', img: '/static/project-pic4.jpg' }
+          { title: 'Luxury Sliding Door Installation', desc: 'High-end residential project with ocean views', img: '/static/luxury-sliding-doors.jpg' },
+          { title: 'Professional Workshop', desc: 'Expert craftsmanship and manufacturing', img: '/static/project-workshop.jpg' }
         ]
       },
       about: {
-        title: 'About Us',
-        text1: 'Since 2005, MOI has been manufacturing and installing premium aluminium solutions across Mauritius.',
-        text2: 'Grade MEDIUM II Contractor • Made in Moris Member • 20 Years Experience'
+        title: 'Company Profile',
+        text1: 'Menuiserie de l\'Océan Indien (MOI) is a leading aluminium fabricator and installer in Mauritius with 20+ years of excellence. We manufacture high-quality windows, doors, and architectural systems using European standards.',
+        text2: 'SMEDA Grade MEDIUM II Contractor • Made in Moris Certified • 100M Rs Annual Capacity • Export Ready',
+        certifications: 'Certifications & Standards',
+        stats: { years: '20+', projects: '500+', capacity: '100M', team: '10+' },
+        labels: { years: 'Years Experience', projects: 'Projects Completed', capacity: 'Rs Capacity', team: 'Expert Team' }
       },
       contact: {
         title: 'Contact Us',
@@ -122,34 +119,30 @@
       }
     },
     fr: {
-      nav: { home: 'Accueil', services: 'Nos Services', products: 'Produits', partners: 'Partenaires', projects: 'Projets', about: 'À Propos', contact: 'Contact' },
+      nav: { home: 'Accueil', showcase: 'Vitrine', products: 'Produits', partners: 'Partenaires', projects: 'Installation', about: 'Entreprise', contact: 'Contact' },
       hero: {
         title: 'Menuiserie de l\'Océan Indien',
-        subtitle: 'Menuiserie Aluminium Premium Depuis 2005 • Maurice',
-        cta: 'Voir Nos Services',
+        subtitle: 'Solutions Aluminium Premium pour Marchés Mondiaux',
+        ciie: 'Exposant à CIIE 2025 - Foire Internationale des Importations de Chine',
+        tagline: 'Votre Partenaire Aluminium de Confiance de Maurice',
+        cta: 'Voir le Catalogue',
         scroll: 'DÉFILER',
-        tagline: 'Nouvelle Proposition de Valeur Clé',
         values: {
-          security: 'Sécurité & Robustesse',
-          corrosion: 'Résistant à la Corrosion',
-          maintenance: 'Faible Entretien',
-          quality: 'Qualité Abordable',
-          smeda: 'Agréé SMEDA',
-          climate: 'Parfait pour Climat Océanique',
-          manufacturing: 'Fabrication Professionnelle',
-          island: 'Solutions Durables Île'
+          experience: '20+ Ans d\'Expérience',
+          certified: 'SMEDA Grade Moyen II',
+          export: 'Prêt à l\'Export',
+          quality: 'Normes Européennes',
+          capacity: 'Capacité 100M Rs/An',
+          madein: 'Fabriqué à Maurice'
         }
       },
-      services: {
-        title: 'Nos Services',
-        subtitle: 'Gamme complète de solutions en menuiserie aluminium',
+      showcase: {
+        title: 'Vitrine Produits',
+        subtitle: 'Solutions aluminium haute qualité pour projets résidentiels et commerciaux',
         items: [
-          { title: 'Fenêtres Aluminium', desc: 'Fenêtres économes en énergie', img: '/static/aluminum-windows-commercial.jpg' },
-          { title: 'Portes Aluminium', desc: 'Solutions d\'entrée sécurisées', img: '/static/door-red.jpg' },
-          { title: 'Cloisons Vitrées', desc: 'Divisions modernes pour bureaux', img: '/static/glass-partition-office.jpg' },
-          { title: 'Volets Roulants', desc: 'Sécurité et intimité', img: '/static/roller-shutter-residential.jpg' },
-          { title: 'Garde-corps Verre', desc: 'Rampes de sécurité contemporaines', img: '/static/glass-balustrade-balcony.jpg' },
-          { title: 'Solutions Sur Mesure', desc: 'Conceptions adaptées', img: '/static/custom-shower-partition.jpg' }
+          { title: 'Portes Coulissantes Premium', desc: 'Systèmes cadre noir luxe avec technologie rupture thermique', img: '/static/luxury-sliding-doors.jpg' },
+          { title: 'Fenêtres à Battant', desc: 'Fenêtres cadre noir moderne avec double vitrage', img: '/static/product-casement-window.jpg' },
+          { title: 'Portes Pliantes', desc: 'Systèmes connexion intérieur-extérieur sans couture', img: '/static/product-bifold-door.jpg' }
         ]
       },
       products: {
@@ -213,19 +206,20 @@
         ]
       },
       projects: {
-        title: 'Projets Sélectionnés',
-        subtitle: 'Installations aluminium de qualité',
+        title: 'Exemples d\'Installation',
+        subtitle: 'Installations aluminium professionnelles à Maurice',
         items: [
-          { title: 'Installation Aluminium Moderne', desc: 'Projet résidentiel haute qualité', img: '/static/project-pic1.jpg' },
-          { title: 'Verre & Aluminium Premium', desc: 'Solution commerciale contemporaine', img: '/static/project-pic2.jpg' },
-          { title: 'Atelier Professionnel', desc: 'Savoir-faire expert en action', img: '/static/project-workshop.jpg' },
-          { title: 'Fabrication Aluminium Qualité', desc: 'Processus de fabrication précis', img: '/static/project-pic4.jpg' }
+          { title: 'Installation Porte Coulissante Luxe', desc: 'Projet résidentiel haut de gamme avec vue océan', img: '/static/luxury-sliding-doors.jpg' },
+          { title: 'Atelier Professionnel', desc: 'Savoir-faire expert et fabrication', img: '/static/project-workshop.jpg' }
         ]
       },
       about: {
-        title: 'À Propos',
-        text1: 'Depuis 2005, MOI fabrique et installe des solutions en aluminium à Maurice.',
-        text2: 'Entrepreneur Grade MOYEN II • Membre Made in Moris • 20 Ans d\'Expérience'
+        title: 'Profil de l\'Entreprise',
+        text1: 'Menuiserie de l\'Océan Indien (MOI) est un fabricant et installateur leader en aluminium à Maurice avec plus de 20 ans d\'excellence. Nous fabriquons des fenêtres, portes et systèmes architecturaux de haute qualité selon normes européennes.',
+        text2: 'Entrepreneur SMEDA Grade MOYEN II • Certifié Made in Moris • Capacité 100M Rs/An • Prêt à l\'Export',
+        certifications: 'Certifications & Normes',
+        stats: { years: '20+', projects: '500+', capacity: '100M', team: '10+' },
+        labels: { years: 'Ans d\'Expérience', projects: 'Projets Réalisés', capacity: 'Rs Capacité', team: 'Équipe Expert' }
       },
       contact: {
         title: 'Contactez-Nous',
@@ -240,34 +234,30 @@
       }
     },
     zh: {
-      nav: { home: '首页', services: '我们的服务', products: '产品', partners: '合作伙伴', projects: '项目案例', about: '关于我们', contact: '联系我们' },
+      nav: { home: '首页', showcase: '展示', products: '产品', partners: '合作伙伴', projects: '安装', about: '公司', contact: '联系' },
       hero: {
         title: '印度洋门窗公司',
-        subtitle: '自2005年起提供优质铝合金门窗 • 毛里求斯',
-        cta: '查看我们的服务',
+        subtitle: '面向全球市场的高端铝合金解决方案',
+        ciie: '参展CIIE 2025 - 中国国际进口博览会',
+        tagline: '来自毛里求斯的可信赖铝合金合作伙伴',
+        cta: '查看产品目录',
         scroll: '向下滚动',
-        tagline: '新的关键价值主张',
         values: {
-          security: '安全坚固',
-          corrosion: '防腐蚀',
-          maintenance: '低维护',
-          quality: '优质实惠',
-          smeda: 'SMEDA认证',
-          climate: '适合海洋气候',
-          manufacturing: '专业制造',
-          island: '岛屿耐用方案'
+          experience: '20+年经验',
+          certified: 'SMEDA中级II级认证',
+          export: '出口就绪',
+          quality: '欧洲标准',
+          capacity: '年产能1亿卢比',
+          madein: '毛里求斯制造'
         }
       },
-      services: {
-        title: '我们的服务',
-        subtitle: '完整的铝合金门窗解决方案系列',
+      showcase: {
+        title: '产品展示',
+        subtitle: '高品质铝合金解决方案，适用于住宅和商业项目',
         items: [
-          { title: '铝合金窗户', desc: '多种风格的节能窗', img: '/static/aluminum-windows-commercial.jpg' },
-          { title: '铝合金门', desc: '安全时尚的入口解决方案', img: '/static/door-red.jpg' },
-          { title: '玻璃隔断', desc: '现代办公和家居分隔', img: '/static/glass-partition-office.jpg' },
-          { title: '卷帘门', desc: '安全和隐私解决方案', img: '/static/roller-shutter-residential.jpg' },
-          { title: '玻璃栏杆', desc: '现代安全护栏', img: '/static/glass-balustrade-balcony.jpg' },
-          { title: '定制方案', desc: '为任何空间量身定制', img: '/static/custom-shower-partition.jpg' }
+          { title: '高端推拉门', desc: '豪华黑色边框系统，采用断桥技术', img: '/static/luxury-sliding-doors.jpg' },
+          { title: '平开窗', desc: '现代黑色边框窗户，双层玻璃', img: '/static/product-casement-window.jpg' },
+          { title: '折叠门', desc: '无缝室内外连接系统', img: '/static/product-bifold-door.jpg' }
         ]
       },
       products: {
@@ -331,19 +321,20 @@
         ]
       },
       projects: {
-        title: '精选项目',
-        subtitle: '优质铝合金安装案例',
+        title: '安装示例',
+        subtitle: '毛里求斯专业铝合金安装',
         items: [
-          { title: '现代铝合金安装', desc: '高品质住宅项目', img: '/static/project-pic1.jpg' },
-          { title: '优质玻璃与铝合金', desc: '现代商业解决方案', img: '/static/project-pic2.jpg' },
-          { title: '专业车间', desc: '专业工艺展示', img: '/static/project-workshop.jpg' },
-          { title: '优质铝合金制造', desc: '精密制造工艺', img: '/static/project-pic4.jpg' }
+          { title: '豪华推拉门安装', desc: '高端住宅项目，海景房', img: '/static/luxury-sliding-doors.jpg' },
+          { title: '专业车间', desc: '专家工艺和制造', img: '/static/project-workshop.jpg' }
         ]
       },
       about: {
-        title: '关于我们',
-        text1: '自2005年以来，MOI一直在毛里求斯制造和安装高品质铝合金解决方案。',
-        text2: '中级II级承包商 • 毛里求斯制造成员 • 20年经验'
+        title: '公司简介',
+        text1: '印度洋门窗公司（MOI）是毛里求斯领先的铝合金制造和安装企业，拥有20多年的卓越经验。我们按照欧洲标准生产高质量的窗户、门和建筑系统。',
+        text2: 'SMEDA中级II级承包商 • 毛里求斯认证 • 年产能1亿卢比 • 出口就绪',
+        certifications: '认证和标准',
+        stats: { years: '20+', projects: '500+', capacity: '100万', team: '10+' },
+        labels: { years: '年经验', projects: '完成项目', capacity: '卢比产能', team: '专家团队' }
       },
       contact: {
         title: '联系我们',
@@ -374,7 +365,7 @@
             </div>
             <div class="hidden md:flex gap-8 items-center">
               <a href="#home" class="text-gray-700 hover:text-blue-600">${t.nav.home}</a>
-              <a href="#services" class="text-gray-700 hover:text-blue-600">${t.nav.services}</a>
+              <a href="#showcase" class="text-gray-700 hover:text-blue-600">${t.nav.showcase}</a>
               <a href="#products" class="text-gray-700 hover:text-blue-600">${t.nav.products}</a>
               <a href="#partners" class="text-gray-700 hover:text-blue-600">${t.nav.partners}</a>
               <a href="#projects" class="text-gray-700 hover:text-blue-600">${t.nav.projects}</a>
@@ -425,14 +416,33 @@
               <div class="h-px w-20 bg-gradient-to-r from-transparent via-white/50 to-transparent"></div>
             </div>
             
-            <p class="text-2xl md:text-3xl text-white/95 font-light tracking-wide leading-relaxed max-w-3xl mx-auto">
+            <p class="text-2xl md:text-3xl text-white/95 font-light tracking-wide leading-relaxed max-w-3xl mx-auto mb-3">
               ${t.hero.subtitle}
             </p>
+            
+            <!-- CIIE Badge -->
+            ${t.hero.ciie ? `
+              <div class="inline-flex items-center gap-2 px-4 py-2 bg-red-600/90 backdrop-blur-sm rounded-full border border-red-500/50 mt-4">
+                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V5h2v4z"/>
+                </svg>
+                <span class="text-sm font-medium text-white">${t.hero.ciie}</span>
+              </div>
+            ` : ''}
+          </div>
+          
+          <!-- Key Value Propositions -->
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-12 animate-fade-in-up animation-delay-200">
+            ${Object.values(t.hero.values).map(value => `
+              <div class="bg-white/10 backdrop-blur-md px-4 py-3 rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300">
+                <p class="text-sm md:text-base text-white font-medium text-center">${value}</p>
+              </div>
+            `).join('')}
           </div>
           
           <!-- CTA Button with Enhanced Hover -->
           <div class="animate-fade-in-up animation-delay-300">
-            <a href="#services" class="group inline-flex items-center gap-3 bg-white/95 hover:bg-white text-blue-900 px-10 py-5 rounded-full text-lg font-semibold shadow-2xl hover:shadow-blue-500/50 transition-all duration-500 transform hover:scale-110 hover:-translate-y-1 border-2 border-white/50">
+            <a href="#showcase" class="group inline-flex items-center gap-3 bg-white/95 hover:bg-white text-blue-900 px-10 py-5 rounded-full text-lg font-semibold shadow-2xl hover:shadow-blue-500/50 transition-all duration-500 transform hover:scale-110 hover:-translate-y-1 border-2 border-white/50">
               <span>${t.hero.cta}</span>
               <svg class="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
@@ -452,26 +462,49 @@
         </div>
       </section>
 
-      <!-- Services Section - Dynamic Cards -->
-      <section id="services" class="py-20 bg-white">
+      <!-- Product Showcase Section - Large Hero Images -->
+      <section id="showcase" class="py-20 bg-gradient-to-br from-gray-50 to-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-16 scroll-animate">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">${t.services.title}</h2>
-            <p class="text-lg text-gray-600">${t.services.subtitle}</p>
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">${t.showcase.title}</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">${t.showcase.subtitle}</p>
           </div>
           
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            ${t.services.items.map((item, index) => `
-              <div class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-2xl transition-all duration-500 group scroll-animate cursor-pointer transform hover:-translate-y-2" style="animation-delay: ${index * 0.1}s">
-                <div class="aspect-[4/3] overflow-hidden bg-gray-100 relative">
-                  <img src="${item.img}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                  <div class="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-                    <span class="text-white font-semibold text-lg">${item.title}</span>
+          <div class="space-y-12">
+            ${t.showcase.items.map((item, index) => `
+              <div class="scroll-animate" style="animation-delay: ${index * 0.2}s">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 group">
+                  <div class="grid md:grid-cols-2 gap-0">
+                    <!-- Image Side -->
+                    <div class="aspect-[4/3] md:aspect-auto overflow-hidden relative ${index % 2 === 0 ? 'md:order-1' : 'md:order-2'}">
+                      <img src="${item.img}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                      <div class="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent"></div>
+                    </div>
+                    
+                    <!-- Content Side -->
+                    <div class="p-8 md:p-12 flex flex-col justify-center ${index % 2 === 0 ? 'md:order-2' : 'md:order-1'}">
+                      <div class="inline-flex items-center gap-2 text-blue-600 font-semibold mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span>Premium Quality</span>
+                      </div>
+                      
+                      <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300">
+                        ${item.title}
+                      </h3>
+                      
+                      <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        ${item.desc}
+                      </p>
+                      
+                      <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">Thermal Break</span>
+                        <span class="px-4 py-2 bg-green-50 text-green-700 rounded-full text-sm font-medium">Double Glazing</span>
+                        <span class="px-4 py-2 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">European Standards</span>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="p-6">
-                  <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300">${item.title}</h3>
-                  <p class="text-gray-600">${item.desc}</p>
                 </div>
               </div>
             `).join('')}
@@ -575,10 +608,15 @@
           </div>
           
           <div class="grid md:grid-cols-3 gap-8">
-            ${t.partners.items.map(partner => `
+            ${t.partners.items.map((partner, idx) => {
+              const logos = ['/static/logo-acebond.png', '/static/logo-assa-abloy.png', '/static/logo-gns.png'];
+              return `
               <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 scroll-animate">
-                <div class="text-4xl mb-4">🤝</div>
-                <h3 class="text-xl font-bold text-gray-900 mb-4">${partner.name}</h3>
+                <div class="h-20 mb-6 flex items-center justify-center">
+                  <img src="${logos[idx]}" alt="${partner.name}" class="max-h-full max-w-full object-contain">
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-4">${partner.name}</h3>`
+            }).join('')}
                 <div class="space-y-3 text-sm text-gray-600 mb-6">
                   <p class="flex items-start gap-2">
                     <svg class="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -615,13 +653,38 @@
       <section id="about" class="py-20 bg-gray-50">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">${t.about.title}</h2>
-          <p class="text-lg text-gray-700 mb-4">${t.about.text1}</p>
-          <p class="text-md text-gray-600">${t.about.text2}</p>
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
-            <div><div class="text-4xl font-bold text-blue-600">20+</div><div class="text-gray-600">Years</div></div>
-            <div><div class="text-4xl font-bold text-blue-600">500+</div><div class="text-gray-600">Projects</div></div>
-            <div><div class="text-4xl font-bold text-blue-600">100M</div><div class="text-gray-600">Rs Capacity</div></div>
-            <div><div class="text-4xl font-bold text-blue-600">10+</div><div class="text-gray-600">Team</div></div>
+          <p class="text-lg text-gray-700 mb-4 leading-relaxed">${t.about.text1}</p>
+          <p class="text-md text-gray-600 mb-8">${t.about.text2}</p>
+          
+          <!-- Statistics -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12 mb-12">
+            <div class="text-center">
+              <div class="text-4xl md:text-5xl font-bold text-blue-600 mb-2">${t.about.stats.years}</div>
+              <div class="text-gray-600 font-medium">${t.about.labels.years}</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl md:text-5xl font-bold text-blue-600 mb-2">${t.about.stats.projects}</div>
+              <div class="text-gray-600 font-medium">${t.about.labels.projects}</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl md:text-5xl font-bold text-blue-600 mb-2">${t.about.stats.capacity}</div>
+              <div class="text-gray-600 font-medium">${t.about.labels.capacity}</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl md:text-5xl font-bold text-blue-600 mb-2">${t.about.stats.team}</div>
+              <div class="text-gray-600 font-medium">${t.about.labels.team}</div>
+            </div>
+          </div>
+          
+          <!-- Certifications -->
+          <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 mt-8">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">${t.about.certifications}</h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="px-4 py-2 bg-white text-gray-800 rounded-lg text-sm font-medium shadow-sm">SMEDA Grade Medium II</span>
+              <span class="px-4 py-2 bg-white text-gray-800 rounded-lg text-sm font-medium shadow-sm">Made in Moris Certified</span>
+              <span class="px-4 py-2 bg-white text-gray-800 rounded-lg text-sm font-medium shadow-sm">European Standards</span>
+              <span class="px-4 py-2 bg-white text-gray-800 rounded-lg text-sm font-medium shadow-sm">Export Ready</span>
+            </div>
           </div>
         </div>
       </section>
