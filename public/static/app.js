@@ -29,7 +29,7 @@
           { title: 'Aluminium Windows', desc: 'Energy-efficient windows in various styles', img: '/static/aluminum-windows-commercial.jpg' },
           { title: 'Aluminium Doors', desc: 'Secure and stylish entrance solutions', img: '/static/door-red.jpg' },
           { title: 'Glass Partitions', desc: 'Modern office and home divisions', img: '/static/glass-partition-office.jpg' },
-          { title: 'Roller Shutters', desc: 'Security and privacy solutions', img: '/static/door-frosted.jpg' },
+          { title: 'Roller Shutters', desc: 'Security and privacy solutions', img: '/static/roller-shutter-residential.jpg' },
           { title: 'Glass Balustrades', desc: 'Contemporary safety railings', img: '/static/glass-balustrade-balcony.jpg' },
           { title: 'Custom Solutions', desc: 'Tailored designs for any space', img: '/static/custom-shower-partition.jpg' }
         ]
@@ -87,7 +87,7 @@
           { title: 'Fenêtres Aluminium', desc: 'Fenêtres économes en énergie', img: '/static/aluminum-windows-commercial.jpg' },
           { title: 'Portes Aluminium', desc: 'Solutions d\'entrée sécurisées', img: '/static/door-red.jpg' },
           { title: 'Cloisons Vitrées', desc: 'Divisions modernes pour bureaux', img: '/static/glass-partition-office.jpg' },
-          { title: 'Volets Roulants', desc: 'Sécurité et intimité', img: '/static/door-frosted.jpg' },
+          { title: 'Volets Roulants', desc: 'Sécurité et intimité', img: '/static/roller-shutter-residential.jpg' },
           { title: 'Garde-corps Verre', desc: 'Rampes de sécurité contemporaines', img: '/static/glass-balustrade-balcony.jpg' },
           { title: 'Solutions Sur Mesure', desc: 'Conceptions adaptées', img: '/static/custom-shower-partition.jpg' }
         ]
@@ -145,7 +145,7 @@
           { title: '铝合金窗户', desc: '多种风格的节能窗', img: '/static/aluminum-windows-commercial.jpg' },
           { title: '铝合金门', desc: '安全时尚的入口解决方案', img: '/static/door-red.jpg' },
           { title: '玻璃隔断', desc: '现代办公和家居分隔', img: '/static/glass-partition-office.jpg' },
-          { title: '卷帘门', desc: '安全和隐私解决方案', img: '/static/door-frosted.jpg' },
+          { title: '卷帘门', desc: '安全和隐私解决方案', img: '/static/roller-shutter-residential.jpg' },
           { title: '玻璃栏杆', desc: '现代安全护栏', img: '/static/glass-balustrade-balcony.jpg' },
           { title: '定制方案', desc: '为任何空间量身定制', img: '/static/custom-shower-partition.jpg' }
         ]
