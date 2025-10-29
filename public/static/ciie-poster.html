@@ -17,237 +17,318 @@
         }
         
         body {
-            font-family: 'Microsoft YaHei', 'SimHei', sans-serif;
+            font-family: 'Microsoft YaHei', 'SimHei', Arial, sans-serif;
             background: white;
         }
         
         .a4-page {
             width: 210mm;
             height: 297mm;
-            background: linear-gradient(135deg, #ffffff 0%, #eff6ff 100%);
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);
             position: relative;
             overflow: hidden;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 15mm 20mm;
+            padding: 0;
         }
         
-        /* Decorative elements */
-        .corner-decoration {
+        /* Animated background pattern */
+        .pattern {
             position: absolute;
-            width: 60mm;
-            height: 60mm;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.05;
+            background-image: 
+                repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(255,255,255,0.1) 20px, rgba(255,255,255,0.1) 40px),
+                repeating-linear-gradient(-45deg, transparent, transparent 20px, rgba(255,255,255,0.1) 20px, rgba(255,255,255,0.1) 40px);
+        }
+        
+        /* Decorative circles */
+        .circle {
+            position: absolute;
+            border-radius: 50%;
             opacity: 0.08;
         }
         
-        .corner-top-left {
-            top: 0;
-            left: 0;
-            background: linear-gradient(135deg, #dc2626 0%, transparent 70%);
+        .circle-1 {
+            width: 120mm;
+            height: 120mm;
+            top: -40mm;
+            right: -40mm;
+            background: radial-gradient(circle, #fbbf24, transparent);
         }
         
-        .corner-top-right {
-            top: 0;
-            right: 0;
-            background: linear-gradient(225deg, #dc2626 0%, transparent 70%);
+        .circle-2 {
+            width: 100mm;
+            height: 100mm;
+            bottom: -30mm;
+            left: -30mm;
+            background: radial-gradient(circle, #dc2626, transparent);
         }
         
-        .corner-bottom-left {
-            bottom: 0;
-            left: 0;
-            background: linear-gradient(45deg, #dc2626 0%, transparent 70%);
-        }
-        
-        .corner-bottom-right {
-            bottom: 0;
-            right: 0;
-            background: linear-gradient(315deg, #dc2626 0%, transparent 70%);
-        }
-        
-        /* Header section with logo */
-        .header {
+        /* Top logo section - LARGE AND PROMINENT */
+        .logo-header {
             position: relative;
             z-index: 10;
-            text-align: center;
-            margin-bottom: 10mm;
+            background: white;
             width: 100%;
+            padding: 12mm 0;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+            border-bottom: 5px solid #fbbf24;
         }
         
         .logo {
-            width: 30mm;
-            height: 30mm;
+            width: 60mm;
+            height: 60mm;
             margin: 0 auto 5mm;
-            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+            filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.2));
+            animation: float 3s ease-in-out infinite;
         }
         
-        .company-name-en {
-            font-size: 16pt;
-            font-weight: bold;
-            color: #1e40af;
-            margin-bottom: 2mm;
-            letter-spacing: 1px;
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
         }
         
         .company-name-zh {
-            font-size: 24pt;
-            font-weight: bold;
+            font-size: 28pt;
+            font-weight: 900;
             color: #1e3a8a;
             margin-bottom: 3mm;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .company-name-en {
+            font-size: 14pt;
+            font-weight: 600;
+            color: #64748b;
             letter-spacing: 2px;
+            text-transform: uppercase;
         }
         
-        .tagline {
-            font-size: 12pt;
-            color: #475569;
-            margin-bottom: 8mm;
-        }
-        
-        /* CIIE Banner */
+        /* CIIE Banner - Eye-catching */
         .ciie-banner {
-            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
-            color: white;
-            padding: 8mm;
-            border-radius: 15px;
-            margin-bottom: 10mm;
-            box-shadow: 0 8px 30px rgba(220, 38, 38, 0.3);
-            width: 100%;
             position: relative;
             z-index: 10;
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 50%, #991b1b 100%);
+            color: white;
+            padding: 10mm 15mm;
+            margin: 15mm 15mm 10mm;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(220, 38, 38, 0.5);
+            transform: rotate(-1deg);
+            border: 4px solid #fbbf24;
         }
         
         .ciie-banner::before {
-            content: '';
+            content: '🇨🇳';
             position: absolute;
-            top: -2px;
-            left: -2px;
-            right: -2px;
-            bottom: -2px;
-            background: linear-gradient(45deg, #fbbf24, #f59e0b, #fbbf24);
-            border-radius: 15px;
-            z-index: -1;
+            top: -15mm;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 40pt;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
         }
         
         .ciie-year {
-            font-size: 32pt;
-            font-weight: bold;
+            font-size: 42pt;
+            font-weight: 900;
             text-align: center;
-            margin-bottom: 3mm;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 4mm;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+            letter-spacing: 3px;
         }
         
         .ciie-title {
-            font-size: 18pt;
+            font-size: 22pt;
             font-weight: bold;
             text-align: center;
-            line-height: 1.4;
+            line-height: 1.3;
             margin-bottom: 3mm;
         }
         
         .ciie-subtitle {
-            font-size: 11pt;
+            font-size: 12pt;
             text-align: center;
             opacity: 0.95;
+            letter-spacing: 2px;
+            font-style: italic;
+        }
+        
+        /* QR Code integrated with logo */
+        .qr-hero-section {
+            position: relative;
+            z-index: 10;
+            margin: 8mm 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .qr-container {
+            position: relative;
+            width: 90mm;
+            height: 90mm;
+        }
+        
+        /* Large QR code */
+        .qr-code-large {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 75mm;
+            height: 75mm;
+            border-radius: 15px;
+            background: white;
+            padding: 3mm;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            border: 4px solid #fbbf24;
+        }
+        
+        .qr-code-large img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        
+        /* Small logo overlay on QR code */
+        .qr-logo-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 22mm;
+            height: 22mm;
+            background: white;
+            border-radius: 50%;
+            padding: 2mm;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            border: 3px solid #2563eb;
+            z-index: 5;
+        }
+        
+        .qr-logo-overlay img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        /* Decorative corners around QR */
+        .qr-corner {
+            position: absolute;
+            width: 15mm;
+            height: 15mm;
+            border: 3px solid #fbbf24;
+        }
+        
+        .qr-corner-tl {
+            top: -5mm;
+            left: -5mm;
+            border-right: none;
+            border-bottom: none;
+            border-radius: 15px 0 0 0;
+        }
+        
+        .qr-corner-tr {
+            top: -5mm;
+            right: -5mm;
+            border-left: none;
+            border-bottom: none;
+            border-radius: 0 15px 0 0;
+        }
+        
+        .qr-corner-bl {
+            bottom: -5mm;
+            left: -5mm;
+            border-right: none;
+            border-top: none;
+            border-radius: 0 0 0 15px;
+        }
+        
+        .qr-corner-br {
+            bottom: -5mm;
+            right: -5mm;
+            border-left: none;
+            border-top: none;
+            border-radius: 0 0 15px 0;
+        }
+        
+        .scan-text {
+            margin-top: 8mm;
+            font-size: 20pt;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
             letter-spacing: 1px;
         }
         
-        /* QR Code section */
-        .qr-section {
-            position: relative;
-            z-index: 10;
-            margin: 10mm 0;
-            padding: 12mm;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 15px 50px rgba(37, 99, 235, 0.2);
-            border: 4px solid transparent;
-            background-clip: padding-box;
-        }
-        
-        .qr-section::before {
-            content: '';
-            position: absolute;
-            top: -4px;
-            left: -4px;
-            right: -4px;
-            bottom: -4px;
-            background: linear-gradient(135deg, #2563eb, #dc2626, #fbbf24);
-            border-radius: 20px;
-            z-index: -1;
-        }
-        
-        .qr-title {
-            font-size: 20pt;
-            font-weight: bold;
-            color: #1e3a8a;
+        .scan-instruction {
+            margin-top: 3mm;
+            font-size: 14pt;
+            color: rgba(255, 255, 255, 0.95);
             text-align: center;
-            margin-bottom: 6mm;
-        }
-        
-        .qr-code-container {
-            position: relative;
-            width: 65mm;
-            height: 65mm;
-            margin: 0 auto 6mm;
-            padding: 5mm;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .qr-code {
-            width: 100%;
-            height: 100%;
-            border-radius: 8px;
-        }
-        
-        .qr-instruction {
-            font-size: 13pt;
-            color: #64748b;
-            text-align: center;
-            margin-bottom: 4mm;
-            line-height: 1.6;
+            line-height: 1.5;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
         
         .website-url {
-            font-size: 18pt;
-            font-weight: bold;
-            color: #2563eb;
+            margin-top: 4mm;
+            font-size: 20pt;
+            font-weight: 900;
+            color: #fbbf24;
             text-align: center;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.2);
+            padding: 3mm 8mm;
+            border-radius: 10px;
+            border: 2px solid #fbbf24;
         }
         
-        /* Contact section */
-        .contact-section {
+        /* Bottom section */
+        .bottom-section {
             position: relative;
             z-index: 10;
             margin-top: auto;
             width: 100%;
             background: white;
-            padding: 6mm;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            padding: 8mm 15mm 10mm;
+            border-top: 5px solid #fbbf24;
+            box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.3);
         }
         
-        .contact-title {
+        .tagline {
             font-size: 14pt;
             font-weight: bold;
-            color: #1e40af;
+            color: #2563eb;
             text-align: center;
-            margin-bottom: 4mm;
+            margin-bottom: 5mm;
+            letter-spacing: 1px;
         }
         
         .contact-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 3mm;
+            margin-bottom: 5mm;
         }
         
         .contact-item {
-            font-size: 10pt;
-            color: #475569;
-            padding: 2mm;
+            font-size: 11pt;
+            color: #1e3a8a;
+            font-weight: 600;
             text-align: center;
+            padding: 2mm;
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            border-radius: 8px;
+            border: 1px solid #93c5fd;
         }
         
         .contact-icon {
@@ -255,20 +336,10 @@
             margin-right: 2mm;
         }
         
-        /* Footer */
-        .footer {
-            position: absolute;
-            bottom: 8mm;
-            left: 0;
-            right: 0;
-            text-align: center;
-            z-index: 10;
-        }
-        
         .badges {
             display: flex;
             justify-content: center;
-            gap: 4mm;
+            gap: 3mm;
             flex-wrap: wrap;
         }
         
@@ -279,7 +350,8 @@
             border-radius: 20px;
             font-size: 9pt;
             font-weight: bold;
-            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+            box-shadow: 0 3px 10px rgba(37, 99, 235, 0.4);
+            border: 2px solid #60a5fa;
         }
         
         /* Print styles */
@@ -296,28 +368,28 @@
             @page {
                 margin: 0;
             }
+            
+            .logo {
+                animation: none;
+            }
         }
     </style>
 </head>
 <body>
     <div class="a4-page">
-        <!-- Corner decorations -->
-        <div class="corner-decoration corner-top-left"></div>
-        <div class="corner-decoration corner-top-right"></div>
-        <div class="corner-decoration corner-bottom-left"></div>
-        <div class="corner-decoration corner-bottom-right"></div>
+        <!-- Background pattern -->
+        <div class="pattern"></div>
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
         
-        <!-- Header -->
-        <div class="header">
+        <!-- Logo Header - LARGE AND PROMINENT -->
+        <div class="logo-header">
             <img src="/static/logo.png" alt="MOI Logo" class="logo">
-            <div class="company-name-en">
-                Menuiserie de l'Océan Indien
-            </div>
             <div class="company-name-zh">
                 印度洋门窗公司
             </div>
-            <div class="tagline">
-                毛里求斯高端铝合金解决方案供应商 • 自2005年
+            <div class="company-name-en">
+                Menuiserie de l'Océan Indien
             </div>
         </div>
         
@@ -334,26 +406,43 @@
             </div>
         </div>
         
-        <!-- QR Code -->
-        <div class="qr-section">
-            <div class="qr-title">
-                扫码访问我们的网站
+        <!-- QR Code Hero Section with Logo Integration -->
+        <div class="qr-hero-section">
+            <div class="qr-container">
+                <!-- Decorative corners -->
+                <div class="qr-corner qr-corner-tl"></div>
+                <div class="qr-corner qr-corner-tr"></div>
+                <div class="qr-corner qr-corner-bl"></div>
+                <div class="qr-corner qr-corner-br"></div>
+                
+                <!-- Large QR Code -->
+                <div class="qr-code-large">
+                    <img src="/static/moi-website-qr.png" alt="Scan to visit website">
+                </div>
+                
+                <!-- Small logo overlay in center of QR code -->
+                <div class="qr-logo-overlay">
+                    <img src="/static/logo.png" alt="MOI Logo">
+                </div>
             </div>
-            <div class="qr-code-container">
-                <img src="/static/moi-website-qr.png" alt="QR Code" class="qr-code">
+            
+            <div class="scan-text">
+                📱 扫码访问我们的网站
             </div>
-            <div class="qr-instruction">
-                使用微信或相机扫描二维码<br>
-                查看完整产品目录和公司信息
+            <div class="scan-instruction">
+                使用微信或相机扫描 • 查看完整产品目录
             </div>
             <div class="website-url">
                 MoialuCIIE2025
             </div>
         </div>
         
-        <!-- Contact Info -->
-        <div class="contact-section">
-            <div class="contact-title">联系方式 Contact Information</div>
+        <!-- Bottom Contact Section -->
+        <div class="bottom-section">
+            <div class="tagline">
+                🏆 毛里求斯高端铝合金解决方案供应商 • 自2005年
+            </div>
+            
             <div class="contact-grid">
                 <div class="contact-item">
                     <span class="contact-icon">📞</span>
@@ -372,24 +461,21 @@
                     Mauritius 毛里求斯
                 </div>
             </div>
-        </div>
-        
-        <!-- Footer badges -->
-        <div class="footer">
+            
             <div class="badges">
-                <div class="badge">SMEDA 注册企业</div>
-                <div class="badge">中级II级认证</div>
-                <div class="badge">毛里求斯制造</div>
-                <div class="badge">20+年经验</div>
+                <div class="badge">🏅 SMEDA注册</div>
+                <div class="badge">⭐ 中级II级认证</div>
+                <div class="badge">🇲🇺 毛里求斯制造</div>
+                <div class="badge">🎯 20+年经验</div>
             </div>
         </div>
     </div>
     
     <script>
-        // Auto-print dialog
+        // Auto-print dialog (optional)
         window.addEventListener('load', function() {
             // Uncomment to enable auto-print
-            // window.print();
+            // setTimeout(() => window.print(), 500);
         });
     </script>
 </body>
