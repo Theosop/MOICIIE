@@ -502,18 +502,23 @@
     // Trigger door opening animation on hero logo
     const heroLogo = document.getElementById('heroLogo');
     if (heroLogo) {
-      // Open doors after a short delay
-      setTimeout(() => {
-        heroLogo.classList.add('doors-open');
-      }, 800);
+      console.log('Hero logo found! Starting animation...');
       
-      // Loop the animation - close and reopen
+      // Loop the animation every 6 seconds
       setInterval(() => {
-        heroLogo.classList.remove('doors-open');
+        // Reset animation by removing and re-adding class
+        heroLogo.classList.remove('animate-loop');
+        
+        // Force reflow to restart animation
+        void heroLogo.offsetWidth;
+        
+        // Add animation class
         setTimeout(() => {
-          heroLogo.classList.add('doors-open');
-        }, 1000);
-      }, 8000); // Repeat every 8 seconds
+          heroLogo.classList.add('animate-loop');
+        }, 50);
+      }, 6000); // Repeat every 6 seconds
+    } else {
+      console.log('Hero logo NOT found!');
     }
   }
 
