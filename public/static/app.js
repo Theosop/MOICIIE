@@ -622,6 +622,28 @@
             </div>
           </div>
           
+          <!-- Google Maps Embedded Location -->
+          <div class="mt-12 scroll-animate">
+            <h3 class="text-2xl font-sans font-bold text-gray-900 mb-6 text-center">📍 Our Location</h3>
+            <div class="rounded-xl overflow-hidden shadow-2xl border-4 border-blue-100">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.8!2d57.550!3d-20.250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c5b7e6b7e6b7e%3A0x0!2zMjDCsDE1JzAwLjAiUyA1N8KwMzMnMDAuMCJF!5e0!3m2!1sen!2smu!4v1699999999999" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="MOI Location - DBM SME Park, Quartier Militaire, Mauritius">
+              </iframe>
+            </div>
+            <p class="text-center mt-4 text-sm text-gray-600 font-sans">
+              <strong class="text-gray-900">Unit 29 - Block 8, DBM SME Park</strong><br>
+              Vuillemin, Quartier Militaire, Mauritius<br>
+              <span class="text-xs text-gray-500">Coordinates: 20°15'S 57°33'E</span>
+            </p>
+          </div>
+          
           <!-- QR Code Section -->
           <div class="mt-16 text-center scroll-animate">
             <h3 class="text-2xl font-sans font-bold text-gray-900 mb-4">${t.contact.qrTitle || 'Scan to Visit Our Website'}</h3>
