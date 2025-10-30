@@ -27,7 +27,8 @@
         items: [
           { title: 'Premium Sliding Doors', desc: 'Luxury black frame systems with thermal break technology', img: '/static/luxury-sliding-doors.jpg' },
           { title: 'Casement Windows', desc: 'Modern black frame windows with double glazing', img: '/static/product-casement-window.jpg' },
-          { title: 'Bi-Fold Doors', desc: 'Seamless indoor-outdoor connection systems', img: '/static/product-bifold-door.jpg' }
+          { title: 'Bi-Fold Doors', desc: 'Seamless indoor-outdoor connection systems', img: '/static/product-bifold-door.jpg' },
+          { title: 'Commercial Office Tower', desc: 'Large-scale aluminum curtain wall systems for commercial buildings', img: '/static/commercial-tower-2.jpg' }
         ]
       },
       products: {
@@ -122,7 +123,8 @@
         items: [
           { title: 'Portes Coulissantes Premium', desc: 'Systèmes cadre noir luxe avec technologie rupture thermique', img: '/static/luxury-sliding-doors.jpg' },
           { title: 'Fenêtres à Battant', desc: 'Fenêtres cadre noir moderne avec double vitrage', img: '/static/product-casement-window.jpg' },
-          { title: 'Portes Pliantes', desc: 'Systèmes connexion intérieur-extérieur sans couture', img: '/static/product-bifold-door.jpg' }
+          { title: 'Portes Pliantes', desc: 'Systèmes connexion intérieur-extérieur sans couture', img: '/static/product-bifold-door.jpg' },
+          { title: 'Tour de Bureaux Commerciale', desc: 'Systèmes de murs-rideaux en aluminium à grande échelle pour bâtiments commerciaux', img: '/static/commercial-tower-2.jpg' }
         ]
       },
       products: {
@@ -217,7 +219,8 @@
         items: [
           { title: '高端推拉门', desc: '豪华黑色边框系统，采用断桥技术', img: '/static/luxury-sliding-doors.jpg' },
           { title: '平开窗', desc: '现代黑色边框窗户，双层玻璃', img: '/static/product-casement-window.jpg' },
-          { title: '折叠门', desc: '无缝室内外连接系统', img: '/static/product-bifold-door.jpg' }
+          { title: '折叠门', desc: '无缝室内外连接系统', img: '/static/product-bifold-door.jpg' },
+          { title: '商业办公大楼', desc: '商业建筑大型铝合金幕墙系统', img: '/static/commercial-tower-2.jpg' }
         ]
       },
       products: {
@@ -301,29 +304,29 @@
           <div class="flex justify-between items-center h-16">
             <div class="flex items-center gap-2">
               <img src="/static/logo.png" alt="Menuiserie de l'Océan Indien" class="h-12 w-12">
-              <span class="font-bold text-lg text-gray-900 hidden sm:inline">Menuiserie de l'Océan Indien</span>
+              <span class="font-sans font-semibold text-lg text-gray-900 hidden sm:inline">Menuiserie de l'Océan Indien</span>
             </div>
             
             <!-- Mobile Language Selector -->
             <div class="flex md:hidden gap-1.5">
-              <button onclick="window.moiApp.setLang('en')" class="px-2.5 py-1.5 text-xs font-bold ${currentLang==='en'?'bg-blue-600 text-white':'bg-gray-100 text-gray-700'} rounded-md">EN</button>
-              <button onclick="window.moiApp.setLang('fr')" class="px-2.5 py-1.5 text-xs font-bold ${currentLang==='fr'?'bg-blue-600 text-white':'bg-gray-100 text-gray-700'} rounded-md">FR</button>
-              <button onclick="window.moiApp.setLang('zh')" class="px-2.5 py-1.5 text-xs font-bold ${currentLang==='zh'?'bg-blue-600 text-white':'bg-gray-100 text-gray-700'} rounded-md">中文</button>
+              <button onclick="window.moiApp.setLang('en')" class="px-2.5 py-1.5 text-xs font-sans font-semibold ${currentLang==='en'?'bg-blue-600 text-white':'bg-gray-100 text-gray-700'} rounded-md">EN</button>
+              <button onclick="window.moiApp.setLang('fr')" class="px-2.5 py-1.5 text-xs font-sans font-semibold ${currentLang==='fr'?'bg-blue-600 text-white':'bg-gray-100 text-gray-700'} rounded-md">FR</button>
+              <button onclick="window.moiApp.setLang('zh')" class="px-2.5 py-1.5 text-xs font-sans font-semibold ${currentLang==='zh'?'bg-blue-600 text-white':'bg-gray-100 text-gray-700'} rounded-md">中文</button>
             </div>
             
             <div class="hidden md:flex gap-8 items-center">
-              <a href="#home" class="text-gray-700 hover:text-blue-600">${t.nav.home}</a>
-              <a href="#showcase" class="text-gray-700 hover:text-blue-600">${t.nav.showcase}</a>
-              <a href="#products" class="text-gray-700 hover:text-blue-600">${t.nav.products}</a>
-              <a href="#partners" class="text-gray-700 hover:text-blue-600">${t.nav.partners}</a>
-              <a href="#projects" class="text-gray-700 hover:text-blue-600">${t.nav.projects}</a>
-              <a href="#about" class="text-gray-700 hover:text-blue-600">${t.nav.about}</a>
-              <a href="#contact" class="text-gray-700 hover:text-blue-600">${t.nav.contact}</a>
+              <a href="#home" class="font-sans font-medium text-sm text-gray-700 hover:text-blue-600 transition-colors">${t.nav.home}</a>
+              <a href="#showcase" class="font-sans font-medium text-sm text-gray-700 hover:text-blue-600 transition-colors">${t.nav.showcase}</a>
+              <a href="#products" class="font-sans font-medium text-sm text-gray-700 hover:text-blue-600 transition-colors">${t.nav.products}</a>
+              <a href="#partners" class="font-sans font-medium text-sm text-gray-700 hover:text-blue-600 transition-colors">${t.nav.partners}</a>
+              <a href="#projects" class="font-sans font-medium text-sm text-gray-700 hover:text-blue-600 transition-colors">${t.nav.projects}</a>
+              <a href="#about" class="font-sans font-medium text-sm text-gray-700 hover:text-blue-600 transition-colors">${t.nav.about}</a>
+              <a href="#contact" class="font-sans font-medium text-sm text-gray-700 hover:text-blue-600 transition-colors">${t.nav.contact}</a>
               <div class="flex gap-2 ml-4 border-l pl-4 items-center">
-                <span class="text-xs text-gray-500 mr-1">Language:</span>
-                <button onclick="window.moiApp.setLang('en')" class="px-3 py-1.5 text-sm font-semibold ${currentLang==='en'?'bg-blue-600 text-white shadow-md':'bg-gray-100 text-gray-700 hover:bg-gray-200'} rounded-lg transition-all">EN</button>
-                <button onclick="window.moiApp.setLang('fr')" class="px-3 py-1.5 text-sm font-semibold ${currentLang==='fr'?'bg-blue-600 text-white shadow-md':'bg-gray-100 text-gray-700 hover:bg-gray-200'} rounded-lg transition-all">FR</button>
-                <button onclick="window.moiApp.setLang('zh')" class="px-3 py-1.5 text-sm font-semibold ${currentLang==='zh'?'bg-blue-600 text-white shadow-md':'bg-gray-100 text-gray-700 hover:bg-gray-200'} rounded-lg transition-all">中文</button>
+                <span class="text-xs font-sans font-medium text-gray-500 mr-1">Language:</span>
+                <button onclick="window.moiApp.setLang('en')" class="px-3 py-1.5 text-sm font-sans font-semibold ${currentLang==='en'?'bg-blue-600 text-white shadow-md':'bg-gray-100 text-gray-700 hover:bg-gray-200'} rounded-lg transition-all">EN</button>
+                <button onclick="window.moiApp.setLang('fr')" class="px-3 py-1.5 text-sm font-sans font-semibold ${currentLang==='fr'?'bg-blue-600 text-white shadow-md':'bg-gray-100 text-gray-700 hover:bg-gray-200'} rounded-lg transition-all">FR</button>
+                <button onclick="window.moiApp.setLang('zh')" class="px-3 py-1.5 text-sm font-sans font-semibold ${currentLang==='zh'?'bg-blue-600 text-white shadow-md':'bg-gray-100 text-gray-700 hover:bg-gray-200'} rounded-lg transition-all">中文</button>
               </div>
             </div>
           </div>
@@ -352,7 +355,7 @@
           
           <!-- Title with Elegant Typography -->
           <div class="mb-12 animate-fade-in-up">
-            <h1 class="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tight">
+            <h1 class="text-5xl md:text-7xl font-display font-bold text-white mb-4 tracking-tight">
               <span class="block bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent drop-shadow-2xl animate-gradient">
                 ${t.hero.title}
               </span>
@@ -365,7 +368,7 @@
               <div class="h-px w-20 bg-gradient-to-r from-transparent via-white/50 to-transparent"></div>
             </div>
             
-            <p class="text-2xl md:text-3xl text-white/95 font-light tracking-wide leading-relaxed max-w-3xl mx-auto mb-3">
+            <p class="text-2xl md:text-3xl font-sans font-light text-white/95 tracking-wide leading-relaxed max-w-3xl mx-auto mb-3">
               ${t.hero.subtitle}
             </p>
             
@@ -375,7 +378,7 @@
                 <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V5h2v4z"/>
                 </svg>
-                <span class="text-sm font-medium text-white">${t.hero.ciie}</span>
+                <span class="text-sm font-sans font-medium text-white">${t.hero.ciie}</span>
               </div>
             ` : ''}
           </div>
@@ -384,7 +387,7 @@
           <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-12 animate-fade-in-up animation-delay-200">
             ${Object.values(t.hero.values).map(value => `
               <div class="bg-white/10 backdrop-blur-md px-4 py-3 rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300">
-                <p class="text-sm md:text-base text-white font-medium text-center">${value}</p>
+                <p class="text-sm md:text-base font-sans font-medium text-white text-center">${value}</p>
               </div>
             `).join('')}
           </div>
