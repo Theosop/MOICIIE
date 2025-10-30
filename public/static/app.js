@@ -82,6 +82,8 @@
       },
       about: {
         title: 'Company Profile',
+        gateway: '🌍 Your Gateway to Africa',
+        gatewayDesc: 'Opening doors to African markets with premium aluminium solutions',
         text1: 'Menuiserie de l\'Océan Indien (MOI) is a leading aluminium fabricator and installer in Mauritius with 20+ years of excellence. We manufacture high-quality windows, doors, and architectural systems using European standards.',
         text2: 'SMEDA Grade MEDIUM II Contractor • Made in Moris Certified • 100M Rs Annual Capacity • Export Ready',
         certifications: 'Certifications & Standards',
@@ -179,6 +181,8 @@
       },
       about: {
         title: 'Profil de l\'Entreprise',
+        gateway: '🌍 Votre Passerelle vers l\'Afrique',
+        gatewayDesc: 'Ouvrir les portes aux marchés africains avec des solutions aluminium premium',
         text1: 'Menuiserie de l\'Océan Indien (MOI) est un fabricant et installateur leader en aluminium à Maurice avec plus de 20 ans d\'excellence. Nous fabriquons des fenêtres, portes et systèmes architecturaux de haute qualité selon normes européennes.',
         text2: 'Entrepreneur SMEDA Grade MOYEN II • Certifié Made in Moris • Capacité 100M Rs/An • Prêt à l\'Export',
         certifications: 'Certifications & Normes',
@@ -276,6 +280,8 @@
       },
       about: {
         title: '公司简介',
+        gateway: '🌍 您通往非洲的门户',
+        gatewayDesc: '以优质铝合金解决方案为非洲市场打开大门',
         text1: '印度洋门窗公司（MOI）是毛里求斯领先的铝合金制造和安装企业，拥有20多年的卓越经验。我们按照欧洲标准生产高质量的窗户、门和建筑系统。',
         text2: 'SMEDA中级II级承包商 • 毛里求斯认证 • 年产能1亿卢比 • 出口就绪',
         certifications: '认证和标准',
@@ -420,6 +426,13 @@
       <section id="about" class="py-20 bg-gray-50">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-6">${t.about.title}</h2>
+          
+          <!-- Gateway to Africa - Opening Doors Metaphor -->
+          <div class="mb-8 py-6 px-8 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl shadow-xl">
+            <h3 class="text-2xl md:text-3xl font-display font-bold text-white mb-3">${t.about.gateway}</h3>
+            <p class="text-lg text-white/90 font-sans">${t.about.gatewayDesc}</p>
+          </div>
+          
           <p class="text-lg text-gray-700 mb-4 leading-relaxed font-sans">${t.about.text1}</p>
           <p class="text-md text-gray-600 mb-8 font-sans">${t.about.text2}</p>
           
