@@ -427,11 +427,60 @@
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-6">${t.about.title}</h2>
           
-          <!-- Gateway to Africa - Opening Doors Metaphor -->
-          <div class="mb-8 py-6 px-8 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl shadow-xl">
-            <h3 class="text-2xl md:text-3xl font-display font-bold text-white mb-3">${t.about.gateway}</h3>
-            <p class="text-lg text-white/90 font-sans">${t.about.gatewayDesc}</p>
+          <!-- Gateway to Africa - Visual Metaphor with Opening Doors -->
+          <div class="mb-12 py-12 px-8 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 rounded-3xl shadow-2xl relative overflow-hidden">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0 opacity-10">
+              <div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(circle at 30% 40%, #fbbf24 0%, transparent 50%), radial-gradient(circle at 70% 60%, #dc2626 0%, transparent 50%);"></div>
+            </div>
+            
+            <div class="relative z-10">
+              <h3 class="text-3xl md:text-4xl font-display font-bold text-white mb-6">${t.about.gateway}</h3>
+              <p class="text-xl text-white/90 font-sans mb-8 max-w-2xl mx-auto">${t.about.gatewayDesc}</p>
+              
+              <!-- Visual: Africa Continent with Opening Doors Logo -->
+              <div class="relative max-w-4xl mx-auto mt-8" style="perspective: 1000px;">
+                <!-- Large Africa Continent Background -->
+                <div class="relative w-full h-[400px] md:h-[500px] flex items-center justify-center">
+                  <img src="/static/africa-continent.jpg" alt="Africa Continent" class="absolute inset-0 w-full h-full object-contain opacity-30 filter brightness-150">
+                  
+                  <!-- Small MOI Logo with Opening Doors in Center -->
+                  <div class="relative z-20" style="width: 120px; height: 120px;">
+                    <div class="logo-gateway-container" style="position: relative; width: 100%; height: 100%; border-radius: 50%; background: white; padding: 15px; box-shadow: 0 20px 60px rgba(251, 191, 36, 0.6); border: 4px solid #fbbf24; overflow: hidden;">
+                      <!-- Logo Image -->
+                      <img src="/static/logo.png" alt="MOI Logo" style="position: relative; z-index: 0; width: 100%; height: 100%; object-fit: contain;">
+                      
+                      <!-- Animated Opening Doors (White M shape) -->
+                      <div class="logo-door-left" style="content: ''; position: absolute; top: 0; left: 0; width: 50%; height: 100%; background: white; z-index: 1; transform-origin: left center; animation: doorOpenLeftGateway 4s ease-in-out infinite;"></div>
+                      <div class="logo-door-right" style="content: ''; position: absolute; top: 0; right: 0; width: 50%; height: 100%; background: white; z-index: 1; transform-origin: right center; animation: doorOpenRightGateway 4s ease-in-out infinite;"></div>
+                    </div>
+                  </div>
+                  
+                  <!-- Golden Rays Emanating from Logo -->
+                  <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <div style="width: 600px; height: 600px; background: radial-gradient(circle, rgba(251, 191, 36, 0.3) 0%, transparent 70%); animation: pulse 3s ease-in-out infinite;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          
+          <style>
+            @keyframes doorOpenLeftGateway {
+              0%, 100% { transform: perspective(600px) rotateY(0deg); }
+              50% { transform: perspective(600px) rotateY(-85deg); opacity: 0.3; }
+            }
+            
+            @keyframes doorOpenRightGateway {
+              0%, 100% { transform: perspective(600px) rotateY(0deg); }
+              50% { transform: perspective(600px) rotateY(85deg); opacity: 0.3; }
+            }
+            
+            @keyframes pulse {
+              0%, 100% { transform: scale(1); opacity: 0.3; }
+              50% { transform: scale(1.1); opacity: 0.5; }
+            }
+          </style>
           
           <p class="text-lg text-gray-700 mb-4 leading-relaxed font-sans">${t.about.text1}</p>
           <p class="text-md text-gray-600 mb-8 font-sans">${t.about.text2}</p>
