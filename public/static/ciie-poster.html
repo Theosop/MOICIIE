@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOI - CIIE 2025</title>
+    <title>MOI - CIIE 2025 | 印度洋门窗 - 风水吉祥设计</title>
     <style>
         * {
             margin: 0;
@@ -17,47 +17,255 @@
         }
         
         body {
-            font-family: 'Microsoft YaHei', -apple-system, 'Helvetica Neue', sans-serif;
+            font-family: 'Microsoft YaHei', 'STHeiti', 'SimHei', -apple-system, sans-serif;
         }
         
-        /* Clean white background with subtle tint */
+        /* FENG SHUI BAGUA LAYOUT (210mm x 297mm) */
         .a4-page {
             width: 210mm;
             height: 297mm;
-            background: linear-gradient(180deg, #FAFAFA 0%, #FFFFFF 100%);
+            position: relative;
+            overflow: hidden;
+            background: #FFFFFF;
+        }
+        
+        /* =====================================================
+           FENG SHUI COLOR SECTORS (BAGUA MAP)
+           ===================================================== */
+        
+        /* TOP LEFT: WEALTH (财位 - Purple/Gold gradient) */
+        .bagua-wealth {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 70mm;
+            height: 99mm;
+            background: linear-gradient(135deg, #8B4789 0%, #9B59B6 30%, #C39BD3 60%, #D4AF37 100%);
+            opacity: 0.15;
+            border-radius: 0 0 40mm 0;
+        }
+        
+        /* TOP CENTER: FAME (名位 - Red) */
+        .bagua-fame {
+            position: absolute;
+            top: 0;
+            left: 70mm;
+            width: 70mm;
+            height: 99mm;
+            background: linear-gradient(180deg, #DC143C 0%, #E74C3C 40%, #EC7063 80%, #F1948A 100%);
+            opacity: 0.18;
+        }
+        
+        /* TOP RIGHT: LOVE (爱位 - Pink) */
+        .bagua-love {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 70mm;
+            height: 99mm;
+            background: linear-gradient(225deg, #FF69B4 0%, #FFB6C1 50%, #FFC0CB 100%);
+            opacity: 0.12;
+            border-radius: 0 0 0 40mm;
+        }
+        
+        /* CENTER: EARTH ELEMENT (中宫 - Yellow/Gold glow around QR) */
+        .bagua-center {
+            position: absolute;
+            top: 99mm;
+            left: 45mm;
+            width: 120mm;
+            height: 99mm;
+            background: radial-gradient(circle at center, 
+                #FFD700 0%, 
+                #FFC107 15%, 
+                #FFE082 30%, 
+                rgba(255, 235, 59, 0.3) 50%, 
+                transparent 70%
+            );
+            opacity: 0.25;
+        }
+        
+        /* BOTTOM LEFT: KNOWLEDGE (知位 - Blue) */
+        .bagua-knowledge {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 70mm;
+            height: 99mm;
+            background: linear-gradient(45deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%);
+            opacity: 0.12;
+            border-radius: 0 40mm 0 0;
+        }
+        
+        /* BOTTOM CENTER: CAREER (事业位 - Black/Deep Blue) */
+        .bagua-career {
+            position: absolute;
+            bottom: 0;
+            left: 70mm;
+            width: 70mm;
+            height: 99mm;
+            background: linear-gradient(0deg, #000000 0%, #1A237E 40%, #283593 70%, #3F51B5 100%);
+            opacity: 0.15;
+        }
+        
+        /* BOTTOM RIGHT: HELPFUL PEOPLE (贵人位 - Gray/Silver) */
+        .bagua-helpful {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 70mm;
+            height: 99mm;
+            background: linear-gradient(315deg, #BDBDBD 0%, #E0E0E0 50%, #FFFFFF 100%);
+            opacity: 0.10;
+            border-radius: 40mm 0 0 0;
+        }
+        
+        /* =====================================================
+           PROSPERITY SYMBOLS (SUBTLE 5% OPACITY)
+           ===================================================== */
+        
+        /* Chinese coin patterns at corners */
+        .coin-pattern {
+            position: absolute;
+            width: 15mm;
+            height: 15mm;
+            border: 2px solid #D4AF37;
+            border-radius: 50%;
+            opacity: 0.05;
+        }
+        
+        .coin-pattern::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 6mm;
+            height: 6mm;
+            background: #D4AF37;
+            border-radius: 2px;
+        }
+        
+        .coin-tl { top: 5mm; left: 5mm; }
+        .coin-tr { top: 5mm; right: 5mm; }
+        .coin-bl { bottom: 5mm; left: 5mm; }
+        .coin-br { bottom: 5mm; right: 5mm; }
+        
+        /* Wave pattern at bottom (ocean reference) */
+        .wave-pattern {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 15mm;
+            background-image: 
+                repeating-linear-gradient(90deg, 
+                    transparent 0mm, 
+                    rgba(0, 123, 193, 0.03) 5mm, 
+                    transparent 10mm
+                );
+            opacity: 0.5;
+        }
+        
+        /* Cloud pattern at top (ascending fortune) */
+        .cloud-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 15mm;
+            background-image: 
+                repeating-linear-gradient(90deg, 
+                    transparent 0mm, 
+                    rgba(212, 175, 55, 0.03) 5mm, 
+                    transparent 10mm
+                );
+            opacity: 0.5;
+        }
+        
+        /* =====================================================
+           CHI FLOW DESIGN (CURVED GUIDING LINES)
+           ===================================================== */
+        
+        .chi-flow-left {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(ellipse at 0% 50%, 
+                    rgba(212, 175, 55, 0.05) 0%, 
+                    transparent 30%
+                );
+            pointer-events: none;
+        }
+        
+        .chi-flow-right {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(ellipse at 100% 50%, 
+                    rgba(212, 175, 55, 0.05) 0%, 
+                    transparent 30%
+                );
+            pointer-events: none;
+        }
+        
+        /* =====================================================
+           CONTENT LAYERS (ABOVE BAGUA BACKGROUND)
+           ===================================================== */
+        
+        .content-layer {
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+        }
+        
+        /* TOP SECTION (FAME POSITION - 33%) */
+        .header {
+            text-align: center;
+            padding: 15mm 20mm 10mm;
             position: relative;
         }
         
-        /* Subtle corner dots (Feng Shui) */
-        .corner-dot {
+        /* Wealth corner text (TOP LEFT) */
+        .wealth-text {
             position: absolute;
-            width: 5mm;
-            height: 5mm;
-            background: #D4AF37;
-            border-radius: 50%;
-            opacity: 0.4;
+            top: 12mm;
+            left: 15mm;
+            font-size: 11pt;
+            font-weight: 600;
+            color: #8B4789;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
         }
         
-        .dot-tl { top: 8mm; left: 8mm; }
-        .dot-tr { top: 8mm; right: 8mm; }
-        .dot-bl { bottom: 8mm; left: 8mm; }
-        .dot-br { bottom: 8mm; right: 8mm; }
-        
-        /* TOP (15%) */
-        .header {
-            text-align: center;
-            padding: 20mm 20mm 15mm;
+        /* Love corner text (TOP RIGHT) */
+        .love-text {
+            position: absolute;
+            top: 12mm;
+            right: 15mm;
+            font-size: 11pt;
+            font-weight: 600;
+            color: #FF1493;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
         }
         
         .logo {
-            width: 60mm;
-            height: 60mm;
-            margin: 0 auto 8mm;
+            width: 55mm;
+            height: 55mm;
+            margin: 0 auto 6mm;
             background: white;
             border-radius: 50%;
-            padding: 12mm;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-            border: 1px solid #E5E5E5;
+            padding: 11mm;
+            box-shadow: 0 3px 12px rgba(220, 20, 60, 0.15);
+            border: 2px solid #DC143C;
         }
         
         .logo img {
@@ -67,76 +275,80 @@
         }
         
         .company-name-zh {
-            font-size: 22pt;
-            font-weight: 500;
-            color: #007BC1;
-            letter-spacing: 4px;
-            margin-bottom: 3mm;
+            font-size: 24pt;
+            font-weight: 600;
+            background: linear-gradient(90deg, #DC143C 0%, #E74C3C 50%, #EC7063 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 5px;
+            margin-bottom: 2mm;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
         }
         
         .company-name-fr {
             font-size: 9pt;
-            font-weight: 400;
-            color: #666666;
+            font-weight: 500;
+            color: #555555;
             letter-spacing: 1px;
             text-transform: uppercase;
         }
         
-        /* CENTER (70%) - QR CODE */
+        /* CENTER SECTION (EARTH ELEMENT - 34%) */
         .qr-section {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 10mm 0;
+            padding: 8mm 0;
+            position: relative;
         }
         
         .scan-prompt-zh {
-            font-size: 18pt;
-            font-weight: 500;
-            color: #007BC1;
-            letter-spacing: 3px;
-            margin-bottom: 3mm;
-        }
-        
-        .scan-prompt-en {
-            font-size: 12pt;
-            font-weight: 400;
-            color: #666666;
-            letter-spacing: 1px;
-            margin-bottom: 8mm;
+            font-size: 16pt;
+            font-weight: 600;
+            color: #D4AF37;
+            letter-spacing: 4px;
+            margin-bottom: 5mm;
+            text-shadow: 1px 1px 3px rgba(255, 215, 0, 0.3);
         }
         
         .qr-container {
             position: relative;
-            width: 120mm;
-            height: 120mm;
+            width: 110mm;
+            height: 110mm;
             display: flex;
             align-items: center;
             justify-content: center;
         }
         
-        /* Subtle corner marks (⌜ ⌝ ⌞ ⌟) */
-        .corner-mark {
+        /* OCTAGON QR FRAME (8 prosperity sides) */
+        .qr-octagon {
             position: absolute;
-            width: 12mm;
-            height: 12mm;
-            border-color: #D4AF37;
-            border-style: solid;
+            width: 110mm;
+            height: 110mm;
+            background: linear-gradient(135deg, #FFD700 0%, #FFC107 100%);
+            clip-path: polygon(
+                30% 0%, 70% 0%, 
+                100% 30%, 100% 70%, 
+                70% 100%, 30% 100%, 
+                0% 70%, 0% 30%
+            );
+            opacity: 0.15;
         }
         
-        .mark-tl { top: -5mm; left: -5mm; border-width: 2px 0 0 2px; }
-        .mark-tr { top: -5mm; right: -5mm; border-width: 2px 2px 0 0; }
-        .mark-bl { bottom: -5mm; left: -5mm; border-width: 0 0 2px 2px; }
-        .mark-br { bottom: -5mm; right: -5mm; border-width: 0 2px 2px 0; }
-        
         .qr-box {
-            width: 120mm;
-            height: 120mm;
+            width: 100mm;
+            height: 100mm;
             background: white;
-            padding: 10mm;
-            border: 2pt solid #D4AF37;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 8mm;
+            border: 3pt solid #D4AF37;
+            box-shadow: 
+                0 0 15mm rgba(255, 215, 0, 0.2),
+                0 4px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 2;
+            border-radius: 8mm;
         }
         
         .qr-box img {
@@ -146,48 +358,74 @@
         }
         
         .scan-instruction-zh {
-            font-size: 14pt;
-            font-weight: 400;
-            color: #007BC1;
+            font-size: 12pt;
+            font-weight: 500;
+            color: #D4AF37;
             letter-spacing: 2px;
-            margin-top: 6mm;
+            margin-top: 5mm;
         }
         
-        .scan-instruction-en {
-            font-size: 11pt;
+        .scan-features {
+            font-size: 9pt;
             font-weight: 400;
             color: #666666;
             letter-spacing: 1px;
             margin-top: 2mm;
+            text-align: center;
         }
         
-        /* BOTTOM (15%) */
+        /* BOTTOM SECTION (CAREER POSITION - 33%) */
         .footer {
             text-align: center;
-            padding: 10mm 20mm 20mm;
+            padding: 8mm 20mm 15mm;
+            position: relative;
         }
         
         .tagline-zh {
-            font-size: 13pt;
+            font-size: 14pt;
+            font-weight: 600;
+            background: linear-gradient(90deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 3px;
+            margin-bottom: 3mm;
+        }
+        
+        .contact-info {
+            font-size: 10pt;
             font-weight: 500;
-            color: #333333;
-            letter-spacing: 2px;
+            color: #1565C0;
+            letter-spacing: 1px;
             margin-bottom: 2mm;
         }
         
-        .tagline-en {
+        .exhibition {
             font-size: 11pt;
-            font-weight: 400;
-            color: #666666;
-            letter-spacing: 1px;
-            margin-bottom: 4mm;
+            font-weight: 600;
+            color: #000000;
+            letter-spacing: 2px;
+            margin-top: 3mm;
         }
         
-        .exhibition {
-            font-size: 12pt;
-            font-weight: 500;
-            color: #007BC1;
-            letter-spacing: 2px;
+        /* Wood element - subtle green accent lines */
+        .wood-accent {
+            position: absolute;
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, #4CAF50 50%, transparent 100%);
+            opacity: 0.15;
+        }
+        
+        .wood-top {
+            top: 98mm;
+            left: 20mm;
+            width: 170mm;
+        }
+        
+        .wood-bottom {
+            bottom: 98mm;
+            left: 20mm;
+            width: 170mm;
         }
         
         @media print {
@@ -199,48 +437,67 @@
 </head>
 <body>
     <div class="a4-page">
-        <!-- Subtle corner dots -->
-        <div class="corner-dot dot-tl"></div>
-        <div class="corner-dot dot-tr"></div>
-        <div class="corner-dot dot-bl"></div>
-        <div class="corner-dot dot-br"></div>
+        <!-- FENG SHUI BAGUA COLOR SECTORS -->
+        <div class="bagua-wealth"></div>
+        <div class="bagua-fame"></div>
+        <div class="bagua-love"></div>
+        <div class="bagua-center"></div>
+        <div class="bagua-knowledge"></div>
+        <div class="bagua-career"></div>
+        <div class="bagua-helpful"></div>
         
-        <!-- TOP (15%) -->
-        <div class="header">
-            <div class="logo">
-                <img src="/static/logo.png" alt="MOI">
-            </div>
-            <div class="company-name-zh">印度洋门窗公司</div>
-            <div class="company-name-fr">Menuiserie de l'Océan Indien</div>
-        </div>
+        <!-- PROSPERITY SYMBOLS -->
+        <div class="coin-pattern coin-tl"></div>
+        <div class="coin-pattern coin-tr"></div>
+        <div class="coin-pattern coin-bl"></div>
+        <div class="coin-pattern coin-br"></div>
+        <div class="wave-pattern"></div>
+        <div class="cloud-pattern"></div>
         
-        <!-- CENTER (70%) - QR CODE -->
-        <div class="qr-section">
-            <div class="scan-prompt-zh">微信扫一扫</div>
-            <div class="scan-prompt-en">Scan with WeChat</div>
-            
-            <div class="qr-container">
-                <!-- Corner marks -->
-                <div class="corner-mark mark-tl"></div>
-                <div class="corner-mark mark-tr"></div>
-                <div class="corner-mark mark-bl"></div>
-                <div class="corner-mark mark-br"></div>
+        <!-- CHI FLOW -->
+        <div class="chi-flow-left"></div>
+        <div class="chi-flow-right"></div>
+        
+        <!-- WOOD ELEMENT ACCENTS -->
+        <div class="wood-accent wood-top"></div>
+        <div class="wood-accent wood-bottom"></div>
+        
+        <!-- CONTENT LAYER -->
+        <div class="content-layer">
+            <!-- TOP SECTION: FAME POSITION -->
+            <div class="header">
+                <div class="wealth-text">创立于2005年</div>
+                <div class="love-text">20年品质保证</div>
                 
-                <!-- Clean QR box -->
-                <div class="qr-box">
-                    <img src="/static/moi-website-qr.png" alt="QR Code">
+                <div class="logo">
+                    <img src="/static/logo.png" alt="MOI">
                 </div>
+                <div class="company-name-zh">印度洋门窗公司</div>
+                <div class="company-name-fr">Menuiserie de l'Océan Indien</div>
             </div>
             
-            <div class="scan-instruction-zh">扫码了解更多</div>
-            <div class="scan-instruction-en">Scan to Learn More</div>
-        </div>
-        
-        <!-- BOTTOM (15%) -->
-        <div class="footer">
-            <div class="tagline-zh">高端铝合金门窗解决方案</div>
-            <div class="tagline-en">Premium Aluminum Solutions</div>
-            <div class="exhibition">CIIE 2025 · Mauritius Pavilion</div>
+            <!-- CENTER SECTION: EARTH ELEMENT -->
+            <div class="qr-section">
+                <div class="scan-prompt-zh">微信扫一扫</div>
+                
+                <div class="qr-container">
+                    <div class="qr-octagon"></div>
+                    <div class="qr-box">
+                        <img src="/static/moi-vcard-qr.png" alt="vCard QR Code">
+                    </div>
+                </div>
+                
+                <div class="scan-instruction-zh">扫码保存联系方式</div>
+                <div class="scan-features">一键拨号 · 发送邮件 · 访问网站</div>
+            </div>
+            
+            <!-- BOTTOM SECTION: CAREER POSITION -->
+            <div class="footer">
+                <div class="tagline-zh">高端铝合金门窗解决方案</div>
+                <div class="contact-info">📞 +230 5437 3025 · +230 5940 2190</div>
+                <div class="contact-info">📧 moi.alu2012@gmail.com</div>
+                <div class="exhibition">CIIE 2025 · 中国国际进口博览会 · 毛里求斯馆</div>
+            </div>
         </div>
     </div>
 </body>
