@@ -5,7 +5,9 @@ Professional website for Menuiserie de l'Océan Indien Ltée, a leading aluminum
 ## 🌐 Live URLs
 
 - **Development**: https://3000-ibx036hjulo80wh8j5egw-583b4d74.sandbox.novita.ai
-- **Production**: (To be deployed to Cloudflare Pages)
+- **Production**: https://moialuciie2025.pages.dev
+- **CIIE 2025 Poster**: https://moialuciie2025.pages.dev/ciie-poster
+- **Exhibition Poster**: https://moialuciie2025.pages.dev/exhibition-poster
 
 ## 🏢 Company Overview
 
@@ -43,9 +45,12 @@ Menuiserie de l'Océan Indien Ltée specializes in the manufacturing, supply, an
 
 #### Static Routes
 - `GET /` - Main website homepage
-- `GET /static/app.js` - Frontend JavaScript application (MGI layout - 233 lines)
+- `GET /ciie-poster` - CIIE 2025 A4 poster with authentic Feng Shui Bagua design
+- `GET /exhibition-poster` - 900mm x 500mm exhibition booth poster
+- `GET /static/app.js` - Frontend JavaScript application (MGI layout - 816 lines)
 - `GET /static/style.css` - Custom styles
-- `GET /static/[images]` - Product photos (brochure1.jpg, door-red.jpg, etc.)
+- `GET /static/[images]` - Product photos and posters (brochure1.jpg, door-red.jpg, etc.)
+- `GET /static/moi-vcard-qr.png` - vCard QR code (phone/email/website)
 
 ### Page Sections
 - **Navigation** - Fixed header with logo, links, and language switcher (EN/FR/中文)
@@ -269,6 +274,20 @@ webapp/
 
 ## 🎯 Recent Updates
 
+### October 31, 2025 - CIIE 2025 Exhibition Materials
+- ✅ **Authentic Feng Shui Bagua Design** for A4 CIIE poster
+- ✅ **vCard QR Code** with phone, email, website for one-click actions
+- ✅ **Five Elements Balance**: Fire 30%, Metal 25%, Earth 15%, Water 20%, Wood subtle
+- ✅ **Feng Shui Bagua Sectors**: Wealth (purple/gold), Fame (red), Love (pink), Career (blue/black)
+- ✅ **Prosperity Symbols**: Octagon QR frame (8 sides), coin patterns, wave/cloud patterns
+- ✅ **Chi Flow Design**: Curved lines, soft transitions, no sharp angles
+- ✅ **Chinese Text**: 创立于2005年, 20年品质保证, 扫码保存联系方式
+- ✅ **Professional color gradients**: Red (Fame), Gold (Wealth), Blue (Career)
+- ✅ Enhanced B2B website content targeting Chinese investors/officials
+- ✅ "Gateway to Africa" visual with animated opening doors on Africa continent
+- ✅ Detailed investor highlights and value propositions
+- ✅ 900mm x 500mm exhibition poster matching reference design
+
 ### October 28, 2025 - MGI Layout Implementation
 - ✅ Complete website redesign based on https://www.mgi.mg/
 - ✅ Simplified from 1,047 lines to 233 lines (78% reduction)
@@ -290,6 +309,6 @@ webapp/
 
 ---
 
-**Last Updated**: October 28, 2025
-**Status**: ✅ Active Development - MGI Layout
+**Last Updated**: October 31, 2025
+**Status**: ✅ CIIE 2025 Ready - Feng Shui Design Complete
 **Maintainer**: MOI Development Team
