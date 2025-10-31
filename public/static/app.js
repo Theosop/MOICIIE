@@ -82,10 +82,19 @@
       },
       about: {
         title: 'Company Profile',
-        gateway: '🌍 Your Gateway to Africa',
-        gatewayDesc: 'Opening doors to African markets with premium aluminium solutions',
-        text1: 'Menuiserie de l\'Océan Indien (MOI) is a leading aluminium fabricator and installer in Mauritius with 20+ years of excellence. We manufacture high-quality windows, doors, and architectural systems using European standards.',
-        text2: 'SMEDA Grade MEDIUM II Contractor • Made in Moris Certified • 100M Rs Annual Capacity • Export Ready',
+        gateway: '🌍 Your Strategic Gateway to Africa',
+        gatewayDesc: 'Mauritius-based manufacturing excellence connecting international suppliers with expanding African markets through premium aluminium architectural solutions',
+        text1: 'Menuiserie de l\'Océan Indien (MOI) is a SMEDA-certified aluminium manufacturer strategically positioned in Mauritius—the ideal bridge between European suppliers and African markets. With 20+ years of proven excellence, we deliver European-standard architectural systems to residential, commercial, and infrastructure projects across the Indian Ocean region.',
+        text2: 'Investment Highlights: SMEDA Grade MEDIUM II Certified • 100M Rs Annual Production Capacity • ISO-Compliant Manufacturing • Export-Ready Infrastructure • Established Supply Chain Network • Government-Backed Trade Credentials',
+        investorHighlights: 'Why Partner with MOI',
+        investorPoints: [
+          'Strategic Location: Mauritius offers preferential trade access to African, Asian, and European markets',
+          'Proven Track Record: 500+ successful installations across commercial and residential sectors',
+          'Quality Assurance: European-standard manufacturing with certified materials and processes',
+          'Scalable Operations: Modern facility with expansion-ready infrastructure and skilled workforce',
+          'Market Expertise: Deep understanding of African market requirements and regulatory compliance',
+          'Reliable Partnership: Long-term relationships with international suppliers (Hong Kong, Portugal, EU)'
+        ],
         certifications: 'Certifications & Standards',
         stats: { years: '20+', projects: '500+', capacity: '100M', team: '10+' },
         labels: { years: 'Years Experience', projects: 'Projects Completed', capacity: 'Rs Capacity', team: 'Expert Team' }
@@ -181,10 +190,19 @@
       },
       about: {
         title: 'Profil de l\'Entreprise',
-        gateway: '🌍 Votre Passerelle vers l\'Afrique',
-        gatewayDesc: 'Ouvrir les portes aux marchés africains avec des solutions aluminium premium',
-        text1: 'Menuiserie de l\'Océan Indien (MOI) est un fabricant et installateur leader en aluminium à Maurice avec plus de 20 ans d\'excellence. Nous fabriquons des fenêtres, portes et systèmes architecturaux de haute qualité selon normes européennes.',
-        text2: 'Entrepreneur SMEDA Grade MOYEN II • Certifié Made in Moris • Capacité 100M Rs/An • Prêt à l\'Export',
+        gateway: '🌍 Votre Passerelle Stratégique vers l\'Afrique',
+        gatewayDesc: 'Excellence manufacturière basée à Maurice reliant fournisseurs internationaux aux marchés africains en expansion via solutions architecturales aluminium premium',
+        text1: 'Menuiserie de l\'Océan Indien (MOI) est un fabricant d\'aluminium certifié SMEDA, stratégiquement positionné à Maurice—pont idéal entre fournisseurs européens et marchés africains. Avec 20+ ans d\'excellence prouvée, nous livrons systèmes architecturaux aux normes européennes pour projets résidentiels, commerciaux et infrastructures dans l\'océan Indien.',
+        text2: 'Atouts Investissement: Certifié SMEDA Grade MOYEN II • Capacité Production 100M Rs/An • Fabrication Conforme ISO • Infrastructure Export-Ready • Réseau Approvisionnement Établi • Accréditations Commerciales Gouvernementales',
+        investorHighlights: 'Pourquoi S\'Associer avec MOI',
+        investorPoints: [
+          'Position Stratégique: Maurice offre accès commercial préférentiel aux marchés africains, asiatiques et européens',
+          'Historique Prouvé: 500+ installations réussies dans secteurs commercial et résidentiel',
+          'Assurance Qualité: Fabrication standard européen avec matériaux et processus certifiés',
+          'Opérations Évolutives: Installation moderne avec infrastructure prête à expansion et main-d\'œuvre qualifiée',
+          'Expertise Marché: Compréhension approfondie des exigences marchés africains et conformité réglementaire',
+          'Partenariat Fiable: Relations long-terme avec fournisseurs internationaux (Hong Kong, Portugal, UE)'
+        ],
         certifications: 'Certifications & Normes',
         stats: { years: '20+', projects: '500+', capacity: '100M', team: '10+' },
         labels: { years: 'Ans d\'Expérience', projects: 'Projets Réalisés', capacity: 'Rs Capacité', team: 'Équipe Expert' }
@@ -280,10 +298,19 @@
       },
       about: {
         title: '公司简介',
-        gateway: '🌍 您通往非洲的门户',
-        gatewayDesc: '以优质铝合金解决方案为非洲市场打开大门',
-        text1: '印度洋门窗公司（MOI）是毛里求斯领先的铝合金制造和安装企业，拥有20多年的卓越经验。我们按照欧洲标准生产高质量的窗户、门和建筑系统。',
-        text2: 'SMEDA中级II级承包商 • 毛里求斯认证 • 年产能1亿卢比 • 出口就绪',
+        gateway: '🌍 您的非洲战略门户',
+        gatewayDesc: '毛里求斯制造卓越企业，通过优质铝合金建筑解决方案连接国际供应商与不断扩大的非洲市场',
+        text1: '印度洋门窗公司（MOI）是获SMEDA认证的铝合金制造商，战略性地位于毛里求斯——连接欧洲供应商与非洲市场的理想桥梁。凭借20多年的卓越业绩，我们为印度洋地区的住宅、商业和基础设施项目提供符合欧洲标准的建筑系统。',
+        text2: '投资亮点：SMEDA中级II级认证 • 年产能1亿卢比 • ISO合规制造 • 出口就绪基础设施 • 成熟供应链网络 • 政府支持的贸易资质',
+        investorHighlights: '为何与MOI合作',
+        investorPoints: [
+          '战略位置：毛里求斯提供进入非洲、亚洲和欧洲市场的优惠贸易通道',
+          '成熟记录：在商业和住宅领域成功完成500+安装项目',
+          '质量保证：采用认证材料和工艺的欧洲标准制造',
+          '可扩展运营：现代化设施配备可扩展基础设施和熟练劳动力',
+          '市场专长：深入了解非洲市场需求和监管合规要求',
+          '可靠合作：与国际供应商（香港、葡萄牙、欧盟）建立长期关系'
+        ],
         certifications: '认证和标准',
         stats: { years: '20+', projects: '500+', capacity: '100万', team: '10+' },
         labels: { years: '年经验', projects: '完成项目', capacity: '卢比产能', team: '专家团队' }
@@ -484,6 +511,28 @@
           
           <p class="text-lg text-gray-700 mb-4 leading-relaxed font-sans">${t.about.text1}</p>
           <p class="text-md text-gray-600 mb-8 font-sans">${t.about.text2}</p>
+          
+          <!-- Investment & Partnership Highlights -->
+          ${t.about.investorHighlights ? `
+          <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border-2 border-blue-200 mt-8 mb-8 shadow-lg">
+            <h3 class="text-2xl font-display font-bold text-gray-900 mb-6 flex items-center justify-center gap-3">
+              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
+              ${t.about.investorHighlights}
+            </h3>
+            <div class="grid md:grid-cols-2 gap-4 text-left">
+              ${t.about.investorPoints.map((point, index) => `
+                <div class="flex gap-3 items-start p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                  <div class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-sm font-bold mt-0.5">
+                    ${index + 1}
+                  </div>
+                  <p class="text-sm text-gray-700 font-sans leading-relaxed">${point}</p>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+          ` : ''}
           
           <!-- Statistics -->
           <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12 mb-12">
