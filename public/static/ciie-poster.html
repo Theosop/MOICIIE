@@ -67,11 +67,11 @@
         }
         
         .company-name-zh {
-            font-size: 20pt;
+            font-size: 22pt;
             font-weight: 500;
             color: #007BC1;
             letter-spacing: 4px;
-            margin-bottom: 2mm;
+            margin-bottom: 3mm;
         }
         
         .company-name-fr {
@@ -91,11 +91,19 @@
             padding: 10mm 0;
         }
         
-        .scan-prompt {
-            font-size: 16pt;
+        .scan-prompt-zh {
+            font-size: 18pt;
             font-weight: 500;
             color: #007BC1;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
+            margin-bottom: 3mm;
+        }
+        
+        .scan-prompt-en {
+            font-size: 12pt;
+            font-weight: 400;
+            color: #666666;
+            letter-spacing: 1px;
             margin-bottom: 8mm;
         }
         
@@ -137,12 +145,20 @@
             object-fit: contain;
         }
         
-        .scan-instruction {
-            font-size: 13pt;
+        .scan-instruction-zh {
+            font-size: 14pt;
             font-weight: 400;
             color: #007BC1;
+            letter-spacing: 2px;
+            margin-top: 6mm;
+        }
+        
+        .scan-instruction-en {
+            font-size: 11pt;
+            font-weight: 400;
+            color: #666666;
             letter-spacing: 1px;
-            margin-top: 8mm;
+            margin-top: 2mm;
         }
         
         /* BOTTOM (15%) */
@@ -200,7 +216,8 @@
         
         <!-- CENTER (70%) - QR CODE -->
         <div class="qr-section">
-            <div class="scan-prompt">微信扫一扫</div>
+            <div class="scan-prompt-zh">微信扫一扫</div>
+            <div class="scan-prompt-en">Scan with WeChat</div>
             
             <div class="qr-container">
                 <!-- Corner marks -->
@@ -215,7 +232,8 @@
                 </div>
             </div>
             
-            <div class="scan-instruction">SCAN WITH WECHAT</div>
+            <div class="scan-instruction-zh">扫码了解更多</div>
+            <div class="scan-instruction-en">Scan to Learn More</div>
         </div>
         
         <!-- BOTTOM (15%) -->
