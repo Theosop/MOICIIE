@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOI - CIIE 2025</title>
+    <title>MOI - 第八届进博会参展海报</title>
     <style>
         * {
             margin: 0;
@@ -17,230 +17,256 @@
         }
         
         body {
-            font-family: 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+            font-family: 'Microsoft YaHei', 'SimHei', 'PingFang SC', sans-serif;
             background: white;
         }
         
-        /* A4 Page - Clean gradient background */
+        /* A4 Page - Professional red and gold theme */
         .a4-page {
             width: 210mm;
             height: 297mm;
-            background: linear-gradient(180deg, #fef9f3 0%, #ffffff 50%, #fef9f3 100%);
+            background: linear-gradient(180deg, #ffffff 0%, #fef3c7 30%, #ffffff 70%, #fef3c7 100%);
             position: relative;
             overflow: hidden;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            padding: 15mm 20mm;
         }
         
-        /* Subtle Feng Shui pattern */
-        .pattern {
+        /* Subtle pattern */
+        .bg-pattern {
             position: absolute;
             inset: 0;
-            opacity: 0.02;
+            opacity: 0.03;
             background-image: 
-                radial-gradient(circle at 25% 25%, #dc2626 0%, transparent 50%),
-                radial-gradient(circle at 75% 75%, #fbbf24 0%, transparent 50%);
+                radial-gradient(circle at 30% 30%, #dc2626 0%, transparent 40%),
+                radial-gradient(circle at 70% 70%, #fbbf24 0%, transparent 40%);
         }
         
-        /* TOP SECTION: Logo + Exhibition Info */
-        .top-section {
+        /* TOP HEADER - Red Banner with Logo */
+        .header {
             position: relative;
             z-index: 10;
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            padding: 15mm 20mm;
             text-align: center;
+            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
         }
         
-        .logo-container {
-            width: 60mm;
-            height: 60mm;
+        .logo-box {
+            width: 80mm;
+            height: 80mm;
             margin: 0 auto 8mm;
             background: white;
-            border-radius: 50%;
-            padding: 10mm;
-            box-shadow: 0 4px 20px rgba(220, 38, 38, 0.15);
-            border: 3px solid #fbbf24;
+            border-radius: 12px;
+            padding: 12mm;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            border: 4px solid #fbbf24;
         }
         
-        .logo-container img {
+        .logo-box img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
         
-        .company-name {
-            font-size: 16pt;
-            font-weight: 700;
-            color: #1e3a8a;
-            letter-spacing: 1px;
+        .company-name-cn {
+            font-size: 28pt;
+            font-weight: 900;
+            color: #fbbf24;
+            letter-spacing: 6px;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
             margin-bottom: 3mm;
         }
         
-        .exhibition-badge {
-            display: inline-block;
-            background: linear-gradient(135deg, #dc2626, #b91c1c);
-            color: white;
-            padding: 3mm 10mm;
-            border-radius: 20px;
+        .company-name-fr {
             font-size: 12pt;
-            font-weight: 700;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.9);
             letter-spacing: 2px;
-            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
-            border: 2px solid #fbbf24;
+        }
+        
+        .exhibition-banner {
+            background: white;
+            margin: 10mm 20mm 0;
+            padding: 6mm;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(220, 38, 38, 0.2);
+            border: 3px solid #dc2626;
+        }
+        
+        .exhibition-title {
+            font-size: 22pt;
+            font-weight: 900;
+            color: #dc2626;
+            letter-spacing: 4px;
+            margin-bottom: 2mm;
         }
         
         .exhibition-subtitle {
-            font-size: 9pt;
-            color: #64748b;
-            margin-top: 2mm;
-            font-weight: 600;
+            font-size: 11pt;
+            color: #1e3a8a;
+            font-weight: 700;
+            letter-spacing: 1px;
         }
         
-        /* MIDDLE SECTION: QR Code */
-        .middle-section {
+        /* MIDDLE - QR Code Section */
+        .qr-section {
             position: relative;
             z-index: 10;
+            flex: 1;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            padding: 10mm 20mm;
         }
         
-        .qr-wrapper {
+        .qr-container {
             position: relative;
-            width: 90mm;
-            height: 90mm;
-            margin: 0 auto 6mm;
+            width: 100mm;
+            height: 100mm;
+            margin-bottom: 8mm;
         }
         
-        .qr-code {
+        .qr-decoration {
+            position: absolute;
+            inset: -10mm;
+        }
+        
+        .qr-corner {
+            position: absolute;
+            width: 16mm;
+            height: 16mm;
+            background: radial-gradient(circle, #fbbf24, #f59e0b);
+            border-radius: 50%;
+            border: 4px solid #dc2626;
+            box-shadow: 0 4px 12px rgba(220, 38, 38, 0.4);
+        }
+        
+        .corner-tl { top: 0; left: 0; }
+        .corner-tr { top: 0; right: 0; }
+        .corner-bl { bottom: 0; left: 0; }
+        .corner-br { bottom: 0; right: 0; }
+        
+        .qr-box {
             width: 100%;
             height: 100%;
             background: white;
-            padding: 8mm;
-            border-radius: 15px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-            border: 3px solid #dc2626;
+            padding: 10mm;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            border: 4px solid #dc2626;
             position: relative;
         }
         
-        .qr-code::before {
+        .qr-box::before {
             content: '';
             position: absolute;
-            inset: -5px;
-            background: linear-gradient(45deg, #fbbf24, #dc2626, #fbbf24);
-            border-radius: 15px;
+            inset: -6px;
+            background: linear-gradient(45deg, #fbbf24, #dc2626, #fbbf24, #dc2626);
+            border-radius: 12px;
             z-index: -1;
-            opacity: 0.3;
+            opacity: 0.4;
         }
         
-        .qr-code img {
+        .qr-box img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
         
-        .qr-corners {
-            position: absolute;
-            inset: -8mm;
-        }
-        
-        .qr-corner {
-            position: absolute;
-            width: 12mm;
-            height: 12mm;
-            background: radial-gradient(circle, #fbbf24, #f59e0b);
-            border-radius: 50%;
-            border: 3px solid #dc2626;
-            box-shadow: 0 3px 10px rgba(220, 38, 38, 0.3);
-        }
-        
-        .qr-corner-tl { top: 0; left: 0; }
-        .qr-corner-tr { top: 0; right: 0; }
-        .qr-corner-bl { bottom: 0; left: 0; }
-        .qr-corner-br { bottom: 0; right: 0; }
-        
-        .scan-prompt {
-            font-size: 14pt;
-            font-weight: 700;
-            color: #dc2626;
-            text-align: center;
-            margin-bottom: 2mm;
-        }
-        
-        .website-name {
+        .scan-text {
             font-size: 18pt;
             font-weight: 900;
-            color: #1e3a8a;
-            letter-spacing: 2px;
+            color: #dc2626;
             text-align: center;
-            background: linear-gradient(135deg, #fef3c7, #fef9c3);
-            padding: 3mm 8mm;
-            border-radius: 12px;
-            border: 2px solid #fbbf24;
-            display: inline-block;
+            margin-bottom: 3mm;
+            letter-spacing: 2px;
         }
         
-        /* BOTTOM SECTION: Contact Info */
-        .bottom-section {
+        .scan-instruction {
+            font-size: 12pt;
+            color: #475569;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 5mm;
+        }
+        
+        .website-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #dc2626, #b91c1c);
+            color: #fbbf24;
+            padding: 4mm 12mm;
+            border-radius: 25px;
+            font-size: 16pt;
+            font-weight: 900;
+            letter-spacing: 3px;
+            box-shadow: 0 6px 20px rgba(220, 38, 38, 0.4);
+            border: 3px solid #fbbf24;
+        }
+        
+        /* BOTTOM - Contact Section */
+        .footer {
             position: relative;
             z-index: 10;
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            padding: 8mm 20mm;
+            border-top: 4px solid #fbbf24;
+            box-shadow: 0 -4px 15px rgba(220, 38, 38, 0.3);
         }
         
-        .tagline {
-            font-size: 11pt;
-            font-weight: 700;
-            color: #1e3a8a;
+        .company-tagline {
+            font-size: 13pt;
+            font-weight: 900;
+            color: #fbbf24;
             text-align: center;
             margin-bottom: 5mm;
-            padding-bottom: 5mm;
-            border-bottom: 2px solid #fbbf24;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
         }
         
-        .contact-row {
-            display: flex;
-            justify-content: space-between;
-            gap: 4mm;
-            margin-bottom: 4mm;
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3mm;
+            margin-bottom: 5mm;
         }
         
-        .contact-item {
-            flex: 1;
-            font-size: 9pt;
-            color: #475569;
-            font-weight: 600;
-            text-align: center;
-            padding: 2.5mm;
+        .contact-box {
             background: white;
+            padding: 3mm;
             border-radius: 8px;
-            border: 1.5px solid #e5e7eb;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            font-size: 10pt;
+            font-weight: 700;
+            color: #1e3a8a;
+            border: 2px solid #fbbf24;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
         }
         
         .contact-icon {
-            font-size: 11pt;
-            margin-right: 1mm;
+            font-size: 12pt;
+            margin-right: 2mm;
         }
         
-        .badges-row {
+        .certification-row {
             display: flex;
             justify-content: center;
             gap: 3mm;
             flex-wrap: wrap;
         }
         
-        .badge {
-            background: linear-gradient(135deg, #fef3c7, #fde68a);
-            color: #92400e;
-            padding: 2mm 5mm;
-            border-radius: 15px;
-            font-size: 8pt;
-            font-weight: 700;
-            border: 1.5px solid #fbbf24;
-            box-shadow: 0 2px 6px rgba(251, 191, 36, 0.2);
+        .cert-badge {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            color: #7c2d12;
+            padding: 2mm 6mm;
+            border-radius: 20px;
+            font-size: 9pt;
+            font-weight: 900;
+            box-shadow: 0 3px 10px rgba(251, 191, 36, 0.4);
+            border: 2px solid white;
         }
         
-        /* Print optimization */
         @media print {
             body {
                 margin: 0;
@@ -259,80 +285,87 @@
 </head>
 <body>
     <div class="a4-page">
-        <!-- Subtle background pattern -->
-        <div class="pattern"></div>
+        <!-- Background pattern -->
+        <div class="bg-pattern"></div>
         
-        <!-- TOP: Logo + Exhibition Badge -->
-        <div class="top-section">
-            <div class="logo-container">
+        <!-- TOP: Logo and Company Name -->
+        <div class="header">
+            <div class="logo-box">
                 <img src="/static/logo.png" alt="MOI Logo">
             </div>
-            <div class="company-name">
-                印度洋门窗公司<br>
-                Menuiserie de l'Océan Indien
+            <div class="company-name-cn">
+                印度洋门窗公司
             </div>
-            <div class="exhibition-badge">
-                CIIE 2025 参展商
+            <div class="company-name-fr">
+                MENUISERIE DE L'OCÉAN INDIEN
+            </div>
+        </div>
+        
+        <!-- Exhibition Banner -->
+        <div class="exhibition-banner">
+            <div class="exhibition-title">
+                第八届中国国际进口博览会
             </div>
             <div class="exhibition-subtitle">
-                China International Import Expo • Shanghai
+                8th China International Import Expo 2025 • Shanghai
             </div>
         </div>
         
         <!-- MIDDLE: QR Code -->
-        <div class="middle-section">
-            <div class="qr-wrapper">
-                <div class="qr-corners">
-                    <div class="qr-corner qr-corner-tl"></div>
-                    <div class="qr-corner qr-corner-tr"></div>
-                    <div class="qr-corner qr-corner-bl"></div>
-                    <div class="qr-corner qr-corner-br"></div>
+        <div class="qr-section">
+            <div class="qr-container">
+                <div class="qr-decoration">
+                    <div class="qr-corner corner-tl"></div>
+                    <div class="qr-corner corner-tr"></div>
+                    <div class="qr-corner corner-bl"></div>
+                    <div class="qr-corner corner-br"></div>
                 </div>
-                <div class="qr-code">
-                    <img src="/static/moi-website-qr.png" alt="Scan QR Code">
+                <div class="qr-box">
+                    <img src="/static/moi-website-qr.png" alt="扫码访问">
                 </div>
             </div>
-            <div class="scan-prompt">
-                📱 扫码访问产品目录
+            
+            <div class="scan-text">
+                📱 扫码访问企业官网
             </div>
-            <div class="website-name">
+            <div class="scan-instruction">
+                使用微信或手机相机扫描二维码
+            </div>
+            <div class="website-badge">
                 MoialuCIIE2025
             </div>
         </div>
         
         <!-- BOTTOM: Contact Information -->
-        <div class="bottom-section">
-            <div class="tagline">
-                🏆 毛里求斯优质铝合金门窗制造商 • 欧洲标准 • 出口认证
+        <div class="footer">
+            <div class="company-tagline">
+                🏆 毛里求斯优质铝合金门窗系统制造商 • 欧洲标准 • 自2005年
             </div>
             
-            <div class="contact-row">
-                <div class="contact-item">
+            <div class="contact-grid">
+                <div class="contact-box">
                     <span class="contact-icon">📞</span>
                     +230 5437 3025
                 </div>
-                <div class="contact-item">
+                <div class="contact-box">
                     <span class="contact-icon">📱</span>
                     +230 5940 2190
                 </div>
-            </div>
-            
-            <div class="contact-row">
-                <div class="contact-item">
+                <div class="contact-box">
                     <span class="contact-icon">✉️</span>
                     moi.alu2012@gmail.com
                 </div>
-                <div class="contact-item">
-                    <span class="contact-icon">📍</span>
-                    Mauritius 毛里求斯
+                <div class="contact-box">
+                    <span class="contact-icon">🌍</span>
+                    毛里求斯 Mauritius
                 </div>
             </div>
             
-            <div class="badges-row">
-                <div class="badge">🏅 SMEDA认证</div>
-                <div class="badge">⭐ 中级II级</div>
-                <div class="badge">🇲🇺 毛里求斯制造</div>
-                <div class="badge">🎯 20+年经验</div>
+            <div class="certification-row">
+                <div class="cert-badge">🏅 SMEDA认证企业</div>
+                <div class="cert-badge">⭐ 中级II级资质</div>
+                <div class="cert-badge">🇲🇺 毛里求斯制造</div>
+                <div class="cert-badge">🎯 20+年行业经验</div>
             </div>
         </div>
     </div>
