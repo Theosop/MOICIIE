@@ -33,26 +33,26 @@
            FENG SHUI COLOR SECTORS (BAGUA MAP)
            ===================================================== */
         
-        /* TOP LEFT: WEALTH (财位 - Purple/Gold gradient - ENHANCED SATURATION) */
+        /* TOP LEFT: WEALTH (财位 - Purple/Gold gradient) */
         .bagua-wealth {
             position: absolute;
             top: 0;
             left: 0;
             width: 70mm;
             height: 99mm;
-            background: linear-gradient(135deg, #6B2869 0%, #8B3A9B 30%, #B384C3 60%, #FFD700 100%);
+            background: linear-gradient(135deg, #8B4789 0%, #9B59B6 30%, #C39BD3 60%, #D4AF37 100%);
             opacity: 0.15;
             border-radius: 0 0 40mm 0;
         }
         
-        /* TOP CENTER: FAME (名位 - Red - STRONGER RED) */
+        /* TOP CENTER: FAME (名位 - Red) */
         .bagua-fame {
             position: absolute;
             top: 0;
             left: 70mm;
             width: 70mm;
             height: 99mm;
-            background: linear-gradient(180deg, #E31837 0%, #DC2626 40%, #E74C3C 80%, #F1948A 100%);
+            background: linear-gradient(180deg, #DC143C 0%, #E74C3C 40%, #EC7063 80%, #F1948A 100%);
             opacity: 0.18;
         }
         
@@ -97,15 +97,15 @@
             border-radius: 0 40mm 0 0;
         }
         
-        /* BOTTOM CENTER: CAREER (事业位 - Black/Deep Blue - DARKER) */
+        /* BOTTOM CENTER: CAREER (事业位 - Black/Deep Blue) */
         .bagua-career {
             position: absolute;
             bottom: 0;
             left: 70mm;
             width: 70mm;
             height: 99mm;
-            background: linear-gradient(0deg, #000000 0%, #0D1B3E 40%, #1A237E 70%, #283593 100%);
-            opacity: 0.18;
+            background: linear-gradient(0deg, #000000 0%, #1A237E 40%, #283593 70%, #3F51B5 100%);
+            opacity: 0.15;
         }
         
         /* BOTTOM RIGHT: HELPFUL PEOPLE (贵人位 - Gray/Silver) */
@@ -151,95 +151,37 @@
         .coin-bl { bottom: 5mm; left: 5mm; }
         .coin-br { bottom: 5mm; right: 5mm; }
         
-        /* Wave pattern at bottom (ocean reference - ENHANCED) */
+        /* Wave pattern at bottom (ocean reference) */
         .wave-pattern {
             position: absolute;
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 20mm;
+            height: 15mm;
             background-image: 
-                repeating-radial-gradient(circle at 50% 100%, 
-                    rgba(0, 123, 193, 0.05) 0mm, 
-                    transparent 3mm, 
-                    rgba(0, 123, 193, 0.05) 6mm, 
-                    transparent 9mm
+                repeating-linear-gradient(90deg, 
+                    transparent 0mm, 
+                    rgba(0, 123, 193, 0.03) 5mm, 
+                    transparent 10mm
                 );
-            opacity: 1;
+            opacity: 0.5;
         }
         
-        /* Cloud pattern at top (ascending fortune - ENHANCED) */
+        /* Cloud pattern at top (ascending fortune) */
         .cloud-pattern {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
-            height: 25mm;
+            height: 15mm;
             background-image: 
-                radial-gradient(ellipse 20mm 8mm at 20% 50%, rgba(255, 215, 0, 0.03) 0%, transparent 50%),
-                radial-gradient(ellipse 25mm 10mm at 50% 50%, rgba(255, 215, 0, 0.03) 0%, transparent 50%),
-                radial-gradient(ellipse 20mm 8mm at 80% 50%, rgba(255, 215, 0, 0.03) 0%, transparent 50%);
-            opacity: 1;
+                repeating-linear-gradient(90deg, 
+                    transparent 0mm, 
+                    rgba(212, 175, 55, 0.03) 5mm, 
+                    transparent 10mm
+                );
+            opacity: 0.5;
         }
-        
-        /* Number 8 prosperity watermark pattern */
-        .prosperity-eight {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 200mm;
-            font-weight: 900;
-            color: #FFD700;
-            opacity: 0.02;
-            z-index: 1;
-            pointer-events: none;
-        }
-        
-        /* Eight prosperity dots around QR */
-        .prosperity-dots {
-            position: absolute;
-            width: 125mm;
-            height: 125mm;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 1;
-        }
-        
-        .prosperity-dot {
-            position: absolute;
-            width: 4mm;
-            height: 4mm;
-            background: #FFD700;
-            border-radius: 50%;
-            opacity: 0.15;
-            box-shadow: 0 0 3mm rgba(255, 215, 0, 0.3);
-        }
-        
-        .dot-1 { top: 0; left: 50%; transform: translateX(-50%); }
-        .dot-2 { top: 15%; right: 15%; }
-        .dot-3 { top: 50%; right: 0; transform: translateY(-50%); }
-        .dot-4 { bottom: 15%; right: 15%; }
-        .dot-5 { bottom: 0; left: 50%; transform: translateX(-50%); }
-        .dot-6 { bottom: 15%; left: 15%; }
-        .dot-7 { top: 50%; left: 0; transform: translateY(-50%); }
-        .dot-8 { top: 15%; left: 15%; }
-        
-        /* Small Bagua symbols at QR corners */
-        .bagua-symbol {
-            position: absolute;
-            width: 8mm;
-            height: 8mm;
-            opacity: 0.05;
-            background-image: 
-                linear-gradient(0deg, #FFD700 0%, #FFD700 30%, transparent 30%, transparent 40%, #FFD700 40%, #FFD700 60%, transparent 60%, transparent 70%, #FFD700 70%, #FFD700 100%);
-        }
-        
-        .bagua-tl { top: -10mm; left: -10mm; }
-        .bagua-tr { top: -10mm; right: -10mm; }
-        .bagua-bl { bottom: -10mm; left: -10mm; }
-        .bagua-br { bottom: -10mm; right: -10mm; }
         
         /* =====================================================
            CHI FLOW DESIGN (CURVED GUIDING LINES)
@@ -333,13 +275,13 @@
         }
         
         .company-name-zh {
-            font-size: 29pt;
-            font-weight: 700;
-            background: linear-gradient(90deg, #E31837 0%, #DC2626 50%, #E74C3C 100%);
+            font-size: 24pt;
+            font-weight: 600;
+            background: linear-gradient(90deg, #DC143C 0%, #E74C3C 50%, #EC7063 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            letter-spacing: 6px;
+            letter-spacing: 5px;
             margin-bottom: 2mm;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
         }
@@ -365,10 +307,10 @@
         .scan-prompt-zh {
             font-size: 16pt;
             font-weight: 600;
-            color: #FFD700;
+            color: #D4AF37;
             letter-spacing: 4px;
             margin-bottom: 5mm;
-            text-shadow: 1px 1px 3px rgba(255, 215, 0, 0.4);
+            text-shadow: 1px 1px 3px rgba(255, 215, 0, 0.3);
         }
         
         .qr-container {
@@ -380,19 +322,19 @@
             justify-content: center;
         }
         
-        /* OCTAGON QR FRAME (8 prosperity sides - ENHANCED) */
+        /* OCTAGON QR FRAME (8 prosperity sides) */
         .qr-octagon {
             position: absolute;
             width: 110mm;
             height: 110mm;
-            background: linear-gradient(135deg, #FFD700 0%, #FFC107 50%, #FFD700 100%);
+            background: linear-gradient(135deg, #FFD700 0%, #FFC107 100%);
             clip-path: polygon(
-                29.3% 0%, 70.7% 0%, 
-                100% 29.3%, 100% 70.7%, 
-                70.7% 100%, 29.3% 100%, 
-                0% 70.7%, 0% 29.3%
+                30% 0%, 70% 0%, 
+                100% 30%, 100% 70%, 
+                70% 100%, 30% 100%, 
+                0% 70%, 0% 30%
             );
-            opacity: 0.20;
+            opacity: 0.15;
         }
         
         .qr-box {
@@ -400,20 +342,13 @@
             height: 100mm;
             background: white;
             padding: 8mm;
-            border: 4pt solid #FFD700;
+            border: 3pt solid #D4AF37;
             box-shadow: 
-                0 0 20mm rgba(255, 215, 0, 0.3),
-                0 6px 20px rgba(0, 0, 0, 0.15),
-                inset 0 0 0 1pt rgba(255, 215, 0, 0.3);
+                0 0 15mm rgba(255, 215, 0, 0.2),
+                0 4px 15px rgba(0, 0, 0, 0.1);
             position: relative;
             z-index: 2;
             border-radius: 8mm;
-            clip-path: polygon(
-                15% 0%, 85% 0%, 
-                100% 15%, 100% 85%, 
-                85% 100%, 15% 100%, 
-                0% 85%, 0% 15%
-            );
         }
         
         .qr-box img {
@@ -425,7 +360,7 @@
         .scan-instruction-zh {
             font-size: 12pt;
             font-weight: 500;
-            color: #FFD700;
+            color: #D4AF37;
             letter-spacing: 2px;
             margin-top: 5mm;
         }
@@ -448,7 +383,7 @@
         
         .tagline-zh {
             font-size: 14pt;
-            font-weight: 700;
+            font-weight: 600;
             background: linear-gradient(90deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -458,9 +393,9 @@
         }
         
         .contact-info {
-            font-size: 11pt;
-            font-weight: 600;
-            color: #0D47A1;
+            font-size: 10pt;
+            font-weight: 500;
+            color: #1565C0;
             letter-spacing: 1px;
             margin-bottom: 2mm;
         }
@@ -519,9 +454,6 @@
         <div class="wave-pattern"></div>
         <div class="cloud-pattern"></div>
         
-        <!-- NUMBER 8 PROSPERITY WATERMARK -->
-        <div class="prosperity-eight">8</div>
-        
         <!-- CHI FLOW -->
         <div class="chi-flow-left"></div>
         <div class="chi-flow-right"></div>
@@ -538,7 +470,7 @@
                 <div class="love-text">20年品质保证</div>
                 
                 <div class="logo">
-                    <img src="/static/logo.png" alt="MOI">
+                    <img src="data:image/png;base64,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" alt="MOI">
                 </div>
                 <div class="company-name-zh">印度洋门窗公司</div>
                 <div class="company-name-fr">Menuiserie de l'Océan Indien</div>
@@ -549,28 +481,9 @@
                 <div class="scan-prompt-zh">微信扫一扫</div>
                 
                 <div class="qr-container">
-                    <!-- Eight prosperity dots -->
-                    <div class="prosperity-dots">
-                        <div class="prosperity-dot dot-1"></div>
-                        <div class="prosperity-dot dot-2"></div>
-                        <div class="prosperity-dot dot-3"></div>
-                        <div class="prosperity-dot dot-4"></div>
-                        <div class="prosperity-dot dot-5"></div>
-                        <div class="prosperity-dot dot-6"></div>
-                        <div class="prosperity-dot dot-7"></div>
-                        <div class="prosperity-dot dot-8"></div>
-                    </div>
-                    
                     <div class="qr-octagon"></div>
-                    
                     <div class="qr-box">
-                        <!-- Bagua symbols at corners -->
-                        <div class="bagua-symbol bagua-tl"></div>
-                        <div class="bagua-symbol bagua-tr"></div>
-                        <div class="bagua-symbol bagua-bl"></div>
-                        <div class="bagua-symbol bagua-br"></div>
-                        
-                        <img src="/static/moi-vcard-qr.png" alt="vCard QR Code">
+                        <img src="data:image/png;base64,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" alt="vCard QR Code">
                     </div>
                 </div>
                 
