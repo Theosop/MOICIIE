@@ -35,6 +35,11 @@ app.get('/ciie-poster', (c) => {
   return c.redirect('/static/ciie-poster')
 })
 
+// Exhibition Poster route (900mm x 500mm)
+app.get('/exhibition-poster', (c) => {
+  return c.redirect('/static/exhibition-poster')
+})
+
 // QR Poster route (redirect to static file without .html)
 app.get('/qr-poster', (c) => {
   return c.redirect('/static/qr-poster')
