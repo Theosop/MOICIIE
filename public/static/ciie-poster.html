@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOI - CIIE 2025 QR Poster</title>
+    <title>MOI - CIIE 2025</title>
     <style>
         * {
             margin: 0;
@@ -17,70 +17,47 @@
         }
         
         body {
-            font-family: 'Microsoft YaHei', 'SimHei', sans-serif;
+            font-family: 'Microsoft YaHei', -apple-system, 'Helvetica Neue', sans-serif;
         }
         
-        /* FENG SHUI - Blue (water/career) to white gradient */
+        /* Clean white background with subtle tint */
         .a4-page {
             width: 210mm;
             height: 297mm;
-            background: linear-gradient(180deg, #e0f2fe 0%, #ffffff 40%, #fef9c3 100%);
+            background: linear-gradient(180deg, #FAFAFA 0%, #FFFFFF 100%);
             position: relative;
-            overflow: hidden;
         }
         
-        /* FENG SHUI - Dragon scale pattern (3% opacity) */
-        .dragon-pattern {
+        /* Subtle corner dots (Feng Shui) */
+        .corner-dot {
             position: absolute;
-            inset: 0;
-            opacity: 0.03;
-            background-image: 
-                repeating-linear-gradient(45deg, #007BC1 0px, transparent 10px, transparent 20px, #007BC1 30px),
-                repeating-linear-gradient(-45deg, #FFD700 0px, transparent 10px, transparent 20px, #FFD700 30px);
-        }
-        
-        /* FENG SHUI - 4 Golden prosperity coins at corners */
-        .prosperity-coin {
-            position: absolute;
-            width: 25mm;
-            height: 25mm;
-            background: radial-gradient(circle, #FFD700 40%, #FFA500 60%, #FFD700 100%);
+            width: 5mm;
+            height: 5mm;
+            background: #D4AF37;
             border-radius: 50%;
-            border: 4px solid #FF0000;
-            box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
-            z-index: 5;
+            opacity: 0.4;
         }
         
-        .coin-inner {
-            position: absolute;
-            inset: 6mm;
-            background: #FF0000;
-            border-radius: 50%;
-        }
+        .dot-tl { top: 8mm; left: 8mm; }
+        .dot-tr { top: 8mm; right: 8mm; }
+        .dot-bl { bottom: 8mm; left: 8mm; }
+        .dot-br { bottom: 8mm; right: 8mm; }
         
-        .coin-tl { top: 10mm; left: 10mm; }
-        .coin-tr { top: 10mm; right: 10mm; }
-        .coin-bl { bottom: 10mm; left: 10mm; }
-        .coin-br { bottom: 10mm; right: 10mm; }
-        
-        /* TOP (20%) - Logo and Scan Prompt */
+        /* TOP (15%) */
         .header {
-            position: relative;
-            z-index: 10;
             text-align: center;
-            padding: 20mm 15mm 10mm;
-            height: 20%;
+            padding: 20mm 20mm 15mm;
         }
         
         .logo {
-            width: 55mm;
-            height: 55mm;
-            margin: 0 auto 5mm;
+            width: 60mm;
+            height: 60mm;
+            margin: 0 auto 8mm;
             background: white;
             border-radius: 50%;
-            padding: 10mm;
-            box-shadow: 0 4px 20px rgba(0, 123, 193, 0.3);
-            border: 3px solid #007BC1;
+            padding: 12mm;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border: 1px solid #E5E5E5;
         }
         
         .logo img {
@@ -89,102 +66,69 @@
             object-fit: contain;
         }
         
-        .company-name {
+        .company-name-zh {
             font-size: 20pt;
-            font-weight: 900;
+            font-weight: 500;
             color: #007BC1;
             letter-spacing: 4px;
-            margin-bottom: 4mm;
+            margin-bottom: 2mm;
         }
         
-        .scan-prompt-top {
-            font-size: 24pt;
-            font-weight: 900;
-            color: #FF0000;
-            letter-spacing: 5px;
-            text-shadow: 2px 2px 6px rgba(255, 215, 0, 0.6);
+        .company-name-fr {
+            font-size: 9pt;
+            font-weight: 400;
+            color: #666666;
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
         
-        /* CENTER (60%) - MASSIVE QR CODE in WEALTH POSITION */
+        /* CENTER (70%) - QR CODE */
         .qr-section {
-            position: relative;
-            z-index: 10;
-            height: 60%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 0;
+            padding: 10mm 0;
         }
         
-        .wechat-prompt {
-            font-size: 18pt;
-            font-weight: 700;
+        .scan-prompt {
+            font-size: 16pt;
+            font-weight: 500;
             color: #007BC1;
-            margin-bottom: 5mm;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
+            margin-bottom: 8mm;
         }
         
         .qr-container {
             position: relative;
-            width: 140mm;
-            height: 140mm;
+            width: 120mm;
+            height: 120mm;
             display: flex;
             align-items: center;
             justify-content: center;
         }
         
-        /* FENG SHUI - Ba Gua Octagon prosperity frame */
-        .bagua-frame {
+        /* Subtle corner marks (⌜ ⌝ ⌞ ⌟) */
+        .corner-mark {
             position: absolute;
-            inset: -15mm;
-            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-            background: linear-gradient(45deg, #FFD700, #FFA500, #FFD700);
-            opacity: 0.3;
+            width: 12mm;
+            height: 12mm;
+            border-color: #D4AF37;
+            border-style: solid;
         }
         
-        /* Energy arrows pointing to QR */
-        .energy-arrow {
-            position: absolute;
-            width: 0;
-            height: 0;
-            border-left: 8mm solid transparent;
-            border-right: 8mm solid transparent;
-            border-bottom: 12mm solid #FF0000;
-            opacity: 0.7;
-            animation: pulse 2s infinite;
-        }
-        
-        .arrow-top { top: -18mm; left: 50%; transform: translateX(-50%); }
-        .arrow-bottom { bottom: -18mm; left: 50%; transform: translateX(-50%) rotate(180deg); }
-        .arrow-left { left: -18mm; top: 50%; transform: translateY(-50%) rotate(90deg); }
-        .arrow-right { right: -18mm; top: 50%; transform: translateY(-50%) rotate(-90deg); }
-        
-        @keyframes pulse {
-            0%, 100% { opacity: 0.7; transform: scale(1); }
-            50% { opacity: 1; transform: scale(1.1); }
-        }
+        .mark-tl { top: -5mm; left: -5mm; border-width: 2px 0 0 2px; }
+        .mark-tr { top: -5mm; right: -5mm; border-width: 2px 2px 0 0; }
+        .mark-bl { bottom: -5mm; left: -5mm; border-width: 0 0 2px 2px; }
+        .mark-br { bottom: -5mm; right: -5mm; border-width: 0 2px 2px 0; }
         
         .qr-box {
             width: 120mm;
             height: 120mm;
             background: white;
             padding: 10mm;
-            border-radius: 30px;
-            box-shadow: 0 0 40px rgba(255, 215, 0, 0.8), 0 0 80px rgba(255, 0, 0, 0.4);
-            border: 8px solid #FFD700;
-            position: relative;
-        }
-        
-        .qr-box::before {
-            content: '';
-            position: absolute;
-            inset: -15px;
-            background: linear-gradient(45deg, #FFD700, #FF0000, #FFD700, #FF0000);
-            border-radius: 30px;
-            z-index: -1;
-            filter: blur(15px);
-            opacity: 0.8;
+            border: 2pt solid #D4AF37;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
         
         .qr-box img {
@@ -193,41 +137,41 @@
             object-fit: contain;
         }
         
-        .scan-here {
-            font-size: 28pt;
-            font-weight: 900;
-            color: #FF0000;
-            margin-top: 6mm;
-            letter-spacing: 6px;
-            text-shadow: 3px 3px 8px rgba(255, 215, 0, 0.8);
-        }
-        
-        /* BOTTOM (20%) - Simple info */
-        .footer {
-            position: relative;
-            z-index: 10;
-            height: 20%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 0 20mm;
-        }
-        
-        .tagline {
-            font-size: 14pt;
-            font-weight: 700;
+        .scan-instruction {
+            font-size: 13pt;
+            font-weight: 400;
             color: #007BC1;
-            margin-bottom: 3mm;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
+            margin-top: 8mm;
         }
         
-        .exhibition-line {
-            font-size: 16pt;
-            font-weight: 900;
-            color: #FF0000;
-            letter-spacing: 3px;
+        /* BOTTOM (15%) */
+        .footer {
+            text-align: center;
+            padding: 10mm 20mm 20mm;
+        }
+        
+        .tagline-zh {
+            font-size: 13pt;
+            font-weight: 500;
+            color: #333333;
+            letter-spacing: 2px;
+            margin-bottom: 2mm;
+        }
+        
+        .tagline-en {
+            font-size: 11pt;
+            font-weight: 400;
+            color: #666666;
+            letter-spacing: 1px;
+            margin-bottom: 4mm;
+        }
+        
+        .exhibition {
+            font-size: 12pt;
+            font-weight: 500;
+            color: #007BC1;
+            letter-spacing: 2px;
         }
         
         @media print {
@@ -239,50 +183,46 @@
 </head>
 <body>
     <div class="a4-page">
-        <div class="dragon-pattern"></div>
+        <!-- Subtle corner dots -->
+        <div class="corner-dot dot-tl"></div>
+        <div class="corner-dot dot-tr"></div>
+        <div class="corner-dot dot-bl"></div>
+        <div class="corner-dot dot-br"></div>
         
-        <!-- FENG SHUI - 4 Prosperity coins at corners -->
-        <div class="prosperity-coin coin-tl"><div class="coin-inner"></div></div>
-        <div class="prosperity-coin coin-tr"><div class="coin-inner"></div></div>
-        <div class="prosperity-coin coin-bl"><div class="coin-inner"></div></div>
-        <div class="prosperity-coin coin-br"><div class="coin-inner"></div></div>
-        
-        <!-- TOP (20%) -->
+        <!-- TOP (15%) -->
         <div class="header">
             <div class="logo">
                 <img src="/static/logo.png" alt="MOI">
             </div>
-            <div class="company-name">印度洋门窗公司</div>
-            <div class="scan-prompt-top">扫码了解更多</div>
+            <div class="company-name-zh">印度洋门窗公司</div>
+            <div class="company-name-fr">Menuiserie de l'Océan Indien</div>
         </div>
         
-        <!-- CENTER (60%) - WEALTH POSITION QR CODE -->
+        <!-- CENTER (70%) - QR CODE -->
         <div class="qr-section">
-            <div class="wechat-prompt">📱 微信扫一扫</div>
+            <div class="scan-prompt">微信扫一扫</div>
             
             <div class="qr-container">
-                <!-- Ba Gua octagon frame -->
-                <div class="bagua-frame"></div>
+                <!-- Corner marks -->
+                <div class="corner-mark mark-tl"></div>
+                <div class="corner-mark mark-tr"></div>
+                <div class="corner-mark mark-bl"></div>
+                <div class="corner-mark mark-br"></div>
                 
-                <!-- Energy arrows -->
-                <div class="energy-arrow arrow-top"></div>
-                <div class="energy-arrow arrow-bottom"></div>
-                <div class="energy-arrow arrow-left"></div>
-                <div class="energy-arrow arrow-right"></div>
-                
-                <!-- MASSIVE QR CODE -->
+                <!-- Clean QR box -->
                 <div class="qr-box">
-                    <img src="/static/moi-website-qr.png" alt="扫码">
+                    <img src="/static/moi-website-qr.png" alt="QR Code">
                 </div>
             </div>
             
-            <div class="scan-here">SCAN HERE</div>
+            <div class="scan-instruction">SCAN WITH WECHAT</div>
         </div>
         
-        <!-- BOTTOM (20%) -->
+        <!-- BOTTOM (15%) -->
         <div class="footer">
-            <div class="tagline">高端铝合金门窗 | Premium Aluminum Solutions</div>
-            <div class="exhibition-line">CIIE 2025 · 毛里求斯展团</div>
+            <div class="tagline-zh">高端铝合金门窗解决方案</div>
+            <div class="tagline-en">Premium Aluminum Solutions</div>
+            <div class="exhibition">CIIE 2025 · Mauritius Pavilion</div>
         </div>
     </div>
 </body>
