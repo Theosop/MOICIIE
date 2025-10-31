@@ -442,7 +442,7 @@
               <div class="relative max-w-4xl mx-auto mt-8" style="perspective: 1000px;">
                 <!-- Large Africa Continent Background -->
                 <div class="relative w-full h-[400px] md:h-[500px] flex items-center justify-center">
-                  <img src="/static/africa-continent.jpg" alt="Africa Continent" class="absolute inset-0 w-full h-full object-contain opacity-30 filter brightness-150">
+                  <img src="/static/africa-satellite-hq.jpg" alt="Africa Continent" class="absolute inset-0 w-full h-full object-contain opacity-40 filter brightness-110">
                   
                   <!-- Small MOI Logo with Opening Doors in Center -->
                   <div class="relative z-20" style="width: 120px; height: 120px;">
