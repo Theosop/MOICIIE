@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOI QR Code Poster - A4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: white;
+        }
+        
+        .a4-page {
+            width: 210mm;
+            height: 297mm;
+            background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20mm;
+        }
+        
+        /* Decorative background pattern */
+        .pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.03;
+            background-image: 
+                repeating-linear-gradient(45deg, #2563eb 0, #2563eb 1px, transparent 1px, transparent 20px),
+                repeating-linear-gradient(-45deg, #2563eb 0, #2563eb 1px, transparent 1px, transparent 20px);
+            z-index: 1;
+        }
+        
+        /* Top decorative bar */
+        .top-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8mm;
+            background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
+            z-index: 2;
+        }
+        
+        /* Bottom decorative bar */
+        .bottom-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 8mm;
+            background: linear-gradient(90deg, #1e40af 0%, #2563eb 100%);
+            z-index: 2;
+        }
+        
+        /* Content container */
+        .content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            max-width: 170mm;
+        }
+        
+        /* Logo section */
+        .logo-section {
+            margin-bottom: 15mm;
+        }
+        
+        .logo {
+            width: 35mm;
+            height: 35mm;
+            margin: 0 auto 8mm;
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+        }
+        
+        .company-name {
+            font-size: 28pt;
+            font-weight: bold;
+            color: #1e3a8a;
+            margin-bottom: 3mm;
+            line-height: 1.2;
+        }
+        
+        .tagline {
+            font-size: 14pt;
+            color: #475569;
+            margin-bottom: 2mm;
+        }
+        
+        .established {
+            font-size: 11pt;
+            color: #64748b;
+            font-style: italic;
+        }
+        
+        /* QR Code section */
+        .qr-section {
+            margin: 20mm 0;
+            padding: 15mm;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(37, 99, 235, 0.15);
+            border: 3px solid #2563eb;
+        }
+        
+        .qr-title {
+            font-size: 18pt;
+            font-weight: bold;
+            color: #1e3a8a;
+            margin-bottom: 8mm;
+        }
+        
+        .qr-code {
+            width: 60mm;
+            height: 60mm;
+            margin: 0 auto 8mm;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 3mm;
+            background: white;
+        }
+        
+        .qr-instruction {
+            font-size: 12pt;
+            color: #64748b;
+            margin-bottom: 5mm;
+            line-height: 1.5;
+        }
+        
+        .website-url {
+            font-size: 16pt;
+            font-weight: bold;
+            color: #2563eb;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Contact info section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5mm;
+            margin-top: 15mm;
+            text-align: left;
+        }
+        
+        .contact-item {
+            background: white;
+            padding: 4mm;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            border-left: 3px solid #2563eb;
+        }
+        
+        .contact-label {
+            font-size: 9pt;
+            color: #64748b;
+            margin-bottom: 2mm;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .contact-value {
+            font-size: 11pt;
+            color: #1e3a8a;
+            font-weight: 600;
+        }
+        
+        /* Footer badges */
+        .badges {
+            position: absolute;
+            bottom: 15mm;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            gap: 8mm;
+            z-index: 10;
+        }
+        
+        .badge {
+            background: white;
+            padding: 3mm 6mm;
+            border-radius: 20px;
+            font-size: 9pt;
+            color: #2563eb;
+            font-weight: bold;
+            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
+            border: 1px solid #2563eb;
+        }
+        
+        /* Print styles */
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .a4-page {
+                page-break-after: always;
+            }
+            
+            @page {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="a4-page">
+        <!-- Background pattern -->
+        <div class="pattern"></div>
+        
+        <!-- Top bar -->
+        <div class="top-bar"></div>
+        
+        <!-- Content -->
+        <div class="content">
+            <!-- Logo and company info -->
+            <div class="logo-section">
+                <img src="/static/logo.png" alt="MOI Logo" class="logo">
+                <div class="company-name">
+                    Menuiserie de l'Océan Indien
+                </div>
+                <div class="tagline">
+                    Premium Aluminium Solutions
+                </div>
+                <div class="established">
+                    Est. 2005 • Made in Moris
+                </div>
+            </div>
+            
+            <!-- QR Code -->
+            <div class="qr-section">
+                <div class="qr-title">
+                    Visit Our Website
+                </div>
+                <img src="/static/moi-website-qr.png" alt="QR Code" class="qr-code">
+                <div class="qr-instruction">
+                    Scan this QR code with your phone camera<br>
+                    to explore our products and services
+                </div>
+                <div class="website-url">
+                    www.moialu.com
+                </div>
+            </div>
+            
+            <!-- Contact info -->
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-label">📞 Phone</div>
+                    <div class="contact-value">+230 5437 3025</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">📱 Mobile</div>
+                    <div class="contact-value">+230 5940 2190</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">✉️ Email</div>
+                    <div class="contact-value">moi.alu2012@gmail.com</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">📍 Location</div>
+                    <div class="contact-value">Quartier Militaire</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom badges -->
+        <div class="badges">
+            <div class="badge">🏗️ SMEDA Registered</div>
+            <div class="badge">⭐ Grade Medium II</div>
+            <div class="badge">🇲🇺 Made in Moris</div>
+        </div>
+        
+        <!-- Bottom bar -->
+        <div class="bottom-bar"></div>
+    </div>
+    
+    <script>
+        // Auto-print dialog
+        window.addEventListener('load', function() {
+            // Uncomment the line below to enable auto-print
+            // window.print();
+        });
+    </script>
+</body>
+</html>

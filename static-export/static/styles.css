@@ -1,0 +1,337 @@
+/* MOI Dynamic Website - Animations & Effects */
+
+/* Scroll Reveal Animations */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-animate.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-animation {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    transform: scale(1.2);
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 1s ease-out;
+}
+
+.float-animation {
+  animation: float-animation 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 5s ease infinite;
+}
+
+.animation-delay-300 {
+  animation-delay: 0.3s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+/* Parallax Background */
+.parallax-bg {
+  will-change: transform;
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Service Card Hover Effects */
+.service-card {
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.service-card:hover {
+  transform: translateY(-10px) scale(1.02);
+}
+
+/* Project Gallery Animations */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.7s;
+  z-index: 10;
+}
+
+.project-card:hover::before {
+  left: 100%;
+}
+
+/* Smooth Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Loading Animation */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.loading-shimmer {
+  animation: shimmer 2s infinite;
+  background: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+  background-size: 1000px 100%;
+}
+
+/* Custom Cursor Effect (Optional) */
+@media (hover: hover) {
+  .interactive-element {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .interactive-element:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* Stagger Animation Delays */
+.scroll-animate:nth-child(1) { transition-delay: 0.1s; }
+.scroll-animate:nth-child(2) { transition-delay: 0.2s; }
+.scroll-animate:nth-child(3) { transition-delay: 0.3s; }
+.scroll-animate:nth-child(4) { transition-delay: 0.4s; }
+.scroll-animate:nth-child(5) { transition-delay: 0.5s; }
+.scroll-animate:nth-child(6) { transition-delay: 0.6s; }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .parallax-bg {
+    transform: none !important;
+  }
+  
+  .scroll-animate {
+    transform: translateY(20px);
+  }
+}
+
+/* Image Zoom Effect */
+.zoom-on-hover {
+  overflow: hidden;
+}
+
+.zoom-on-hover img {
+  transition: transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.zoom-on-hover:hover img {
+  transform: scale(1.15);
+}
+
+/* Text Reveal Animation */
+@keyframes text-reveal {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.text-reveal {
+  animation: text-reveal 1s ease-out;
+}
+
+/* Gradient Button Hover */
+.gradient-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-size: 200% 200%;
+  transition: background-position 0.5s ease;
+}
+
+.gradient-button:hover {
+  background-position: 100% 0;
+}
+
+/* Card Tilt Effect */
+.card-tilt {
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.card-tilt:hover {
+  transform: perspective(1000px) rotateX(2deg) rotateY(-2deg);
+}
+
+/* Glow Effect on Hover */
+.glow-on-hover {
+  transition: box-shadow 0.3s ease;
+}
+
+.glow-on-hover:hover {
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
+}
+
+/* Progress Bar Pulse */
+#scroll-progress {
+  animation: progress-pulse 2s ease-in-out infinite;
+}
+
+@keyframes progress-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Hero Logo - Door Opening Animation */
+@keyframes doorOpenLeft {
+  0% { transform: scaleX(1); }
+  100% { transform: scaleX(0); }
+}
+
+@keyframes doorOpenRight {
+  0% { transform: scaleX(1); }
+  100% { transform: scaleX(0); }
+}
+
+@keyframes logoReveal {
+  0% { opacity: 0; transform: scale(0.5) rotate(-10deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
+.hero-logo-container {
+  position: relative;
+  display: inline-block;
+  width: 112px;
+  height: 112px;
+}
+
+/* Left Door */
+.hero-logo-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  border: 3px solid #1e3a8a;
+  border-right: 1.5px solid #1e3a8a;
+  box-shadow: 
+    inset -3px 0 10px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(37, 99, 235, 0.5);
+  z-index: 10;
+  transform-origin: left center;
+  animation: doorOpenLeft 2s ease-in-out 0.8s forwards;
+}
+
+/* Right Door */
+.hero-logo-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  border: 3px solid #1e3a8a;
+  border-left: 1.5px solid #1e3a8a;
+  box-shadow: 
+    inset 3px 0 10px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(37, 99, 235, 0.5);
+  z-index: 10;
+  transform-origin: right center;
+  animation: doorOpenRight 2s ease-in-out 0.8s forwards;
+}
+
+/* Logo reveal animation */
+.hero-logo-container img {
+  position: relative;
+  z-index: 5;
+  animation: logoReveal 1.5s ease-out 2s forwards;
+  opacity: 0;
+}
+
+/* Looping animation class */
+.hero-logo-container.animate-loop::before {
+  animation: doorOpenLeft 2s ease-in-out forwards;
+}
+
+.hero-logo-container.animate-loop::after {
+  animation: doorOpenRight 2s ease-in-out forwards;
+}
+
+.hero-logo-container.animate-loop img {
+  animation: logoReveal 1.5s ease-out 1.5s forwards;
+  opacity: 0;
+}
