@@ -11,7 +11,7 @@ app.use('/api/*', cors())
 // API endpoint for contact form (powered by Resend)
 app.post('/api/contact', async (c) => {
   try {
-    const { name, email, phone, message } = await c.req.json()
+    const { name, email, phone, message } = JSON.parse(await c.req.raw.text())
 
     // Validate required fields
     if (!name || !email || !message) {
@@ -80,7 +80,7 @@ app.post('/api/contact', async (c) => {
 // API endpoint for inquiry form (role-based: client, supplier, partner)
 app.post('/api/inquiry', async (c) => {
   try {
-    const body = await c.req.json()
+    const body = JSON.parse(await c.req.raw.text())
     const { role, name, email, phone, company, message } = body
 
     if (!name || !email || !message || !role) {
