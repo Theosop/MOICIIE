@@ -6,25 +6,161 @@ const app = new Hono()
 // Enable CORS for API routes
 app.use('/api/*', cors())
 
-// Serve static files
+// Static files are served automatically by Vercel from the /public directory
 
-// API endpoint for contact form
+// API endpoint for contact form (powered by Resend)
 app.post('/api/contact', async (c) => {
   try {
     const { name, email, phone, message } = await c.req.json()
-    
-    // In production, you would send email or store in database
-    console.log('Contact form submission:', { name, email, phone, message })
-    
+
+    // Validate required fields
+    if (!name || !email || !message) {
+      return c.json({ 
+        success: false, 
+        message: 'Please fill in all required fields (name, email, message).' 
+      }, 400)
+    }
+
+    const RESEND_API_KEY = process.env.RESEND_API_KEY
+    if (!RESEND_API_KEY) {
+      console.error('RESEND_API_KEY is not set')
+      return c.json({ 
+        success: false, 
+        message: 'Email service is not configured. Please contact us directly.' 
+      }, 500)
+    }
+
+    // Send email via Resend API
+    const res = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${RESEND_API_KEY}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        from: 'MOI Website <onboarding@resend.dev>',
+        to: ['moi.alu2012@gmail.com', 'info.moialu@gmail.com'],
+        subject: `New Contact Form: ${name}`,
+        reply_to: email,
+        html: `
+          <h2>New Contact Form Submission</h2>
+          <table style="border-collapse:collapse;width:100%;max-width:500px;">
+            <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Name</td><td style="padding:8px;border-bottom:1px solid #eee;">${name}</td></tr>
+            <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Email</td><td style="padding:8px;border-bottom:1px solid #eee;"><a href="mailto:${email}">${email}</a></td></tr>
+            <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Phone</td><td style="padding:8px;border-bottom:1px solid #eee;">${phone || 'Not provided'}</td></tr>
+            <tr><td style="padding:8px;font-weight:bold;vertical-align:top;">Message</td><td style="padding:8px;">${message.replace(/\n/g, '<br>')}</td></tr>
+          </table>
+          <p style="margin-top:20px;color:#666;font-size:12px;">Sent from moialu.com contact form</p>
+        `
+      })
+    })
+
+    if (!res.ok) {
+      const error = await res.text()
+      console.error('Resend API error:', error)
+      return c.json({ 
+        success: false, 
+        message: 'Failed to send message. Please try again or email us directly.' 
+      }, 500)
+    }
+
     return c.json({ 
       success: true, 
       message: 'Thank you for contacting us! We will get back to you soon.' 
     })
   } catch (error) {
+    console.error('Contact form error:', error)
     return c.json({ 
       success: false, 
       message: 'Failed to send message. Please try again.' 
     }, 500)
+  }
+})
+
+// API endpoint for inquiry form (role-based: client, supplier, partner)
+app.post('/api/inquiry', async (c) => {
+  try {
+    const body = await c.req.json()
+    const { role, name, email, phone, company, message } = body
+
+    if (!name || !email || !message || !role) {
+      return c.json({ success: false, message: 'Please fill in all required fields.' }, 400)
+    }
+
+    const RESEND_API_KEY = process.env.RESEND_API_KEY
+    if (!RESEND_API_KEY) {
+      console.error('RESEND_API_KEY is not set')
+      return c.json({ success: false, message: 'Email service is not configured. Please contact us directly.' }, 500)
+    }
+
+    // Build role-specific details HTML
+    let roleDetails = ''
+    const roleLabels: Record<string, string> = { client: '🏠 Client', supplier: '🏭 Supplier', partner: '🤝 Partner' }
+
+    if (role === 'client') {
+      const budgetLabels: Record<string, string> = { under500k: 'Under Rs 500,000', '500k1m': 'Rs 500K–1M', '1m3m': 'Rs 1M–3M', '3m5m': 'Rs 3M–5M', above5m: 'Above Rs 5M', undisclosed: 'Undisclosed' }
+      const timelineLabels: Record<string, string> = { urgent: 'Urgent (<1 month)', short: '1–3 months', medium: '3–6 months', long: '6+ months', flexible: 'Flexible' }
+      roleDetails = `
+        <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Project Type</td><td style="padding:8px;border-bottom:1px solid #eee;">${body.projectType || '—'}</td></tr>
+        <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Location</td><td style="padding:8px;border-bottom:1px solid #eee;">${body.location || '—'}</td></tr>
+        <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Budget</td><td style="padding:8px;border-bottom:1px solid #eee;">${budgetLabels[body.budget] || body.budget || '—'}</td></tr>
+        <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Timeline</td><td style="padding:8px;border-bottom:1px solid #eee;">${timelineLabels[body.timeline] || body.timeline || '—'}</td></tr>
+        <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Quantities</td><td style="padding:8px;border-bottom:1px solid #eee;">${body.quantity || '—'}</td></tr>
+      `
+    } else if (role === 'supplier') {
+      roleDetails = `
+        <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Products/Services</td><td style="padding:8px;border-bottom:1px solid #eee;">${body.products || '—'}</td></tr>
+        <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Country of Origin</td><td style="padding:8px;border-bottom:1px solid #eee;">${body.country || '—'}</td></tr>
+      `
+    } else if (role === 'partner') {
+      const interestLabels: Record<string, string> = { distribution: 'Distribution/Reseller', joint: 'Joint Venture', technical: 'Technical Collaboration', investment: 'Investment', other: 'Other' }
+      roleDetails = `
+        <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Partnership Type</td><td style="padding:8px;border-bottom:1px solid #eee;">${interestLabels[body.interest] || body.interest || '—'}</td></tr>
+      `
+    }
+
+    const res = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${RESEND_API_KEY}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        from: 'MOI Aluminium <contact@moialu.com>',
+        to: ['moi.alu2012@gmail.com', 'info.moialu@gmail.com'],
+        subject: `[${(roleLabels[role] || role).replace(/[^\w\s]/g, '')}] New Inquiry from ${name}`,
+        reply_to: email,
+        html: `
+          <div style="font-family:Arial,sans-serif;max-width:600px;">
+            <div style="background:linear-gradient(135deg,#1e3a8a,#0ea5e9);padding:20px;border-radius:12px 12px 0 0;">
+              <h2 style="color:white;margin:0;">New ${roleLabels[role] || role} Inquiry</h2>
+              <p style="color:rgba(255,255,255,0.8);margin:5px 0 0;">via moialu.com</p>
+            </div>
+            <div style="padding:20px;background:#f9fafb;border:1px solid #e5e7eb;border-top:none;border-radius:0 0 12px 12px;">
+              <table style="border-collapse:collapse;width:100%;">
+                <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Name</td><td style="padding:8px;border-bottom:1px solid #eee;">${name}</td></tr>
+                <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Email</td><td style="padding:8px;border-bottom:1px solid #eee;"><a href="mailto:${email}">${email}</a></td></tr>
+                <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Phone</td><td style="padding:8px;border-bottom:1px solid #eee;">${phone || '—'}</td></tr>
+                <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Company</td><td style="padding:8px;border-bottom:1px solid #eee;">${company || '—'}</td></tr>
+                ${roleDetails}
+                <tr><td style="padding:8px;font-weight:bold;vertical-align:top;">Message</td><td style="padding:8px;">${message.replace(/\n/g, '<br>')}</td></tr>
+              </table>
+            </div>
+          </div>
+        `
+      })
+    })
+
+    if (!res.ok) {
+      const error = await res.text()
+      console.error('Resend API error:', error)
+      return c.json({ success: false, message: 'Failed to send inquiry. Please try again or email us directly.' }, 500)
+    }
+
+    return c.json({ success: true, message: 'Thank you! Your inquiry has been sent. We will get back to you soon.' })
+  } catch (error) {
+    console.error('Inquiry form error:', error)
+    return c.json({ success: false, message: 'Failed to send inquiry. Please try again.' }, 500)
   }
 })
 
