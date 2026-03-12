@@ -10,5 +10,8 @@ export default defineConfig({
     devServer({
       entry: 'src/index.tsx'
     })
-  ]
+  ],
+  define: {
+    'process.env': 'process.env'
+  }
 })
