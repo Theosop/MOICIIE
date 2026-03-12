@@ -126,7 +126,7 @@ app.post('/api/inquiry', async (c) => {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        from: 'MOI Aluminium <contact@moialu.com>',
+        from: 'MOI Website <onboarding@resend.dev>',
         to: ['moi.alu2012@gmail.com', 'info.moialu@gmail.com'],
         subject: `[${(roleLabels[role] || role).replace(/[^\w\s]/g, '')}] New Inquiry from ${name}`,
         reply_to: email,
