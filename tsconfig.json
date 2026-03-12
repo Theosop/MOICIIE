@@ -6,6 +6,8 @@
     "strict": true,
     "skipLibCheck": true,
     "lib": ["ESNext"],
-    "types": ["node"]
+    "types": ["vite/client"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx"
   }
 }
