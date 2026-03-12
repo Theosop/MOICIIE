@@ -4,7 +4,7 @@
 
   const translations = {
     en: {
-      nav: { home: 'Home', about: 'Company', showcase: 'Showcase', products: 'Products', partners: 'Partners', contact: 'Contact' },
+      nav: { home: 'Home', about: 'Company', showcase: 'Showcase', products: 'Products', partners: 'Partners', inquiry: 'Inquiry', contact: 'Contact' },
       hero: {
         title: 'Menuiserie de l\'Océan Indien',
         subtitle: 'Premium Aluminium Solutions for Global Markets',
@@ -109,10 +109,42 @@
         address: 'Unit 29 - Block 8, DBM SME Park, Vuillemin, Quartier Militaire',
         qrTitle: 'Scan to Visit Our Website',
         qrSubtitle: 'Scan this QR code with your phone camera'
+      },
+      inquiry: {
+        title: 'Get In Touch',
+        subtitle: 'Whether you are a potential client, supplier, or partner — we would love to hear from you.',
+        roleLabel: 'I am a...',
+        roles: { client: 'Client', supplier: 'Supplier', partner: 'Partner' },
+        common: { name: 'Full Name', email: 'Email Address', phone: 'Phone Number', company: 'Company Name', message: 'Message', submit: 'Submit Inquiry', sending: 'Sending...', required: '* Required' },
+        client: {
+          sectionTitle: 'Project Details',
+          projectType: 'Project Type',
+          projectTypes: { residential: 'Residential', commercial: 'Commercial', industrial: 'Industrial' },
+          location: 'Project Location',
+          locationPlaceholder: 'City / Region / Country',
+          budget: 'Estimated Budget (MUR)',
+          budgets: { under500k: 'Under Rs 500,000', '500k1m': 'Rs 500,000 – 1,000,000', '1m3m': 'Rs 1,000,000 – 3,000,000', '3m5m': 'Rs 3,000,000 – 5,000,000', above5m: 'Above Rs 5,000,000', undisclosed: 'Prefer not to say' },
+          timeline: 'Timeline / Urgency',
+          timelines: { urgent: 'Urgent (< 1 month)', short: '1 – 3 months', medium: '3 – 6 months', long: '6+ months', flexible: 'Flexible' },
+          quantity: 'Approximate Quantities',
+          quantityPlaceholder: 'e.g. 12 windows, 3 sliding doors, 2 roller shutters'
+        },
+        supplier: {
+          sectionTitle: 'Supplier Details',
+          products: 'Products / Services Offered',
+          productsPlaceholder: 'Describe the products or services you supply',
+          country: 'Country of Origin',
+          countryPlaceholder: 'e.g. China, Portugal, France'
+        },
+        partner: {
+          sectionTitle: 'Partnership Details',
+          interest: 'Type of Partnership',
+          interests: { distribution: 'Distribution / Reseller', joint: 'Joint Venture', technical: 'Technical Collaboration', investment: 'Investment', other: 'Other' }
+        }
       }
     },
     fr: {
-      nav: { home: 'Accueil', about: 'Entreprise', showcase: 'Vitrine', products: 'Produits', partners: 'Partenaires', contact: 'Contact' },
+      nav: { home: 'Accueil', about: 'Entreprise', showcase: 'Vitrine', products: 'Produits', partners: 'Partenaires', inquiry: 'Demande', contact: 'Contact' },
       hero: {
         title: 'Menuiserie de l\'Océan Indien',
         subtitle: 'Solutions Aluminium Premium pour Marchés Mondiaux',
@@ -217,10 +249,42 @@
         address: 'Unité 29 - Bloc 8, DBM SME Park, Vuillemin, Quartier Militaire',
         qrTitle: 'Scannez pour Visiter Notre Site',
         qrSubtitle: 'Scannez ce code QR avec votre appareil photo'
+      },
+      inquiry: {
+        title: 'Contactez-Nous',
+        subtitle: 'Que vous soyez client, fournisseur ou partenaire potentiel — nous serions ravis de vous entendre.',
+        roleLabel: 'Je suis un(e)...',
+        roles: { client: 'Client', supplier: 'Fournisseur', partner: 'Partenaire' },
+        common: { name: 'Nom complet', email: 'Adresse e-mail', phone: 'Téléphone', company: 'Nom de l\'entreprise', message: 'Message', submit: 'Envoyer la demande', sending: 'Envoi en cours...', required: '* Obligatoire' },
+        client: {
+          sectionTitle: 'Détails du Projet',
+          projectType: 'Type de projet',
+          projectTypes: { residential: 'Résidentiel', commercial: 'Commercial', industrial: 'Industriel' },
+          location: 'Localisation du projet',
+          locationPlaceholder: 'Ville / Région / Pays',
+          budget: 'Budget estimé (MUR)',
+          budgets: { under500k: 'Moins de Rs 500 000', '500k1m': 'Rs 500 000 – 1 000 000', '1m3m': 'Rs 1 000 000 – 3 000 000', '3m5m': 'Rs 3 000 000 – 5 000 000', above5m: 'Plus de Rs 5 000 000', undisclosed: 'Préfère ne pas dire' },
+          timeline: 'Délai / Urgence',
+          timelines: { urgent: 'Urgent (< 1 mois)', short: '1 – 3 mois', medium: '3 – 6 mois', long: '6+ mois', flexible: 'Flexible' },
+          quantity: 'Quantités approximatives',
+          quantityPlaceholder: 'ex. 12 fenêtres, 3 portes coulissantes, 2 volets roulants'
+        },
+        supplier: {
+          sectionTitle: 'Détails Fournisseur',
+          products: 'Produits / Services proposés',
+          productsPlaceholder: 'Décrivez les produits ou services que vous fournissez',
+          country: 'Pays d\'origine',
+          countryPlaceholder: 'ex. Chine, Portugal, France'
+        },
+        partner: {
+          sectionTitle: 'Détails du Partenariat',
+          interest: 'Type de partenariat',
+          interests: { distribution: 'Distribution / Revendeur', joint: 'Coentreprise', technical: 'Collaboration technique', investment: 'Investissement', other: 'Autre' }
+        }
       }
     },
     zh: {
-      nav: { home: '首页', about: '公司', showcase: '展示', products: '产品', partners: '合作伙伴', contact: '联系' },
+      nav: { home: '首页', about: '公司', showcase: '展示', products: '产品', partners: '合作伙伴', inquiry: '询价', contact: '联系' },
       hero: {
         title: '印度洋门窗公司',
         subtitle: '面向全球市场的高端铝合金解决方案',
@@ -325,6 +389,38 @@
         address: 'Unit 29 - Block 8, DBM SME Park, Vuillemin, Quartier Militaire',
         qrTitle: '扫码访问我们的网站',
         qrSubtitle: '使用手机相机扫描此二维码'
+      },
+      inquiry: {
+        title: '联系我们',
+        subtitle: '无论您是潜在客户、供应商还是合作伙伴——我们期待您的来信。',
+        roleLabel: '我是...',
+        roles: { client: '客户', supplier: '供应商', partner: '合作伙伴' },
+        common: { name: '姓名', email: '电子邮件', phone: '电话号码', company: '公司名称', message: '留言', submit: '提交询价', sending: '发送中...', required: '* 必填' },
+        client: {
+          sectionTitle: '项目详情',
+          projectType: '项目类型',
+          projectTypes: { residential: '住宅', commercial: '商业', industrial: '工业' },
+          location: '项目地点',
+          locationPlaceholder: '城市 / 地区 / 国家',
+          budget: '预算估算 (MUR)',
+          budgets: { under500k: '50万卢比以下', '500k1m': '50万 – 100万卢比', '1m3m': '100万 – 300万卢比', '3m5m': '300万 – 500万卢比', above5m: '500万卢比以上', undisclosed: '不便透露' },
+          timeline: '时间要求',
+          timelines: { urgent: '紧急 (< 1个月)', short: '1 – 3个月', medium: '3 – 6个月', long: '6个月以上', flexible: '灵活' },
+          quantity: '大致数量',
+          quantityPlaceholder: '例如: 12扇窗, 3扇推拉门, 2个卷帘'
+        },
+        supplier: {
+          sectionTitle: '供应商详情',
+          products: '供应产品/服务',
+          productsPlaceholder: '请描述您供应的产品或服务',
+          country: '原产国',
+          countryPlaceholder: '例如: 中国, 葡萄牙, 法国'
+        },
+        partner: {
+          sectionTitle: '合作详情',
+          interest: '合作类型',
+          interests: { distribution: '分销/经销商', joint: '合资企业', technical: '技术合作', investment: '投资', other: '其他' }
+        }
       }
     }
   };
@@ -356,6 +452,7 @@
               <a href="#showcase" class="font-sans font-medium text-sm text-gray-700 hover:text-blue-600 transition-colors">${t.nav.showcase}</a>
               <a href="#products" class="font-sans font-medium text-sm text-gray-700 hover:text-blue-600 transition-colors">${t.nav.products}</a>
               <a href="#partners" class="font-sans font-medium text-sm text-gray-700 hover:text-blue-600 transition-colors">${t.nav.partners}</a>
+              <a href="#inquiry" class="font-sans font-medium text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-1.5 rounded-full transition-colors">${t.nav.inquiry}</a>
               <a href="#contact" class="font-sans font-medium text-sm text-gray-700 hover:text-blue-600 transition-colors">${t.nav.contact}</a>
               <div class="flex gap-2 ml-4 border-l pl-4 items-center">
                 <span class="text-xs font-sans font-medium text-gray-500 mr-1">Language:</span>
@@ -696,6 +793,151 @@
         </div>
       </section>
 
+      <!-- Inquiry Section -->
+      <section id="inquiry" class="py-20 bg-gradient-to-b from-blue-50 to-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4 text-center">${t.inquiry.title}</h2>
+          <p class="text-gray-600 text-center mb-10 font-sans max-w-2xl mx-auto">${t.inquiry.subtitle}</p>
+          
+          <div class="bg-white rounded-2xl shadow-xl border border-gray-100 p-6 md:p-10">
+            <!-- Role Selector -->
+            <div class="mb-8">
+              <label class="block text-sm font-semibold text-gray-700 mb-3">${t.inquiry.roleLabel}</label>
+              <div class="grid grid-cols-3 gap-3">
+                <button type="button" onclick="selectInquiryRole('client')" id="role-client" class="inquiry-role-btn px-4 py-3 rounded-xl border-2 border-blue-600 bg-blue-50 text-blue-700 font-semibold text-sm transition-all duration-200 hover:shadow-md">
+                  <span class="block text-xl mb-1">🏠</span>${t.inquiry.roles.client}
+                </button>
+                <button type="button" onclick="selectInquiryRole('supplier')" id="role-supplier" class="inquiry-role-btn px-4 py-3 rounded-xl border-2 border-gray-200 bg-white text-gray-600 font-semibold text-sm transition-all duration-200 hover:shadow-md hover:border-gray-300">
+                  <span class="block text-xl mb-1">🏭</span>${t.inquiry.roles.supplier}
+                </button>
+                <button type="button" onclick="selectInquiryRole('partner')" id="role-partner" class="inquiry-role-btn px-4 py-3 rounded-xl border-2 border-gray-200 bg-white text-gray-600 font-semibold text-sm transition-all duration-200 hover:shadow-md hover:border-gray-300">
+                  <span class="block text-xl mb-1">🤝</span>${t.inquiry.roles.partner}
+                </button>
+              </div>
+            </div>
+
+            <!-- Common Fields -->
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">${t.inquiry.common.name} *</label>
+                <input type="text" id="inq-name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition text-sm font-sans" placeholder="${t.inquiry.common.name}">
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">${t.inquiry.common.email} *</label>
+                <input type="email" id="inq-email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition text-sm font-sans" placeholder="${t.inquiry.common.email}">
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-4 mb-6">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">${t.inquiry.common.phone}</label>
+                <input type="tel" id="inq-phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition text-sm font-sans" placeholder="+230 XXXX XXXX">
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">${t.inquiry.common.company}</label>
+                <input type="text" id="inq-company" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition text-sm font-sans" placeholder="${t.inquiry.common.company}">
+              </div>
+            </div>
+
+            <!-- CLIENT Fields -->
+            <div id="fields-client" class="role-fields">
+              <div class="border-t border-gray-200 pt-6 mb-4">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4 flex items-center gap-2">📋 ${t.inquiry.client.sectionTitle}</h3>
+              </div>
+              <div class="grid md:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-1">${t.inquiry.client.projectType}</label>
+                  <select id="inq-projectType" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition text-sm font-sans bg-white">
+                    <option value="">&mdash;</option>
+                    <option value="residential">${t.inquiry.client.projectTypes.residential}</option>
+                    <option value="commercial">${t.inquiry.client.projectTypes.commercial}</option>
+                    <option value="industrial">${t.inquiry.client.projectTypes.industrial}</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-1">${t.inquiry.client.location}</label>
+                  <input type="text" id="inq-location" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition text-sm font-sans" placeholder="${t.inquiry.client.locationPlaceholder}">
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-1">${t.inquiry.client.budget}</label>
+                  <select id="inq-budget" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition text-sm font-sans bg-white">
+                    <option value="">&mdash;</option>
+                    <option value="under500k">${t.inquiry.client.budgets.under500k}</option>
+                    <option value="500k1m">${t.inquiry.client.budgets['500k1m']}</option>
+                    <option value="1m3m">${t.inquiry.client.budgets['1m3m']}</option>
+                    <option value="3m5m">${t.inquiry.client.budgets['3m5m']}</option>
+                    <option value="above5m">${t.inquiry.client.budgets.above5m}</option>
+                    <option value="undisclosed">${t.inquiry.client.budgets.undisclosed}</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-1">${t.inquiry.client.timeline}</label>
+                  <select id="inq-timeline" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition text-sm font-sans bg-white">
+                    <option value="">&mdash;</option>
+                    <option value="urgent">${t.inquiry.client.timelines.urgent}</option>
+                    <option value="short">${t.inquiry.client.timelines.short}</option>
+                    <option value="medium">${t.inquiry.client.timelines.medium}</option>
+                    <option value="long">${t.inquiry.client.timelines.long}</option>
+                    <option value="flexible">${t.inquiry.client.timelines.flexible}</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700 mb-1">${t.inquiry.client.quantity}</label>
+                <input type="text" id="inq-quantity" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition text-sm font-sans" placeholder="${t.inquiry.client.quantityPlaceholder}">
+              </div>
+            </div>
+
+            <!-- SUPPLIER Fields -->
+            <div id="fields-supplier" class="role-fields hidden">
+              <div class="border-t border-gray-200 pt-6 mb-4">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4 flex items-center gap-2">🏭 ${t.inquiry.supplier.sectionTitle}</h3>
+              </div>
+              <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700 mb-1">${t.inquiry.supplier.products}</label>
+                <textarea id="inq-supplierProducts" rows="3" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition text-sm font-sans resize-vertical" placeholder="${t.inquiry.supplier.productsPlaceholder}"></textarea>
+              </div>
+              <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700 mb-1">${t.inquiry.supplier.country}</label>
+                <input type="text" id="inq-supplierCountry" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition text-sm font-sans" placeholder="${t.inquiry.supplier.countryPlaceholder}">
+              </div>
+            </div>
+
+            <!-- PARTNER Fields -->
+            <div id="fields-partner" class="role-fields hidden">
+              <div class="border-t border-gray-200 pt-6 mb-4">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4 flex items-center gap-2">🤝 ${t.inquiry.partner.sectionTitle}</h3>
+              </div>
+              <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700 mb-1">${t.inquiry.partner.interest}</label>
+                <select id="inq-partnerInterest" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition text-sm font-sans bg-white">
+                  <option value="">&mdash;</option>
+                  <option value="distribution">${t.inquiry.partner.interests.distribution}</option>
+                  <option value="joint">${t.inquiry.partner.interests.joint}</option>
+                  <option value="technical">${t.inquiry.partner.interests.technical}</option>
+                  <option value="investment">${t.inquiry.partner.interests.investment}</option>
+                  <option value="other">${t.inquiry.partner.interests.other}</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Message (all roles) -->
+            <div class="mb-6">
+              <label class="block text-sm font-medium text-gray-700 mb-1">${t.inquiry.common.message} *</label>
+              <textarea id="inq-message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition text-sm font-sans resize-vertical" placeholder="${t.inquiry.common.message}..."></textarea>
+            </div>
+
+            <!-- Submit -->
+            <button id="inq-submit" onclick="submitInquiryForm()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3.5 px-6 rounded-xl transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5 text-sm">
+              ${t.inquiry.common.submit}
+            </button>
+            <div id="inq-status" class="hidden text-center py-3 px-4 rounded-lg text-sm font-sans mt-4"></div>
+            <p class="text-xs text-gray-400 text-center mt-3 font-sans">${t.inquiry.common.required}</p>
+          </div>
+        </div>
+      </section>
+
       <!-- Contact Section - Updated with Full Details -->
       <section id="contact" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -900,6 +1142,101 @@
   }
 
   window.moiApp = { setLang };
+
+  // Inquiry form - role selection
+  let currentRole = 'client';
+  window.selectInquiryRole = function(role) {
+    currentRole = role;
+    // Update button styles
+    document.querySelectorAll('.inquiry-role-btn').forEach(btn => {
+      btn.className = 'inquiry-role-btn px-4 py-3 rounded-xl border-2 border-gray-200 bg-white text-gray-600 font-semibold text-sm transition-all duration-200 hover:shadow-md hover:border-gray-300';
+    });
+    const activeBtn = document.getElementById('role-' + role);
+    if (activeBtn) {
+      activeBtn.className = 'inquiry-role-btn px-4 py-3 rounded-xl border-2 border-blue-600 bg-blue-50 text-blue-700 font-semibold text-sm transition-all duration-200 hover:shadow-md';
+    }
+    // Show/hide role-specific fields
+    document.querySelectorAll('.role-fields').forEach(el => el.classList.add('hidden'));
+    const fields = document.getElementById('fields-' + role);
+    if (fields) fields.classList.remove('hidden');
+  };
+
+  // Inquiry form - submission
+  window.submitInquiryForm = async function() {
+    const name = document.getElementById('inq-name').value.trim();
+    const email = document.getElementById('inq-email').value.trim();
+    const phone = document.getElementById('inq-phone').value.trim();
+    const company = document.getElementById('inq-company').value.trim();
+    const message = document.getElementById('inq-message').value.trim();
+    const btn = document.getElementById('inq-submit');
+    const status = document.getElementById('inq-status');
+
+    if (!name || !email || !message) {
+      status.className = 'text-center py-3 px-4 rounded-lg text-sm font-sans bg-red-50 text-red-700 border border-red-200 mt-4';
+      status.textContent = 'Please fill in all required fields (Name, Email, Message).';
+      return;
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      status.className = 'text-center py-3 px-4 rounded-lg text-sm font-sans bg-red-50 text-red-700 border border-red-200 mt-4';
+      status.textContent = 'Please enter a valid email address.';
+      return;
+    }
+
+    // Gather role-specific data
+    let roleData = {};
+    if (currentRole === 'client') {
+      roleData = {
+        projectType: document.getElementById('inq-projectType')?.value || '',
+        location: document.getElementById('inq-location')?.value?.trim() || '',
+        budget: document.getElementById('inq-budget')?.value || '',
+        timeline: document.getElementById('inq-timeline')?.value || '',
+        quantity: document.getElementById('inq-quantity')?.value?.trim() || ''
+      };
+    } else if (currentRole === 'supplier') {
+      roleData = {
+        products: document.getElementById('inq-supplierProducts')?.value?.trim() || '',
+        country: document.getElementById('inq-supplierCountry')?.value?.trim() || ''
+      };
+    } else if (currentRole === 'partner') {
+      roleData = {
+        interest: document.getElementById('inq-partnerInterest')?.value || ''
+      };
+    }
+
+    btn.disabled = true;
+    btn.textContent = btn.textContent.includes('Sending') ? btn.textContent : 'Sending...';
+    btn.classList.add('opacity-60', 'cursor-not-allowed');
+    status.className = 'hidden';
+
+    try {
+      const res = await fetch('/api/inquiry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ role: currentRole, name, email, phone, company, message, ...roleData })
+      });
+      const data = await res.json();
+
+      if (data.success) {
+        status.className = 'text-center py-3 px-4 rounded-lg text-sm font-sans bg-green-50 text-green-700 border border-green-200 mt-4';
+        status.textContent = data.message;
+        // Clear all fields
+        ['inq-name','inq-email','inq-phone','inq-company','inq-message','inq-projectType','inq-location','inq-budget','inq-timeline','inq-quantity','inq-supplierProducts','inq-supplierCountry','inq-partnerInterest'].forEach(id => {
+          const el = document.getElementById(id);
+          if (el) el.value = '';
+        });
+      } else {
+        status.className = 'text-center py-3 px-4 rounded-lg text-sm font-sans bg-red-50 text-red-700 border border-red-200 mt-4';
+        status.textContent = data.message || 'Something went wrong. Please try again.';
+      }
+    } catch (err) {
+      status.className = 'text-center py-3 px-4 rounded-lg text-sm font-sans bg-red-50 text-red-700 border border-red-200 mt-4';
+      status.textContent = 'Network error. Please check your connection and try again.';
+    }
+
+    btn.disabled = false;
+    btn.textContent = translations[currentLang]?.inquiry?.common?.submit || 'Submit Inquiry';
+    btn.classList.remove('opacity-60', 'cursor-not-allowed');
+  };
   
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
