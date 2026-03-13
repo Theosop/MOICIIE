@@ -1018,6 +1018,12 @@
         </div>
       </footer>
       
+      <!-- Floating WhatsApp Button -->
+      <a href="https://wa.me/23059402190?text=Hello%20MOI%20Aluminium%2C%20I%20would%20like%20to%20enquire%20about%20your%20products." target="_blank" class="fixed bottom-6 left-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-2xl hover:shadow-green-500/50 transition-all duration-300 hover:scale-110 flex items-center gap-2 pl-4 pr-5 py-3">
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.331 0-4.502-.726-6.289-1.964l-.438-.312-2.65.888.888-2.65-.312-.438A9.935 9.935 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+        <span class="text-sm font-semibold hidden sm:inline">WhatsApp Us</span>
+      </a>
+
       <!-- Floating Language Indicator (Mobile) -->
       <div class="fixed bottom-6 right-6 md:hidden z-40 bg-white rounded-full shadow-2xl border-2 border-blue-600 p-1">
         <div class="flex gap-1">
@@ -1209,16 +1215,60 @@
     status.className = 'hidden';
 
     try {
-      const res = await fetch('/api/inquiry', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ role: currentRole, name, email, phone, company, message, ...roleData })
-      });
-      const data = await res.json();
+      // Build details text
+      let details = '';
+      if (currentRole === 'client') {
+        details += 'Project Type: ' + (roleData.projectType || '-') + '\n';
+        details += 'Location: ' + (roleData.location || '-') + '\n';
+        details += 'Budget: ' + (roleData.budget || '-') + '\n';
+        details += 'Timeline: ' + (roleData.timeline || '-') + '\n';
+        details += 'Quantities: ' + (roleData.quantity || '-') + '\n';
+      } else if (currentRole === 'supplier') {
+        details += 'Products/Services: ' + (roleData.products || '-') + '\n';
+        details += 'Country: ' + (roleData.country || '-') + '\n';
+      } else if (currentRole === 'partner') {
+        details += 'Partnership Interest: ' + (roleData.interest || '-') + '\n';
+      }
+
+      // 1. Send to Google Sheets
+      const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwFMINNQX5r0HttMgVm7Tuys3Llme9mqr0V-eylYSGH7_SHF6AzIQhIlooL2IY3TYVc/exec';
+      if (SHEET_URL !== 'YOUR_GOOGLE_SHEET_URL_HERE') {
+        fetch(SHEET_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            timestamp: new Date().toLocaleString(),
+            role: currentRole,
+            name: name,
+            email: email,
+            phone: phone || '-',
+            company: company || '-',
+            details: details.trim(),
+            message: message
+          })
+        }).catch(function() {});
+      }
+
+      // 2. Open WhatsApp with pre-filled message
+      let waMsg = '🏢 *MOI Aluminium - New ' + currentRole.charAt(0).toUpperCase() + currentRole.slice(1) + ' Inquiry*\n\n';
+      waMsg += '👤 *Name:* ' + name + '\n';
+      waMsg += '📧 *Email:* ' + email + '\n';
+      if (phone) waMsg += '📞 *Phone:* ' + phone + '\n';
+      if (company) waMsg += '🏭 *Company:* ' + company + '\n';
+      waMsg += '\n';
+      if (details.trim()) waMsg += '📋 *Details:*\n' + details + '\n';
+      waMsg += '💬 *Message:*\n' + message;
+
+      const waUrl = 'https://wa.me/23059402190?text=' + encodeURIComponent(waMsg);
+      window.open(waUrl, '_blank');
+
+      // Show success
+      const data = { success: true };
 
       if (data.success) {
         status.className = 'text-center py-3 px-4 rounded-lg text-sm font-sans bg-green-50 text-green-700 border border-green-200 mt-4';
-        status.textContent = data.message;
+        status.textContent = 'Thank you! Your inquiry has been sent via WhatsApp. We will get back to you soon.';
         // Clear all fields
         ['inq-name','inq-email','inq-phone','inq-company','inq-message','inq-projectType','inq-location','inq-budget','inq-timeline','inq-quantity','inq-supplierProducts','inq-supplierCountry','inq-partnerInterest'].forEach(id => {
           const el = document.getElementById(id);
