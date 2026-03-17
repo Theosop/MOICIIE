@@ -1230,35 +1230,32 @@
         details += 'Partnership Interest: ' + (roleData.interest || '-') + '\n';
       }
 
-      // 1. Send to Google Sheets
+      // 1. Send to Google Sheets + Email
       const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwFMINNQX5r0HttMgVm7Tuys3Llme9mqr0V-eylYSGH7_SHF6AzIQhIlooL2IY3TYVc/exec';
-      if (SHEET_URL !== 'YOUR_GOOGLE_SHEET_URL_HERE') {
-        fetch(SHEET_URL, {
-          method: 'POST',
-          mode: 'no-cors',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            timestamp: new Date().toLocaleString(),
-            role: currentRole,
-            name: name,
-            email: email,
-            phone: phone || '-',
-            company: company || '-',
-            details: details.trim(),
-            message: message
-          })
-        }).catch(function() {});
-      }
+      fetch(SHEET_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: JSON.stringify({
+          timestamp: new Date().toLocaleString(),
+          role: currentRole,
+          name: name,
+          email: email,
+          phone: phone || '-',
+          company: company || '-',
+          details: details.trim(),
+          message: message
+        })
+      }).catch(function() {});
 
       // 2. Open WhatsApp with pre-filled message
-      let waMsg = '🏢 *MOI Aluminium - New ' + currentRole.charAt(0).toUpperCase() + currentRole.slice(1) + ' Inquiry*\n\n';
-      waMsg += '👤 *Name:* ' + name + '\n';
-      waMsg += '📧 *Email:* ' + email + '\n';
-      if (phone) waMsg += '📞 *Phone:* ' + phone + '\n';
-      if (company) waMsg += '🏭 *Company:* ' + company + '\n';
+      let waMsg = '*MOI Aluminium - New ' + currentRole.charAt(0).toUpperCase() + currentRole.slice(1) + ' Inquiry*\n\n';
+      waMsg += '*Name:* ' + name + '\n';
+      waMsg += '*Email:* ' + email + '\n';
+      if (phone) waMsg += '*Phone:* ' + phone + '\n';
+      if (company) waMsg += '*Company:* ' + company + '\n';
       waMsg += '\n';
-      if (details.trim()) waMsg += '📋 *Details:*\n' + details + '\n';
-      waMsg += '💬 *Message:*\n' + message;
+      if (details.trim()) waMsg += '*Details:*\n' + details + '\n';
+      waMsg += '*Message:*\n' + message;
 
       const waUrl = 'https://wa.me/23059402190?text=' + encodeURIComponent(waMsg);
       window.open(waUrl, '_blank');
