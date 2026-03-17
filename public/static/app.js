@@ -1218,54 +1218,62 @@
       // Build details text
       let details = '';
       if (currentRole === 'client') {
-        details += 'Project Type: ' + (roleData.projectType || '-') + '\n';
-        details += 'Location: ' + (roleData.location || '-') + '\n';
-        details += 'Budget: ' + (roleData.budget || '-') + '\n';
-        details += 'Timeline: ' + (roleData.timeline || '-') + '\n';
-        details += 'Quantities: ' + (roleData.quantity || '-') + '\n';
+        details += 'Project Type: ' + (roleData.projectType || '-') + ', ';
+        details += 'Location: ' + (roleData.location || '-') + ', ';
+        details += 'Budget: ' + (roleData.budget || '-') + ', ';
+        details += 'Timeline: ' + (roleData.timeline || '-') + ', ';
+        details += 'Quantities: ' + (roleData.quantity || '-');
       } else if (currentRole === 'supplier') {
-        details += 'Products/Services: ' + (roleData.products || '-') + '\n';
-        details += 'Country: ' + (roleData.country || '-') + '\n';
+        details += 'Products/Services: ' + (roleData.products || '-') + ', ';
+        details += 'Country: ' + (roleData.country || '-');
       } else if (currentRole === 'partner') {
-        details += 'Partnership Interest: ' + (roleData.interest || '-') + '\n';
+        details += 'Partnership Interest: ' + (roleData.interest || '-');
       }
 
-      // 1. Send to Google Sheets + Email
-      const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwFMINNQX5r0HttMgVm7Tuys3Llme9mqr0V-eylYSGH7_SHF6AzIQhIlooL2IY3TYVc/exec';
-      fetch(SHEET_URL, {
-        method: 'POST',
-        mode: 'no-cors',
-        body: JSON.stringify({
-          timestamp: new Date().toLocaleString(),
-          role: currentRole,
-          name: name,
-          email: email,
-          phone: phone || '-',
-          company: company || '-',
-          details: details.trim(),
-          message: message
-        })
-      }).catch(function() {});
+      // Send to Google Apps Script via hidden iframe form (most reliable method)
+      var iframe = document.createElement('iframe');
+      iframe.name = 'inq-iframe';
+      iframe.style.display = 'none';
+      document.body.appendChild(iframe);
 
-      // 2. Open WhatsApp with pre-filled message
-      let waMsg = '*MOI Aluminium - New ' + currentRole.charAt(0).toUpperCase() + currentRole.slice(1) + ' Inquiry*\n\n';
-      waMsg += '*Name:* ' + name + '\n';
-      waMsg += '*Email:* ' + email + '\n';
-      if (phone) waMsg += '*Phone:* ' + phone + '\n';
-      if (company) waMsg += '*Company:* ' + company + '\n';
-      waMsg += '\n';
-      if (details.trim()) waMsg += '*Details:*\n' + details + '\n';
-      waMsg += '*Message:*\n' + message;
+      var form = document.createElement('form');
+      form.method = 'POST';
+      form.action = 'https://script.google.com/macros/s/AKfycbwFMINNQX5r0HttMgVm7Tuys3Llme9mqr0V-eylYSGH7_SHF6AzIQhIlooL2IY3TYVc/exec';
+      form.target = 'inq-iframe';
 
-      const waUrl = 'https://wa.me/23059402190?text=' + encodeURIComponent(waMsg);
-      window.open(waUrl, '_blank');
+      var fields = {
+        timestamp: new Date().toLocaleString(),
+        role: currentRole,
+        name: name,
+        email: email,
+        phone: phone || '-',
+        company: company || '-',
+        details: details.trim(),
+        message: message
+      };
 
-      // Show success
-      const data = { success: true };
+      Object.keys(fields).forEach(function(key) {
+        var input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = key;
+        input.value = fields[key];
+        form.appendChild(input);
+      });
+
+      document.body.appendChild(form);
+      form.submit();
+
+      // Clean up after 5 seconds
+      setTimeout(function() {
+        document.body.removeChild(form);
+        document.body.removeChild(iframe);
+      }, 5000);
+
+      var data = { success: true };
 
       if (data.success) {
         status.className = 'text-center py-3 px-4 rounded-lg text-sm font-sans bg-green-50 text-green-700 border border-green-200 mt-4';
-        status.textContent = 'Thank you! Your inquiry has been sent via WhatsApp. We will get back to you soon.';
+        status.textContent = 'Thank you! Your inquiry has been sent. We will get back to you soon.';
         // Clear all fields
         ['inq-name','inq-email','inq-phone','inq-company','inq-message','inq-projectType','inq-location','inq-budget','inq-timeline','inq-quantity','inq-supplierProducts','inq-supplierCountry','inq-partnerInterest'].forEach(id => {
           const el = document.getElementById(id);
