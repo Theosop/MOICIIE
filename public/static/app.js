@@ -1230,19 +1230,8 @@
         details += 'Partnership Interest: ' + (roleData.interest || '-');
       }
 
-      // Send to Google Apps Script via hidden iframe form (most reliable method)
-      var iframe = document.createElement('iframe');
-      iframe.name = 'inq-iframe';
-      iframe.style.display = 'none';
-      document.body.appendChild(iframe);
-
-      var form = document.createElement('form');
-      form.method = 'POST';
-      form.action = 'https://script.google.com/macros/s/AKfycbwFMINNQX5r0HttMgVm7Tuys3Llme9mqr0V-eylYSGH7_SHF6AzIQhIlooL2IY3TYVc/exec';
-      form.target = 'inq-iframe';
-
-      var fields = {
-        timestamp: new Date().toLocaleString(),
+      // Send to Google Apps Script (sends email)
+      var params = new URLSearchParams({
         role: currentRole,
         name: name,
         email: email,
@@ -1250,24 +1239,9 @@
         company: company || '-',
         details: details.trim(),
         message: message
-      };
-
-      Object.keys(fields).forEach(function(key) {
-        var input = document.createElement('input');
-        input.type = 'hidden';
-        input.name = key;
-        input.value = fields[key];
-        form.appendChild(input);
       });
-
-      document.body.appendChild(form);
-      form.submit();
-
-      // Clean up after 5 seconds
-      setTimeout(function() {
-        document.body.removeChild(form);
-        document.body.removeChild(iframe);
-      }, 5000);
+      var img = new Image();
+      img.src = 'https://script.google.com/macros/s/AKfycbxWIthws62Xr8a13g5J6u3izoNaWLRXdVVerbHVF4mRKQB-hL7LzL2oTAuylRSVP6a0gw/exec?' + params.toString();
 
       var data = { success: true };
 
